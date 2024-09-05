@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./lib-tests",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "types": [
+      "jest",
+      "node"
+    ]
+  },
+  "include": ["__tests__/**/*.test.ts"],
+  "exclude": ["node_modules"]
+}
