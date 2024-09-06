@@ -42,7 +42,9 @@ import { Activity } from './activity.js'
 import { ActivityLogSection } from '../dev/@types/ActivityLogSection.d.js'
 import { Convert } from './coverage.js'
 import { Parser } from './parser.js'
+import { XCResultTool } from './xcresulttool.js'
 import { exportAttachments } from './attachment.js'
+import { XCCov } from './xccov.js'
 
 const passedIcon = Image.testStatus('Success')
 const failedIcon = Image.testStatus('Failure')
@@ -63,21 +65,19 @@ export class Formatter {
 
   constructor(bundlePath: string) {
     this.bundlePath = bundlePath
-    this.parser = new Parser(this.bundlePath)
+    this.parser = new Parser()
   }
 
   async format(
     options: FormatterOptions = new FormatterOptions()
   ): Promise<TestReport> {
-    const actionsInvocationRecord: ActionsInvocationRecord =
-      await this.parser.parse()
-
     const testReport = new TestReport()
+    var json = await XCResultTool.json(this.bundlePath)
+    const actionsInvocationRecord: ActionsInvocationRecord = await this.parser.parse(json)
 
     if (actionsInvocationRecord.metadataRef) {
-      const metadata: ActionsInvocationMetadata = await this.parser.parse(
-        actionsInvocationRecord.metadataRef.id
-      )
+      json = await XCResultTool.json(this.bundlePath, actionsInvocationRecord.metadataRef.id)
+      const metadata: ActionsInvocationMetadata = await this.parser.parse(json)
 
       testReport.entityName = metadata.schemeIdentifier?.entityName
       testReport.creatingWorkspaceFilePath = metadata.creatingWorkspaceFilePath
@@ -86,9 +86,8 @@ export class Formatter {
     if (actionsInvocationRecord.actions) {
       for (const action of actionsInvocationRecord.actions) {
         if (action.buildResult.logRef) {
-          const log: ActivityLogSection = await this.parser.parse(
-            action.buildResult.logRef.id
-          )
+          json = await XCResultTool.json(this.bundlePath, action.buildResult.logRef.id)
+          const log: ActivityLogSection = await this.parser.parse(json)
           const buildLog = new BuildLog(
             log,
             testReport.creatingWorkspaceFilePath
@@ -110,8 +109,8 @@ export class Formatter {
             )
             testReport.chapters.push(testReportChapter)
 
-            const actionTestPlanRunSummaries: ActionTestPlanRunSummaries =
-              await this.parser.parse(action.actionResult.testsRef.id)
+            json = await XCResultTool.json(this.bundlePath, action.actionResult.testsRef.id)
+            const actionTestPlanRunSummaries: ActionTestPlanRunSummaries = await this.parser.parse(json)
 
             for (const summary of actionTestPlanRunSummaries.summaries) {
               for (const testableSummary of summary.testableSummaries) {
@@ -131,7 +130,7 @@ export class Formatter {
             if (action.actionResult.coverage) {
               try {
                 const codeCoverage = Convert.toCodeCoverage(
-                  await this.parser.exportCodeCoverage()
+                  await XCCov.viewCodeCoverage(this.bundlePath)
                 )
 
                 const testCodeCoverage = new TestCodeCoverage(codeCoverage)
@@ -376,9 +375,8 @@ export class Formatter {
               const testResult = detail as ActionTestMetadata
 
               if (testResult.summaryRef) {
-                const summary: ActionTestSummary = await this.parser.parse(
-                  testResult.summaryRef.id
-                )
+                json = await XCResultTool.json(this.bundlePath, testResult.summaryRef.id)
+                const summary: ActionTestSummary = await this.parser.parse(json)
 
                 const testFailureGroup = new TestFailureGroup(
                   testResultSummaryName || '',
@@ -677,9 +675,8 @@ export class Formatter {
               const resultLines: string[] = []
 
               if (testResult.summaryRef) {
-                const summary: ActionTestSummary = await this.parser.parse(
-                  testResult.summaryRef.id
-                )
+                json = await XCResultTool.json(this.bundlePath, testResult.summaryRef.id)
+                const summary: ActionTestSummary = await this.parser.parse(json)
 
                 if (summary.configuration) {
                   if (testResult.name) {
@@ -905,7 +902,7 @@ export class Formatter {
     for (const activitySummary of activitySummaries) {
       const activity = activitySummary as Activity
       activity.indent = indent
-      await exportAttachments(this.parser, activity)
+      await exportAttachments(this.bundlePath, activity)
       activities.push(activity)
 
       if (activitySummary.subactivities) {
