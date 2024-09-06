@@ -1,5 +1,5 @@
-import {ActionTestActivitySummary} from '../dev/@types/ActionTestActivitySummary.d.js'
-import {Attachment} from './attachment.js'
+import { ActionTestActivitySummary } from '../dev/@types/ActionTestActivitySummary.d.js'
+import { Attachment } from './attachment.js'
 
 export interface Activity {
   title: string

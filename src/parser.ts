@@ -1,8 +1,8 @@
 /*eslint-disable @typescript-eslint/no-explicit-any */
 
 import * as exec from '@actions/exec'
-import {promises} from 'fs'
-const {readFile} = promises
+import { promises } from 'fs'
+const { readFile } = promises
 
 export class Parser {
   private bundlePath: string

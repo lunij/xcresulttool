@@ -3,14 +3,14 @@ import * as exec from '@actions/exec'
 import * as os from 'os'
 import * as path from 'path'
 
-import {Activity} from './activity.js'
-import {Dimensions} from './dimensions.js'
-import {Parser} from './parser.js'
+import { Activity } from './activity.js'
+import { Dimensions } from './dimensions.js'
+import { Parser } from './parser.js'
 
-import {Reference} from '../dev/@types/Reference.d.js'
-import {SortedKeyValueArray} from '../dev/@types/SortedKeyValueArray.d.js'
+import { Reference } from '../dev/@types/Reference.d.js'
+import { SortedKeyValueArray } from '../dev/@types/SortedKeyValueArray.d.js'
 
-import {imageSize} from 'image-size'
+import { imageSize } from 'image-size'
 
 export interface Attachment {
   uniformTypeIdentifier: string

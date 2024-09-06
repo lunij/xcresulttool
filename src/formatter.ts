@@ -28,21 +28,21 @@ import {
   indentation
 } from './markdown.js'
 
-import {ActionTestActivitySummary} from '../dev/@types/ActionTestActivitySummary.d.js'
-import {ActionTestFailureSummary} from '../dev/@types/ActionTestFailureSummary.d.js'
-import {ActionTestMetadata} from '../dev/@types/ActionTestMetadata.d.js'
-import {ActionTestPlanRunSummaries} from '../dev/@types/ActionTestPlanRunSummaries.d.js'
-import {ActionTestSummary} from '../dev/@types/ActionTestSummary.d.js'
-import {ActionTestSummaryGroup} from '../dev/@types/ActionTestSummaryGroup.d.js'
-import {ActionTestableSummary} from '../dev/@types/ActionTestableSummary.d.js'
-import {ActionsInvocationMetadata} from '../dev/@types/ActionsInvocationMetadata.d.js'
-import {ActionsInvocationRecord} from '../dev/@types/ActionsInvocationRecord.d.js'
+import { ActionTestActivitySummary } from '../dev/@types/ActionTestActivitySummary.d.js'
+import { ActionTestFailureSummary } from '../dev/@types/ActionTestFailureSummary.d.js'
+import { ActionTestMetadata } from '../dev/@types/ActionTestMetadata.d.js'
+import { ActionTestPlanRunSummaries } from '../dev/@types/ActionTestPlanRunSummaries.d.js'
+import { ActionTestSummary } from '../dev/@types/ActionTestSummary.d.js'
+import { ActionTestSummaryGroup } from '../dev/@types/ActionTestSummaryGroup.d.js'
+import { ActionTestableSummary } from '../dev/@types/ActionTestableSummary.d.js'
+import { ActionsInvocationMetadata } from '../dev/@types/ActionsInvocationMetadata.d.js'
+import { ActionsInvocationRecord } from '../dev/@types/ActionsInvocationRecord.d.js'
 
-import {Activity} from './activity.js'
-import {ActivityLogSection} from '../dev/@types/ActivityLogSection.d.js'
-import {Convert} from './coverage.js'
-import {Parser} from './parser.js'
-import {exportAttachments} from './attachment.js'
+import { Activity } from './activity.js'
+import { ActivityLogSection } from '../dev/@types/ActivityLogSection.d.js'
+import { Convert } from './coverage.js'
+import { Parser } from './parser.js'
+import { exportAttachments } from './attachment.js'
 
 const passedIcon = Image.testStatus('Success')
 const failedIcon = Image.testStatus('Failure')
@@ -152,11 +152,11 @@ export class Formatter {
       expectedFailure = 0
       total = 0
     }
-    type TestSummaryStatsGroup = {[key: string]: TestSummaryStats}
+    type TestSummaryStatsGroup = { [key: string]: TestSummaryStats }
     const testSummary = {
       stats: new TestSummaryStats(),
       duration: 0,
-      groups: {} as {[key: string]: TestSummaryStatsGroup}
+      groups: {} as { [key: string]: TestSummaryStatsGroup }
     }
 
     for (const chapter of testReport.chapters) {
@@ -165,8 +165,8 @@ export class Formatter {
 
       for (const [identifier, results] of Object.entries(chapter.sections)) {
         const detailGroup = results.details.reduce(
-          (groups: {[key: string]: actionTestSummaries}, detail) => {
-            const d = detail as actionTestSummary & {group?: string}
+          (groups: { [key: string]: actionTestSummaries }, detail) => {
+            const d = detail as actionTestSummary & { group?: string }
             if (d.group) {
               if (groups[d.group]) {
                 groups[d.group].push(detail)
@@ -342,8 +342,8 @@ export class Formatter {
         const testResultSummaryName = results.summary.name
 
         const detailGroup = results.details.reduce(
-          (groups: {[key: string]: actionTestSummaries}, detail) => {
-            const d = detail as actionTestSummary & {group?: string}
+          (groups: { [key: string]: actionTestSummaries }, detail) => {
+            const d = detail as actionTestSummary & { group?: string }
             if (d.group) {
               if (groups[d.group]) {
                 groups[d.group].push(detail)
@@ -358,7 +358,7 @@ export class Formatter {
 
         for (const [, details] of Object.entries(detailGroup)) {
           const configurationGroup = details.reduce(
-            (groups: {[key: string]: actionTestSummaries}, detail) => {
+            (groups: { [key: string]: actionTestSummaries }, detail) => {
               if (detail.identifier) {
                 if (groups[detail.identifier]) {
                   groups[detail.identifier].push(detail)
@@ -489,8 +489,8 @@ export class Formatter {
         testDetail.lines.push('')
 
         const detailGroup = results.details.reduce(
-          (groups: {[key: string]: actionTestSummaries}, detail) => {
-            const d = detail as actionTestSummary & {group?: string}
+          (groups: { [key: string]: actionTestSummaries }, detail) => {
+            const d = detail as actionTestSummary & { group?: string }
             if (d.group) {
               if (groups[d.group]) {
                 groups[d.group].push(detail)
@@ -608,7 +608,7 @@ export class Formatter {
           testDetailTable.push(`<table>`)
 
           const configurationGroup = details.reduce(
-            (groups: {[key: string]: actionTestSummaries}, detail) => {
+            (groups: { [key: string]: actionTestSummaries }, detail) => {
               if (detail.identifier) {
                 if (groups[detail.identifier]) {
                   groups[detail.identifier].push(detail)
@@ -890,7 +890,7 @@ export class Formatter {
         const group = test as ActionTestSummaryGroup
         await this.collectTestSummaries(group, group.subtests, testSummaries)
       } else {
-        const t = test as actionTestSummary & {group?: string}
+        const t = test as actionTestSummary & { group?: string }
         t.group = group.name
         testSummaries.push(test)
       }

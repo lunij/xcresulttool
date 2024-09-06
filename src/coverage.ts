@@ -80,7 +80,7 @@ function invalidValue(typ: any, val: any, key: any = ''): never {
 function jsonToJSProps(typ: any): any {
   if (typ.jsonToJS === undefined) {
     const map: any = {}
-    typ.props.forEach((p: any) => (map[p.json] = {key: p.js, typ: p.typ}))
+    typ.props.forEach((p: any) => (map[p.json] = { key: p.js, typ: p.typ }))
     typ.jsonToJS = map
   }
   return typ.jsonToJS
@@ -89,7 +89,7 @@ function jsonToJSProps(typ: any): any {
 function jsToJSONProps(typ: any): any {
   if (typ.jsToJSON === undefined) {
     const map: any = {}
-    typ.props.forEach((p: any) => (map[p.js] = {key: p.json, typ: p.typ}))
+    typ.props.forEach((p: any) => (map[p.js] = { key: p.json, typ: p.typ }))
     typ.jsToJSON = map
   }
   return typ.jsToJSON
@@ -136,7 +136,7 @@ function transform(val: any, typ: any, getProps: any, key: any = ''): any {
   }
 
   function transformObject(
-    props: {[k: string]: any},
+    props: { [k: string]: any },
     additional: any,
     val: any
   ): any {
@@ -173,10 +173,10 @@ function transform(val: any, typ: any, getProps: any, key: any = ''): any {
     return typ.hasOwnProperty('unionMembers')
       ? transformUnion(typ.unionMembers, val)
       : typ.hasOwnProperty('arrayItems')
-      ? transformArray(typ.arrayItems, val)
-      : typ.hasOwnProperty('props')
-      ? transformObject(getProps(typ), typ.additional, val)
-      : invalidValue(typ, val)
+        ? transformArray(typ.arrayItems, val)
+        : typ.hasOwnProperty('props')
+          ? transformObject(getProps(typ), typ.additional, val)
+          : invalidValue(typ, val)
   }
   // Numbers can be parsed by Date but shouldn't be.
   if (typ === Date && typeof val !== 'number') return transformDate(val)
@@ -192,65 +192,65 @@ function uncast<T>(val: T, typ: any): any {
 }
 
 function a(typ: any) {
-  return {arrayItems: typ}
+  return { arrayItems: typ }
 }
 
 function u(...typs: any[]) {
-  return {unionMembers: typs}
+  return { unionMembers: typs }
 }
 
 function o(props: any[], additional: any) {
-  return {props, additional}
+  return { props, additional }
 }
 
 function m(additional: any) {
-  return {props: [], additional}
+  return { props: [], additional }
 }
 
 function r(name: string) {
-  return {ref: name}
+  return { ref: name }
 }
 
 const typeMap: any = {
   CodeCoverage: o(
     [
-      {json: 'coveredLines', js: 'coveredLines', typ: 0},
-      {json: 'lineCoverage', js: 'lineCoverage', typ: 3.14},
-      {json: 'targets', js: 'targets', typ: a(r('Target'))},
-      {json: 'executableLines', js: 'executableLines', typ: 0}
+      { json: 'coveredLines', js: 'coveredLines', typ: 0 },
+      { json: 'lineCoverage', js: 'lineCoverage', typ: 3.14 },
+      { json: 'targets', js: 'targets', typ: a(r('Target')) },
+      { json: 'executableLines', js: 'executableLines', typ: 0 }
     ],
     false
   ),
   Target: o(
     [
-      {json: 'coveredLines', js: 'coveredLines', typ: 0},
-      {json: 'lineCoverage', js: 'lineCoverage', typ: 3.14},
-      {json: 'files', js: 'files', typ: a(r('File'))},
-      {json: 'name', js: 'name', typ: ''},
-      {json: 'executableLines', js: 'executableLines', typ: 0},
-      {json: 'buildProductPath', js: 'buildProductPath', typ: ''}
+      { json: 'coveredLines', js: 'coveredLines', typ: 0 },
+      { json: 'lineCoverage', js: 'lineCoverage', typ: 3.14 },
+      { json: 'files', js: 'files', typ: a(r('File')) },
+      { json: 'name', js: 'name', typ: '' },
+      { json: 'executableLines', js: 'executableLines', typ: 0 },
+      { json: 'buildProductPath', js: 'buildProductPath', typ: '' }
     ],
     false
   ),
   File: o(
     [
-      {json: 'coveredLines', js: 'coveredLines', typ: 0},
-      {json: 'lineCoverage', js: 'lineCoverage', typ: 3.14},
-      {json: 'path', js: 'path', typ: ''},
-      {json: 'functions', js: 'functions', typ: a(r('Function'))},
-      {json: 'name', js: 'name', typ: ''},
-      {json: 'executableLines', js: 'executableLines', typ: 0}
+      { json: 'coveredLines', js: 'coveredLines', typ: 0 },
+      { json: 'lineCoverage', js: 'lineCoverage', typ: 3.14 },
+      { json: 'path', js: 'path', typ: '' },
+      { json: 'functions', js: 'functions', typ: a(r('Function')) },
+      { json: 'name', js: 'name', typ: '' },
+      { json: 'executableLines', js: 'executableLines', typ: 0 }
     ],
     false
   ),
   Function: o(
     [
-      {json: 'coveredLines', js: 'coveredLines', typ: 0},
-      {json: 'lineCoverage', js: 'lineCoverage', typ: 3.14},
-      {json: 'lineNumber', js: 'lineNumber', typ: 0},
-      {json: 'executionCount', js: 'executionCount', typ: 0},
-      {json: 'name', js: 'name', typ: ''},
-      {json: 'executableLines', js: 'executableLines', typ: 0}
+      { json: 'coveredLines', js: 'coveredLines', typ: 0 },
+      { json: 'lineCoverage', js: 'lineCoverage', typ: 3.14 },
+      { json: 'lineNumber', js: 'lineNumber', typ: 0 },
+      { json: 'executionCount', js: 'executionCount', typ: 0 },
+      { json: 'name', js: 'name', typ: '' },
+      { json: 'executableLines', js: 'executableLines', typ: 0 }
     ],
     false
   )

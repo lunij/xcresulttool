@@ -3,10 +3,10 @@ import * as github from '@actions/github'
 import * as os from 'os'
 import * as path from 'path'
 import * as process from 'process'
-import {expect, test} from '@jest/globals'
-import {promises} from 'fs'
-const {readFile, writeFile} = promises
-import {Formatter, FormatterOptions} from '../src/formatter.js'
+import { expect, test } from '@jest/globals'
+import { promises } from 'fs'
+const { readFile, writeFile } = promises
+import { Formatter, FormatterOptions } from '../src/formatter.js'
 
 test('Example.xcresult', async () => {
   const bundlePath = '__tests__/data/Example.xcresult'

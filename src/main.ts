@@ -3,12 +3,12 @@ import * as exec from '@actions/exec'
 import * as github from '@actions/github'
 import * as os from 'os'
 import * as path from 'path'
-import {DefaultArtifactClient} from '@actions/artifact'
-import {Formatter} from './formatter.js'
-import {Octokit} from '@octokit/action'
-import {glob} from 'glob'
-import {promises} from 'fs'
-const {stat} = promises
+import { DefaultArtifactClient } from '@actions/artifact'
+import { Formatter } from './formatter.js'
+import { Octokit } from '@octokit/action'
+import { glob } from 'glob'
+import { promises } from 'fs'
+const { stat } = promises
 
 async function run(): Promise<void> {
   try {

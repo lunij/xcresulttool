@@ -1,14 +1,14 @@
 import * as pathModule from 'path'
 
-import {ActionRunDestinationRecord} from '../dev/@types/ActionRunDestinationRecord.d.js'
-import {ActionTestMetadata} from '../dev/@types/ActionTestMetadata.d.js'
-import {ActionTestSummary} from '../dev/@types/ActionTestSummary.d.js'
-import {ActionTestSummaryGroup} from '../dev/@types/ActionTestSummaryGroup.d.js'
-import {ActionTestSummaryIdentifiableObject} from '../dev/@types/ActionTestSummaryIdentifiableObject.d.js'
-import {ActionTestableSummary} from '../dev/@types/ActionTestableSummary.d.js'
-import {ActivityLogCommandInvocationSection} from '../dev/@types/ActivityLogCommandInvocationSection.d.js'
-import {ActivityLogSection} from '../dev/@types/ActivityLogSection.d.js'
-import {CodeCoverage} from './coverage.js'
+import { ActionRunDestinationRecord } from '../dev/@types/ActionRunDestinationRecord.d.js'
+import { ActionTestMetadata } from '../dev/@types/ActionTestMetadata.d.js'
+import { ActionTestSummary } from '../dev/@types/ActionTestSummary.d.js'
+import { ActionTestSummaryGroup } from '../dev/@types/ActionTestSummaryGroup.d.js'
+import { ActionTestSummaryIdentifiableObject } from '../dev/@types/ActionTestSummaryIdentifiableObject.d.js'
+import { ActionTestableSummary } from '../dev/@types/ActionTestableSummary.d.js'
+import { ActivityLogCommandInvocationSection } from '../dev/@types/ActivityLogCommandInvocationSection.d.js'
+import { ActivityLogSection } from '../dev/@types/ActivityLogSection.d.js'
+import { CodeCoverage } from './coverage.js'
 
 type TestStatus =
   | 'action_required'
@@ -74,7 +74,7 @@ export class TestReportChapter {
   readonly title?: string
   readonly schemeCommandName: string
   readonly runDestination: ActionRunDestinationRecord
-  readonly sections: {[key: string]: TestReportSection} = {}
+  readonly sections: { [key: string]: TestReportSection } = {}
 
   readonly summaries: TestReportChapterSummary[] = []
   readonly details: TestReportChapterDetail[] = []
