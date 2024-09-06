@@ -6,7 +6,7 @@ import * as process from 'process'
 import {expect, test} from '@jest/globals'
 import {promises} from 'fs'
 const {readFile, writeFile} = promises
-import {Formatter, FormatterOptions} from '../src/formatter'
+import {Formatter, FormatterOptions} from '../src/formatter.js'
 
 test('Example.xcresult', async () => {
   const bundlePath = '__tests__/data/Example.xcresult'
