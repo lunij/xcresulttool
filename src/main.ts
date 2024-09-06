@@ -1,10 +1,10 @@
-import * as artifact from '@actions/artifact'
 import * as core from '@actions/core'
 import * as exec from '@actions/exec'
 import * as github from '@actions/github'
 import * as os from 'os'
 import * as path from 'path'
-import {Formatter} from './formatter'
+import {DefaultArtifactClient} from '@actions/artifact'
+import {Formatter} from './formatter.js'
 import {Octokit} from '@octokit/action'
 import {glob} from 'glob'
 import {promises} from 'fs'
@@ -122,27 +122,27 @@ async function run(): Promise<void> {
             continue
           }
 
-          const artifactClient = artifact.create()
+          const artifactClient = new DefaultArtifactClient()
           const artifactName = path.basename(uploadBundlePath)
-
           const rootDirectory = uploadBundlePath
-          const options = {
-            continueOnError: false
-          }
 
-          glob(`${uploadBundlePath}/**/*`, async (error, files) => {
-            if (error) {
-              core.error(error)
-            }
+          try {
+            const files = await glob(`${uploadBundlePath}/**/*`)
+
             if (files.length) {
               await artifactClient.uploadArtifact(
                 artifactName,
                 files,
-                rootDirectory,
-                options
+                rootDirectory
               )
             }
-          })
+          } catch (error) {
+            if (error instanceof Error) {
+              core.error(error.message)
+            } else {
+              core.error(String(error))
+            }
+          }
         }
       }
     }

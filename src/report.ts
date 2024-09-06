@@ -1,19 +1,29 @@
 import * as pathModule from 'path'
 
-import {ActionRunDestinationRecord} from '../dev/@types/ActionRunDestinationRecord.d'
-import {ActionTestMetadata} from '../dev/@types/ActionTestMetadata.d'
-import {ActionTestSummary} from '../dev/@types/ActionTestSummary.d'
-import {ActionTestSummaryGroup} from '../dev/@types/ActionTestSummaryGroup.d'
-import {ActionTestSummaryIdentifiableObject} from '../dev/@types/ActionTestSummaryIdentifiableObject.d'
-import {ActionTestableSummary} from '../dev/@types/ActionTestableSummary.d'
-import {ActivityLogCommandInvocationSection} from '../dev/@types/ActivityLogCommandInvocationSection.d'
-import {ActivityLogSection} from '../dev/@types/ActivityLogSection.d'
-import {CodeCoverage} from './coverage'
+import {ActionRunDestinationRecord} from '../dev/@types/ActionRunDestinationRecord.d.js'
+import {ActionTestMetadata} from '../dev/@types/ActionTestMetadata.d.js'
+import {ActionTestSummary} from '../dev/@types/ActionTestSummary.d.js'
+import {ActionTestSummaryGroup} from '../dev/@types/ActionTestSummaryGroup.d.js'
+import {ActionTestSummaryIdentifiableObject} from '../dev/@types/ActionTestSummaryIdentifiableObject.d.js'
+import {ActionTestableSummary} from '../dev/@types/ActionTestableSummary.d.js'
+import {ActivityLogCommandInvocationSection} from '../dev/@types/ActivityLogCommandInvocationSection.d.js'
+import {ActivityLogSection} from '../dev/@types/ActivityLogSection.d.js'
+import {CodeCoverage} from './coverage.js'
+
+type TestStatus =
+  | 'action_required'
+  | 'cancelled'
+  | 'failure'
+  | 'neutral'
+  | 'success'
+  | 'skipped'
+  | 'stale'
+  | 'timed_out'
 
 export class TestReport {
   entityName?: string
   creatingWorkspaceFilePath?: string
-  testStatus = 'neutral'
+  testStatus: TestStatus = 'neutral'
 
   buildLog?: BuildLog
   readonly chapters: TestReportChapter[] = []
@@ -216,13 +226,15 @@ export class TestCodeCoverage {
   }
 }
 
+type AnnotationLevel = 'failure' | 'notice' | 'warning'
+
 export class Annotation {
   path: string
   start_line: number
   end_line: number
   start_column?: number
   end_column?: number
-  annotation_level: string
+  annotation_level: AnnotationLevel
   message: string
   title?: string
   raw_details?: string
@@ -231,7 +243,7 @@ export class Annotation {
     path: string,
     start_line: number,
     end_line: number,
-    annotation_level: string,
+    annotation_level: AnnotationLevel,
     message: string,
     title?: string,
     raw_details?: string

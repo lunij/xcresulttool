@@ -3,14 +3,14 @@ import * as exec from '@actions/exec'
 import * as os from 'os'
 import * as path from 'path'
 
-import {Activity} from './activity'
-import {Dimensions} from './dimensions'
-import {Parser} from './parser'
+import {Activity} from './activity.js'
+import {Dimensions} from './dimensions.js'
+import {Parser} from './parser.js'
 
-import {Reference} from '../dev/@types/Reference.d'
-import {SortedKeyValueArray} from '../dev/@types/SortedKeyValueArray.d'
+import {Reference} from '../dev/@types/Reference.d.js'
+import {SortedKeyValueArray} from '../dev/@types/SortedKeyValueArray.d.js'
 
-import sizeOf from 'image-size'
+import {imageSize} from 'image-size'
 
 export interface Attachment {
   uniformTypeIdentifier: string
@@ -53,7 +53,7 @@ export async function exportAttachments(
         }
 
         try {
-          const dimensions: Dimensions = sizeOf(image)
+          const dimensions: Dimensions = imageSize(image)
           attachment.dimensions = dimensions
 
           if (image && core.getInput('token')) {

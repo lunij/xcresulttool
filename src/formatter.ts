@@ -1,6 +1,6 @@
 /*eslint-disable no-shadow */
 
-import * as Image from './image'
+import * as Image from './image.js'
 import * as github from '@actions/github'
 import * as path from 'path'
 
@@ -20,29 +20,29 @@ import {
   TestReportSection,
   actionTestSummaries,
   actionTestSummary
-} from './report'
+} from './report.js'
 import {
   anchorIdentifier,
   anchorNameTag,
   escapeHashSign,
   indentation
-} from './markdown'
+} from './markdown.js'
 
-import {ActionTestActivitySummary} from '../dev/@types/ActionTestActivitySummary.d'
-import {ActionTestFailureSummary} from '../dev/@types/ActionTestFailureSummary.d'
-import {ActionTestMetadata} from '../dev/@types/ActionTestMetadata.d'
-import {ActionTestPlanRunSummaries} from '../dev/@types/ActionTestPlanRunSummaries.d'
-import {ActionTestSummary} from '../dev/@types/ActionTestSummary.d'
-import {ActionTestSummaryGroup} from '../dev/@types/ActionTestSummaryGroup.d'
-import {ActionTestableSummary} from '../dev/@types/ActionTestableSummary.d'
-import {ActionsInvocationMetadata} from '../dev/@types/ActionsInvocationMetadata.d'
-import {ActionsInvocationRecord} from '../dev/@types/ActionsInvocationRecord.d'
+import {ActionTestActivitySummary} from '../dev/@types/ActionTestActivitySummary.d.js'
+import {ActionTestFailureSummary} from '../dev/@types/ActionTestFailureSummary.d.js'
+import {ActionTestMetadata} from '../dev/@types/ActionTestMetadata.d.js'
+import {ActionTestPlanRunSummaries} from '../dev/@types/ActionTestPlanRunSummaries.d.js'
+import {ActionTestSummary} from '../dev/@types/ActionTestSummary.d.js'
+import {ActionTestSummaryGroup} from '../dev/@types/ActionTestSummaryGroup.d.js'
+import {ActionTestableSummary} from '../dev/@types/ActionTestableSummary.d.js'
+import {ActionsInvocationMetadata} from '../dev/@types/ActionsInvocationMetadata.d.js'
+import {ActionsInvocationRecord} from '../dev/@types/ActionsInvocationRecord.d.js'
 
-import {Activity} from './activity'
-import {ActivityLogSection} from '../dev/@types/ActivityLogSection.d'
-import {Convert} from './coverage'
-import {Parser} from './parser'
-import {exportAttachments} from './attachment'
+import {Activity} from './activity.js'
+import {ActivityLogSection} from '../dev/@types/ActivityLogSection.d.js'
+import {Convert} from './coverage.js'
+import {Parser} from './parser.js'
+import {exportAttachments} from './attachment.js'
 
 const passedIcon = Image.testStatus('Success')
 const failedIcon = Image.testStatus('Failure')
