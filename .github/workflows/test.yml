@@ -33,6 +33,12 @@ jobs:
           path: __tests__/data/Example.xcresult
           title: Example.xcresult (+passed)
           show-passed-tests: true
+      - name: Example.xcresult (+test summaries)
+        uses: ./
+        with:
+          path: __tests__/data/Example.xcresult
+          title: Example.xcresult (+test summaries)
+          show-test-summaries: true
       - name: KeychainAccess.xcresult
         uses: ./
         with:
