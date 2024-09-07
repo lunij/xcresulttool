@@ -65,7 +65,11 @@ export class XCResultTool {
     return output
   }
 
-  static async export(xcResultPath: string, outputPath: string, reference: string): Promise<Buffer> {
+  static async export(
+    xcResultPath: string,
+    outputPath: string,
+    reference: string
+  ): Promise<Buffer> {
     const versionInfo = await this.version()
     const args = [
       'xcresulttool',

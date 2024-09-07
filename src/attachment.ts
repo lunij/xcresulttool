@@ -28,7 +28,10 @@ export interface Attachment {
   dimensions: Dimensions
 }
 
-export async function exportAttachments(xcResultPath: string, activity: Activity): Promise<void> {
+export async function exportAttachments(
+  xcResultPath: string,
+  activity: Activity
+): Promise<void> {
   activity.attachments = activity.attachments || []
 
   if (activity.attachments) {

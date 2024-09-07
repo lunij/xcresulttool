@@ -1,4 +1,3 @@
-
 export class Parser {
   static async parse(json: string): Promise<any> {
     const root = JSON.parse(json)
