@@ -3,14 +3,14 @@
   "version": "1.7.0",
   "private": false,
   "description": "A GitHub Action that generates a human-readable test report from the Xcode result bundle and shows it on GitHub Checks.",
-  "main": "lib/main.js",
+  "main": "dist/main.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write '**/*.ts'",
     "format-check": "prettier --check '**/*.ts'",
     "lint": "eslint",
-    "package": "ncc build --source-map --license licenses.txt",
+    "package": "ncc build src/main.ts --source-map --license licenses.txt",
     "pretest": "npm run build",
     "test": "jest",
     "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
