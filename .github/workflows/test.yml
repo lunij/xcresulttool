@@ -27,23 +27,23 @@ jobs:
         with:
           path: __tests__/data/Example.xcresult
           title: Example.xcresult
-      - name: Example.xcresult (failures only)
+      - name: Example.xcresult (+passed)
         uses: ./
         with:
           path: __tests__/data/Example.xcresult
-          title: Example.xcresult (failures only)
-          show-passed-tests: false
+          title: Example.xcresult (+passed)
+          show-passed-tests: true
       - name: KeychainAccess.xcresult
         uses: ./
         with:
           path: __tests__/data/KeychainAccess.xcresult
           title: KeychainAccess.xcresult
-      - name: KeychainAccess.xcresult (failures only)
+      - name: KeychainAccess.xcresult (+passed)
         uses: ./
         with:
           path: __tests__/data/KeychainAccess.xcresult
-          title: KeychainAccess.xcresult (failures only)
-          show-passed-tests: false
+          title: KeychainAccess.xcresult (+passed)
+          show-passed-tests: true
       - name: TAU.xcresult
         uses: ./
         with:
@@ -59,28 +59,28 @@ jobs:
         with:
           path: __tests__/data/Coverage.xcresult
           title: Coverage.xcresult
-      - name: Coverage.xcresult hiding coverage
+      - name: Coverage.xcresult (-coverage)
         uses: ./
         with:
           path: __tests__/data/Coverage.xcresult
-          title: Coverage.xcresult hiding coverage
+          title: Coverage.xcresult (-coverage)
           show-code-coverage: false
       - name: UhooiPicBook.xcresult
         uses: ./
         with:
           path: __tests__/data/UhooiPicBook.xcresult
           title: UhooiPicBook.xcresult
-      - name: UhooiPicBook.xcresult (failures only)
+      - name: UhooiPicBook.xcresult (+passed)
         uses: ./
         with:
           path: __tests__/data/UhooiPicBook.xcresult
-          title: UhooiPicBook.xcresult (failures only)
-          show-passed-tests: false
-      - name: UhooiPicBook.xcresult hiding coverage
+          title: UhooiPicBook.xcresult (+passed)
+          show-passed-tests: true
+      - name: UhooiPicBook.xcresult (-coverage)
         uses: ./
         with:
           path: __tests__/data/UhooiPicBook.xcresult
-          title: UhooiPicBook.xcresult hiding coverage
+          title: UhooiPicBook.xcresult (-coverage)
           show-code-coverage: false
       - name: Multiple Xcode Results
         uses: ./
