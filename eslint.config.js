@@ -1,15 +1,25 @@
 import jest from 'eslint-plugin-jest'
+import stylisticJs from '@stylistic/eslint-plugin-js'
+import stylisticTs from '@stylistic/eslint-plugin-ts'
+import tseslint from 'typescript-eslint'
 import typescriptEslint from '@typescript-eslint/eslint-plugin'
 import globals from 'globals'
 import tsParser from '@typescript-eslint/parser'
 
 export default [
   {
-    ignores: ['**/dist/', '**/lib/', '**/node_modules/', '**/jest.config.js']
+    ignores: [
+      '**/dist/',
+      '**/lib/',
+      '**/node_modules/',
+      'dev/fd2schema.js'
+    ]
   },
   {
     plugins: {
       jest,
+      '@stylistic/js': stylisticJs,
+      '@stylistic/ts': stylisticTs,
       '@typescript-eslint': typescriptEslint
     },
     languageOptions: {
@@ -17,13 +27,12 @@ export default [
         ...globals.node,
         ...jest.environments.globals.globals
       },
-
       parser: tsParser,
       ecmaVersion: 9,
       sourceType: 'module',
-
       parserOptions: {
-        project: './tsconfig.json'
+        project: './tsconfig.json',
+        tsconfigRootDir: import.meta.dirname
       }
     },
     rules: {
@@ -31,6 +40,9 @@ export default [
       'eslint-comments/no-use': 'off',
       'import/no-namespace': 'off',
       'no-unused-vars': 'off',
+      '@stylistic/js/function-call-spacing': ['error', 'never'],
+      '@stylistic/js/semi': ['error', 'never'],
+      '@stylistic/ts/type-annotation-spacing': 'error',
       '@typescript-eslint/no-unused-vars': 'error',
       '@typescript-eslint/explicit-member-accessibility': [
         'error',
@@ -50,7 +62,6 @@ export default [
           allowExpressions: true
         }
       ],
-      '@typescript-eslint/func-call-spacing': ['error', 'never'],
       '@typescript-eslint/no-array-constructor': 'error',
       '@typescript-eslint/no-empty-interface': 'error',
       '@typescript-eslint/no-explicit-any': 'error',
@@ -72,24 +83,11 @@ export default [
       '@typescript-eslint/require-array-sort-compare': 'error',
       '@typescript-eslint/restrict-plus-operands': 'error',
       semi: 'off',
-      '@typescript-eslint/semi': ['error', 'never'],
-      '@typescript-eslint/type-annotation-spacing': 'error',
       '@typescript-eslint/unbound-method': 'error'
     }
   },
   {
-    files: ['__tests__/**/*.test.ts'],
-    languageOptions: {
-      globals: {
-        ...globals.jest,
-        ...globals.node
-      },
-      ecmaVersion: 5,
-      sourceType: 'commonjs',
-      parserOptions: {
-        project: './tsconfig.test.json'
-      }
-    },
-    rules: {}
+    files: ['**/*.js'],
+    ...tseslint.configs.disableTypeChecked
   }
 ]
