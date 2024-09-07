@@ -72,9 +72,7 @@ function invalidValue(typ: any, val: any, key: any = ''): never {
       )} but got ${JSON.stringify(val)}`
     )
   }
-  throw Error(
-    `Invalid value ${JSON.stringify(val)} for type ${JSON.stringify(typ)}`
-  )
+  throw Error(`Invalid value ${JSON.stringify(val)} for type ${JSON.stringify(typ)}`)
 }
 
 function jsonToJSProps(typ: any): any {
@@ -135,20 +133,14 @@ function transform(val: any, typ: any, getProps: any, key: any = ''): any {
     return d
   }
 
-  function transformObject(
-    props: { [k: string]: any },
-    additional: any,
-    val: any
-  ): any {
+  function transformObject(props: { [k: string]: any }, additional: any, val: any): any {
     if (val === null || typeof val !== 'object' || Array.isArray(val)) {
       return invalidValue('object', val)
     }
     const result: any = {}
     Object.getOwnPropertyNames(props).forEach(key => {
       const prop = props[key]
-      const v = Object.prototype.hasOwnProperty.call(val, key)
-        ? val[key]
-        : undefined
+      const v = Object.prototype.hasOwnProperty.call(val, key) ? val[key] : undefined
       result[prop.key] = transform(v, prop.typ, getProps, prop.key)
     })
     Object.getOwnPropertyNames(val).forEach(key => {

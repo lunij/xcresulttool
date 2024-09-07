@@ -28,21 +28,14 @@ export interface Attachment {
   dimensions: Dimensions
 }
 
-export async function exportAttachments(
-  xcResultPath: string,
-  activity: Activity
-): Promise<void> {
+export async function exportAttachments(xcResultPath: string, activity: Activity): Promise<void> {
   activity.attachments = activity.attachments || []
 
   if (activity.attachments) {
     for (const attachment of activity.attachments) {
       if (attachment.filename && attachment.payloadRef) {
         const outputPath = path.join(os.tmpdir(), attachment.filename)
-        const image = await XCResultTool.export(
-          xcResultPath,
-          outputPath,
-          attachment.payloadRef.id
-        )
+        const image = await XCResultTool.export(xcResultPath, outputPath, attachment.payloadRef.id)
 
         let output = ''
         const options = {

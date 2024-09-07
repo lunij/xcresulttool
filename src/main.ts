@@ -86,9 +86,7 @@ async function run(): Promise<void> {
       }
 
       if (report.annotations.length > 50) {
-        core.warning(
-          'Annotations that exceed the limit (50) will be truncated.'
-        )
+        core.warning('Annotations that exceed the limit (50) will be truncated.')
       }
       const annotations = report.annotations.slice(0, 50)
       let output
@@ -135,11 +133,7 @@ async function run(): Promise<void> {
             const files = await glob(`${uploadBundlePath}/**/*`)
 
             if (files.length) {
-              await artifactClient.uploadArtifact(
-                artifactName,
-                files,
-                rootDirectory
-              )
+              await artifactClient.uploadArtifact(artifactName, files, rootDirectory)
             }
           } catch (error) {
             if (error instanceof Error) {
@@ -158,13 +152,8 @@ async function run(): Promise<void> {
 
 run()
 
-async function mergeResultBundle(
-  inputPaths: string[],
-  outputPath: string
-): Promise<void> {
-  const args = ['xcresulttool', 'merge']
-    .concat(inputPaths)
-    .concat(['--output-path', outputPath])
+async function mergeResultBundle(inputPaths: string[], outputPath: string): Promise<void> {
+  const args = ['xcresulttool', 'merge'].concat(inputPaths).concat(['--output-path', outputPath])
   const options = {
     silent: true
   }

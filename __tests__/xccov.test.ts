@@ -31,9 +31,7 @@ describe('XCCov', () => {
       const mockExec = exec as jest.MockedFunction<typeof exec>
 
       mockExec.mockImplementationOnce((cmd, args, options) => {
-        const stdoutCallback = options?.listeners?.stdout as (
-          data: Buffer
-        ) => void
+        const stdoutCallback = options?.listeners?.stdout as (data: Buffer) => void
         stdoutCallback(Buffer.from(''))
         return Promise.resolve(0)
       })
@@ -54,9 +52,7 @@ describe('XCCov', () => {
 
       mockExec.mockRejectedValueOnce(new Error('Command failed'))
 
-      await expect(XCCov.viewCodeCoverage('/path/to/xcresult')).rejects.toThrow(
-        'Command failed'
-      )
+      await expect(XCCov.viewCodeCoverage('/path/to/xcresult')).rejects.toThrow('Command failed')
 
       expect(mockExec).toHaveBeenCalledWith(
         'xcrun',

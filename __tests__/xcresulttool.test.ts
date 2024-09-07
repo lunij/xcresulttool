@@ -22,11 +22,7 @@ describe('XCResultTool', () => {
       let stdoutCallback: (data: Buffer) => void = () => {}
       mockExec.mockImplementationOnce((cmd, args, options) => {
         stdoutCallback = options?.listeners?.stdout as (data: Buffer) => void
-        stdoutCallback(
-          Buffer.from(
-            'xcresulttool version 23025, format version 3.53 (current)'
-          )
-        )
+        stdoutCallback(Buffer.from('xcresulttool version 23025, format version 3.53 (current)'))
         return Promise.resolve(0)
       })
 
@@ -48,16 +44,12 @@ describe('XCResultTool', () => {
       const mockExec = exec as jest.MockedFunction<typeof exec>
 
       mockExec.mockImplementationOnce((cmd, args, options) => {
-        const stdoutCallback = options?.listeners?.stdout as (
-          data: Buffer
-        ) => void
+        const stdoutCallback = options?.listeners?.stdout as (data: Buffer) => void
         stdoutCallback(Buffer.from('invalid version string'))
         return Promise.resolve(0)
       })
 
-      await expect(XCResultTool.version()).rejects.toThrow(
-        'Failed to parse version string'
-      )
+      await expect(XCResultTool.version()).rejects.toThrow('Failed to parse version string')
     })
   })
 
@@ -83,14 +75,7 @@ describe('XCResultTool', () => {
 
       expect(mockExec).toHaveBeenCalledWith(
         'xcrun',
-        [
-          'xcresulttool',
-          'get',
-          '--path',
-          '/path/to/bundle',
-          '--format',
-          'json'
-        ],
+        ['xcresulttool', 'get', '--path', '/path/to/bundle', '--format', 'json'],
         expect.any(Object)
       )
     })
@@ -116,15 +101,7 @@ describe('XCResultTool', () => {
 
       expect(mockExec).toHaveBeenCalledWith(
         'xcrun',
-        [
-          'xcresulttool',
-          'get',
-          '--path',
-          '/path/to/bundle',
-          '--format',
-          'json',
-          '--legacy'
-        ],
+        ['xcresulttool', 'get', '--path', '/path/to/bundle', '--format', 'json', '--legacy'],
         expect.any(Object)
       )
     })
@@ -184,11 +161,7 @@ describe('XCResultTool', () => {
         const fileContent = 'mock file content'
         mockReadFile.mockResolvedValueOnce(Buffer.from(fileContent))
 
-        const result = await XCResultTool.export(
-          '/path/to/xcresult',
-          '/path/to/output',
-          'ref123'
-        )
+        const result = await XCResultTool.export('/path/to/xcresult', '/path/to/output', 'ref123')
 
         expect(result).toEqual(Buffer.from(fileContent))
 
@@ -283,11 +256,7 @@ describe('XCResultTool', () => {
         const fileContent = 'mock file content'
         mockReadFile.mockResolvedValueOnce(Buffer.from(fileContent))
 
-        const result = await XCResultTool.export(
-          '/path/to/xcresult',
-          '/path/to/output',
-          'ref123'
-        )
+        const result = await XCResultTool.export('/path/to/xcresult', '/path/to/output', 'ref123')
 
         expect(result).toEqual(Buffer.from(fileContent))
 

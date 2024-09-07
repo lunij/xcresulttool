@@ -21,12 +21,7 @@ import {
   actionTestSummaries,
   actionTestSummary
 } from './report.js'
-import {
-  anchorIdentifier,
-  anchorNameTag,
-  escapeHashSign,
-  indentation
-} from './markdown.js'
+import { anchorIdentifier, anchorNameTag, escapeHashSign, indentation } from './markdown.js'
 
 import { ActionTestActivitySummary } from '../dev/@types/ActionTestActivitySummary.d.js'
 import { ActionTestFailureSummary } from '../dev/@types/ActionTestFailureSummary.d.js'
@@ -66,19 +61,13 @@ export class Formatter {
     this.bundlePath = bundlePath
   }
 
-  async format(
-    options: FormatterOptions = new FormatterOptions()
-  ): Promise<TestReport> {
+  async format(options: FormatterOptions = new FormatterOptions()): Promise<TestReport> {
     const testReport = new TestReport()
     var json = await XCResultTool.json(this.bundlePath)
-    const actionsInvocationRecord: ActionsInvocationRecord =
-      await Parser.parse(json)
+    const actionsInvocationRecord: ActionsInvocationRecord = await Parser.parse(json)
 
     if (actionsInvocationRecord.metadataRef) {
-      json = await XCResultTool.json(
-        this.bundlePath,
-        actionsInvocationRecord.metadataRef.id
-      )
+      json = await XCResultTool.json(this.bundlePath, actionsInvocationRecord.metadataRef.id)
       const metadata: ActionsInvocationMetadata = await Parser.parse(json)
 
       testReport.entityName = metadata.schemeIdentifier?.entityName
@@ -88,15 +77,9 @@ export class Formatter {
     if (actionsInvocationRecord.actions) {
       for (const action of actionsInvocationRecord.actions) {
         if (action.buildResult.logRef) {
-          json = await XCResultTool.json(
-            this.bundlePath,
-            action.buildResult.logRef.id
-          )
+          json = await XCResultTool.json(this.bundlePath, action.buildResult.logRef.id)
           const log: ActivityLogSection = await Parser.parse(json)
-          const buildLog = new BuildLog(
-            log,
-            testReport.creatingWorkspaceFilePath
-          )
+          const buildLog = new BuildLog(log, testReport.creatingWorkspaceFilePath)
           if (buildLog.content.length) {
             testReport.buildLog = buildLog
             testReport.testStatus = 'failure'
@@ -114,12 +97,8 @@ export class Formatter {
             )
             testReport.chapters.push(testReportChapter)
 
-            json = await XCResultTool.json(
-              this.bundlePath,
-              action.actionResult.testsRef.id
-            )
-            const actionTestPlanRunSummaries: ActionTestPlanRunSummaries =
-              await Parser.parse(json)
+            json = await XCResultTool.json(this.bundlePath, action.actionResult.testsRef.id)
+            const actionTestPlanRunSummaries: ActionTestPlanRunSummaries = await Parser.parse(json)
 
             for (const summary of actionTestPlanRunSummaries.summaries) {
               for (const testableSummary of summary.testableSummaries) {
@@ -130,8 +109,10 @@ export class Formatter {
                   testSummaries
                 )
                 if (testableSummary.name) {
-                  testReportChapter.sections[testableSummary.name] =
-                    new TestReportSection(testableSummary, testSummaries)
+                  testReportChapter.sections[testableSummary.name] = new TestReportSection(
+                    testableSummary,
+                    testSummaries
+                  )
                 }
               }
             }
@@ -283,14 +264,10 @@ export class Formatter {
       if (options.showTestSummaries) {
         chapterSummary.content.push('### Test Summary')
 
-        for (const [groupIdentifier, group] of Object.entries(
-          testSummary.groups
-        )) {
+        for (const [groupIdentifier, group] of Object.entries(testSummary.groups)) {
           const anchorName = anchorIdentifier(groupIdentifier)
           const anchorTag = anchorNameTag(`${groupIdentifier}_summary`)
-          chapterSummary.content.push(
-            `#### ${anchorTag}[${groupIdentifier}](${anchorName})\n`
-          )
+          chapterSummary.content.push(`#### ${anchorTag}[${groupIdentifier}](${anchorName})\n`)
 
           const runDestination = chapter.runDestination
           chapterSummary.content.push(
@@ -315,12 +292,8 @@ export class Formatter {
           for (const [identifier, stats] of Object.entries(group)) {
             chapterSummary.content.push('<tr>')
             const testClass = `${testClassIcon}&nbsp;${identifier}`
-            const testClassAnchor = anchorNameTag(
-              `${groupIdentifier}_${identifier}_summary`
-            )
-            const anchorName = anchorIdentifier(
-              `${groupIdentifier}_${identifier}`
-            )
+            const testClassAnchor = anchorNameTag(`${groupIdentifier}_${identifier}_summary`)
+            const anchorName = anchorIdentifier(`${groupIdentifier}_${identifier}`)
             const testClassLink = `<a href="${anchorName}">${testClass}</a>`
 
             let failedCount: string
@@ -386,10 +359,7 @@ export class Formatter {
               const testResult = detail as ActionTestMetadata
 
               if (testResult.summaryRef) {
-                json = await XCResultTool.json(
-                  this.bundlePath,
-                  testResult.summaryRef.id
-                )
+                json = await XCResultTool.json(this.bundlePath, testResult.summaryRef.id)
                 const summary: ActionTestSummary = await Parser.parse(json)
 
                 const testFailureGroup = new TestFailureGroup(
@@ -403,27 +373,16 @@ export class Formatter {
                   const testFailure = new TestFailure()
                   testFailureGroup.failures.push(testFailure)
 
-                  const failureSummaries = collectFailureSummaries(
-                    summary.failureSummaries
-                  )
+                  const failureSummaries = collectFailureSummaries(summary.failureSummaries)
                   for (const failureSummary of failureSummaries) {
                     testFailure.lines.push(`${failureSummary.contents}`)
 
-                    const workspace = path.dirname(
-                      `${testReport.creatingWorkspaceFilePath}`
-                    )
+                    const workspace = path.dirname(`${testReport.creatingWorkspaceFilePath}`)
                     let filepath = ''
                     if (failureSummary.filePath) {
-                      filepath = failureSummary.filePath.replace(
-                        `${workspace}/`,
-                        ''
-                      )
+                      filepath = failureSummary.filePath.replace(`${workspace}/`, '')
                     }
-                    if (
-                      filepath &&
-                      failureSummary.lineNumber &&
-                      failureSummary.message
-                    ) {
+                    if (filepath && failureSummary.lineNumber && failureSummary.message) {
                       const annotation = new Annotation(
                         filepath,
                         failureSummary.lineNumber,
@@ -470,9 +429,7 @@ export class Formatter {
       }
 
       if (testReport.codeCoverage && options.showCodeCoverage) {
-        const workspace = path.dirname(
-          `${testReport.creatingWorkspaceFilePath}`
-        )
+        const workspace = path.dirname(`${testReport.creatingWorkspaceFilePath}`)
         chapterSummary.content.push('---\n')
 
         const re = new RegExp(`${workspace}/`, 'g')
@@ -482,9 +439,7 @@ export class Formatter {
           const sha = (pr && pr.head.sha) || github.context.sha
           root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
         }
-        chapterSummary.content.push(
-          testReport.codeCoverage.lines.join('\n').replace(re, root)
-        )
+        chapterSummary.content.push(testReport.codeCoverage.lines.join('\n').replace(re, root))
       }
 
       if (options.showTestDetails) {
@@ -519,71 +474,57 @@ export class Formatter {
           for (const [identifier, details] of Object.entries(detailGroup)) {
             const groupIdentifier = identifier
 
-            const [passed, failed, skipped, expectedFailure, total, duration] =
-              details.reduce(
-                (
-                  [passed, failed, skipped, expectedFailure, total, duration]: [
-                    number,
-                    number,
-                    number,
-                    number,
-                    number,
-                    number
-                  ],
-                  detail
-                ) => {
-                  const test = detail as ActionTestSummary
-                  switch (test.testStatus) {
-                    case 'Success':
-                      passed++
-                      break
-                    case 'Failure':
-                      failed++
-                      break
-                    case 'Skipped':
-                      skipped++
-                      break
-                    case 'Expected Failure':
-                      expectedFailure++
-                      break
-                  }
+            const [passed, failed, skipped, expectedFailure, total, duration] = details.reduce(
+              (
+                [passed, failed, skipped, expectedFailure, total, duration]: [
+                  number,
+                  number,
+                  number,
+                  number,
+                  number,
+                  number
+                ],
+                detail
+              ) => {
+                const test = detail as ActionTestSummary
+                switch (test.testStatus) {
+                  case 'Success':
+                    passed++
+                    break
+                  case 'Failure':
+                    failed++
+                    break
+                  case 'Skipped':
+                    skipped++
+                    break
+                  case 'Expected Failure':
+                    expectedFailure++
+                    break
+                }
 
-                  total++
+                total++
 
-                  if (test.duration) {
-                    duration = test.duration
-                  }
-                  return [
-                    passed,
-                    failed,
-                    skipped,
-                    expectedFailure,
-                    total,
-                    duration
-                  ]
-                },
-                [0, 0, 0, 0, 0, 0]
-              )
+                if (test.duration) {
+                  duration = test.duration
+                }
+                return [passed, failed, skipped, expectedFailure, total, duration]
+              },
+              [0, 0, 0, 0, 0, 0]
+            )
 
             const testName = `${groupIdentifier}`
             const passedRate = ((passed / total) * 100).toFixed(0)
             const failedRate = ((failed / total) * 100).toFixed(0)
             const skippedRate = ((skipped / total) * 100).toFixed(0)
-            const expectedFailureRate = ((expectedFailure / total) * 100).toFixed(
-              0
-            )
+            const expectedFailureRate = ((expectedFailure / total) * 100).toFixed(0)
             const testDuration = duration.toFixed(2)
 
-            const anchorTag = anchorNameTag(
-              `${testResultSummaryName}_${groupIdentifier}`
-            )
+            const anchorTag = anchorNameTag(`${testResultSummaryName}_${groupIdentifier}`)
             const anchorName = anchorIdentifier(
               `${testResultSummaryName}_${groupIdentifier}_summary`
             )
             const anchorBack = `[${backIcon}](${anchorName})`
-            testDetail.lines.push(
-              `${anchorTag}<h5>${testName}&nbsp;${anchorBack}</h5>`
-            )
+            testDetail.lines.push(`${anchorTag}<h5>${testName}&nbsp;${anchorBack}</h5>`)
 
             const testsStatsLines: string[] = []
 
@@ -647,9 +588,7 @@ export class Formatter {
                   groupStatus = 'Failure'
                 } else if (statuses.every(status => status === 'Skipped')) {
                   groupStatus = 'Skipped'
-                } else if (
-                  statuses.every(status => status === 'Expected Failure')
-                ) {
+                } else if (statuses.every(status => status === 'Expected Failure')) {
                   groupStatus = 'Expected Failure'
                 } else {
                   if (
@@ -690,10 +629,7 @@ export class Formatter {
                 const resultLines: string[] = []
 
                 if (testResult.summaryRef) {
-                  json = await XCResultTool.json(
-                    this.bundlePath,
-                    testResult.summaryRef.id
-                  )
+                  json = await XCResultTool.json(this.bundlePath, testResult.summaryRef.id)
                   const summary: ActionTestSummary = await Parser.parse(json)
 
                   if (summary.configuration) {
@@ -748,16 +684,10 @@ export class Formatter {
 
                   const activities: Activity[] = []
                   if (summary.activitySummaries) {
-                    await this.collectActivities(
-                      summary.activitySummaries,
-                      activities
-                    )
+                    await this.collectActivities(summary.activitySummaries, activities)
                   }
                   if (activities.length) {
-                    if (
-                      !options.showPassedTests &&
-                      summary.testStatus !== 'Failure'
-                    ) {
+                    if (!options.showPassedTests && summary.testStatus !== 'Failure') {
                       continue
                     }
 
@@ -785,10 +715,7 @@ export class Formatter {
                                 if (info.key === 'Scale') {
                                   const scale = parseInt(`${info.value}`)
                                   if (dimensions.width && dimensions.height) {
-                                    if (
-                                      dimensions.orientation &&
-                                      dimensions.orientation >= 5
-                                    ) {
+                                    if (dimensions.orientation && dimensions.orientation >= 5) {
                                       const value = dimensions.height / scale
                                       width = `${value.toFixed(0)}px`
                                     } else {
@@ -808,16 +735,10 @@ export class Formatter {
 
                         if (attachments.length) {
                           const testStatus = testResult.testStatus
-                          const open = testStatus.includes('Failure')
-                            ? 'open'
-                            : ''
+                          const open = testStatus.includes('Failure') ? 'open' : ''
                           const title = escapeHashSign(activity.title)
-                          const message = `${indentation(
-                            activity.indent
-                          )}- ${title}`
-                          const attachmentIndent = indentation(
-                            activity.indent + 1
-                          )
+                          const message = `${indentation(activity.indent)}- ${title}`
+                          const attachmentIndent = indentation(activity.indent + 1)
                           const attachmentContent = attachments.join('')
                           return `${message}\n${attachmentIndent}<details ${open}><summary>${attachmentIcon}</summary>${attachmentContent}</details>\n`
                         } else {
@@ -827,9 +748,7 @@ export class Formatter {
                       })
                       .join('\n')
 
-                    resultLines.push(
-                      `<br><b>Activities:</b>\n\n${testActivities}`
-                    )
+                    resultLines.push(`<br><b>Activities:</b>\n\n${testActivities}`)
                   }
                 } else {
                   if (!options.showPassedTests && !isFailure) {
@@ -925,19 +844,13 @@ export class Formatter {
       activities.push(activity)
 
       if (activitySummary.subactivities) {
-        await this.collectActivities(
-          activitySummary.subactivities,
-          activities,
-          indent + 1
-        )
+        await this.collectActivities(activitySummary.subactivities, activities, indent + 1)
       }
     }
   }
 }
 
-function collectFailureSummaries(
-  failureSummaries: ActionTestFailureSummary[]
-): FailureSummary[] {
+function collectFailureSummaries(failureSummaries: ActionTestFailureSummary[]): FailureSummary[] {
   return failureSummaries.map(failureSummary => {
     const fileName = failureSummary.fileName
     const sourceCodeContext = failureSummary.sourceCodeContext

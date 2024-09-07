@@ -176,9 +176,7 @@ export class TestCodeCoverage {
         this.lines.push(`<td>${target.name}`)
         const image = `${lineCoverage.toFixed(0)}.svg`
         this.lines.push(`<td width="120px"><img src="${baseUrl}${image}"/>`)
-        this.lines.push(
-          `<td width="104px" align="right">${lineCoverage.toFixed(2)} %`
-        )
+        this.lines.push(`<td width="104px" align="right">${lineCoverage.toFixed(2)} %`)
         this.lines.push(`<td align="right">${target.coveredLines}`)
         this.lines.push(`<td align="right">${target.executableLines}`)
       }
@@ -190,9 +188,7 @@ export class TestCodeCoverage {
         const lineCoverage = file.lineCoverage * 100
 
         this.lines.push('<tr>')
-        this.lines.push(
-          `<td>&nbsp;&nbsp;<a href="${file.path}">${file.name}</a>`
-        )
+        this.lines.push(`<td>&nbsp;&nbsp;<a href="${file.path}">${file.name}</a>`)
         const image = `${lineCoverage.toFixed(0)}.svg`
         this.lines.push(`<td><img src="${baseUrl}${image}"/>`)
         this.lines.push(`<td align="right">${lineCoverage.toFixed(2)} %`)
@@ -280,8 +276,7 @@ export class BuildLog {
 
     const failures = log.subsections.filter(subsection => {
       if (subsection.hasOwnProperty('exitCode')) {
-        const logCommandInvocationSection =
-          subsection as ActivityLogCommandInvocationSection
+        const logCommandInvocationSection = subsection as ActivityLogCommandInvocationSection
         return logCommandInvocationSection.exitCode !== 0
       } else {
         return subsection.result !== 'succeeded'
@@ -291,8 +286,7 @@ export class BuildLog {
       if (failure.subsections) {
         for (const subsection of failure.subsections) {
           if (subsection.hasOwnProperty('exitCode')) {
-            const logCommandInvocationSection =
-              subsection as ActivityLogCommandInvocationSection
+            const logCommandInvocationSection = subsection as ActivityLogCommandInvocationSection
             if (logCommandInvocationSection.exitCode === 0) {
               continue
             }
@@ -302,9 +296,7 @@ export class BuildLog {
             }
             for (const message of subsection.messages) {
               if (message.category) {
-                lines.push(
-                  `${message.type}:&nbsp;${message.category}:&nbsp;${message.title}`
-                )
+                lines.push(`${message.type}:&nbsp;${message.category}:&nbsp;${message.title}`)
               } else {
                 lines.push(`${message.type}:&nbsp;${message.title}`)
               }
@@ -335,9 +327,7 @@ export class BuildLog {
                     }
                   }
                 }
-                const location = url.pathname
-                  .replace('file://', '')
-                  .replace(re, '')
+                const location = url.pathname.replace('file://', '').replace(re, '')
                 const annotation = new Annotation(
                   location,
                   startLine,
@@ -350,8 +340,7 @@ export class BuildLog {
               }
             }
             const pre = '```\n'
-            const emittedOutput =
-              logCommandInvocationSection.emittedOutput.replace(re, '')
+            const emittedOutput = logCommandInvocationSection.emittedOutput.replace(re, '')
             lines.push(`${pre}${emittedOutput}${pre}`)
           } else if (subsection.result !== 'succeeded') {
             lines.push(subsection.title)
@@ -362,8 +351,7 @@ export class BuildLog {
         }
       } else {
         if (failure.hasOwnProperty('exitCode')) {
-          const logCommandInvocationSection =
-            failure as ActivityLogCommandInvocationSection
+          const logCommandInvocationSection = failure as ActivityLogCommandInvocationSection
           if (logCommandInvocationSection.exitCode === 0) {
             continue
           }
@@ -373,9 +361,7 @@ export class BuildLog {
           }
           for (const message of failure.messages) {
             if (message.category) {
-              lines.push(
-                `${message.type}:&nbsp;${message.category}:&nbsp;${message.title}`
-              )
+              lines.push(`${message.type}:&nbsp;${message.category}:&nbsp;${message.title}`)
             } else {
               lines.push(`${message.type}:&nbsp;${message.title}`)
             }
@@ -404,9 +390,7 @@ export class BuildLog {
                   }
                 }
               }
-              const location = url.pathname
-                .replace('file://', '')
-                .replace(re, '')
+              const location = url.pathname.replace('file://', '').replace(re, '')
               const annotation = new Annotation(
                 location,
                 startLine,
@@ -419,8 +403,7 @@ export class BuildLog {
             }
           }
           const pre = '```\n'
-          const emittedOutput =
-            logCommandInvocationSection.emittedOutput.replace(re, '')
+          const emittedOutput = logCommandInvocationSection.emittedOutput.replace(re, '')
           lines.push(`${pre}${emittedOutput}${pre}`)
         } else if (failure.result !== 'succeeded') {
           lines.push(failure.title)

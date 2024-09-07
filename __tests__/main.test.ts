@@ -141,10 +141,7 @@ test('UhooiPicBook.xcresult', async () => {
     root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
   }
   const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(
-    re,
-    ''
-  )
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
 
   const outputPath = path.join(os.tmpdir(), 'UhooiPicBook.md')
   await writeFile(outputPath, reportText)
@@ -180,10 +177,7 @@ test('Coverage.xcresult', async () => {
     root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
   }
   const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(
-    re,
-    ''
-  )
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
 
   const outputPath = path.join(os.tmpdir(), 'Coverage.md')
   await writeFile(outputPath, reportText)
@@ -210,10 +204,7 @@ test('Coverage.xcresult', async () => {
     root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
   }
   const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(
-    re,
-    ''
-  )
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
 
   const outputPath = path.join(os.tmpdir(), 'HideCodeCoverage.md')
   await writeFile(outputPath, reportText)
@@ -263,10 +254,7 @@ test('NoTests.xcresult', async () => {
     root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
   }
   const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(
-    re,
-    ''
-  )
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
 
   const outputPath = path.join(os.tmpdir(), 'NoTests.md')
   await writeFile(outputPath, reportText)
@@ -288,10 +276,7 @@ test('TestResults#669.xcresult', async () => {
     root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
   }
   const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(
-    re,
-    ''
-  )
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
 
   const outputPath = path.join(os.tmpdir(), 'NoTests.md')
   await writeFile(outputPath, reportText)

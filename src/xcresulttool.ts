@@ -17,9 +17,7 @@ export class XCResultTool {
 
     await exec('xcrun', ['xcresulttool', 'version'], options)
 
-    const versionMatch = output.match(
-      /xcresulttool version (\d+), format version ([\d.]+)/
-    )
+    const versionMatch = output.match(/xcresulttool version (\d+), format version ([\d.]+)/)
 
     if (!versionMatch) {
       throw new Error('Failed to parse version string')
@@ -33,14 +31,7 @@ export class XCResultTool {
 
   static async json(xcResultPath: string, reference?: string): Promise<string> {
     const versionInfo = await this.version()
-    const args = [
-      'xcresulttool',
-      'get',
-      '--path',
-      xcResultPath,
-      '--format',
-      'json'
-    ]
+    const args = ['xcresulttool', 'get', '--path', xcResultPath, '--format', 'json']
 
     if (reference) {
       args.push('--id')
