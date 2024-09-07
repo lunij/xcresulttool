@@ -1,77 +1,92 @@
 name: 'build-test'
-on: # rebuild any PRs and main branch changes
+on:
   pull_request:
   push:
     branches:
       - main
       - 'releases/*'
+      - marc/update # remove me
 
 jobs:
-  build: # make sure build/ci work properly
-    runs-on: macos-11
+  build:
+    runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: |
-          npm install
-      - run: |
-          npm run all
-  test: # make sure the action works on a clean machine without building
-    runs-on: macos-11
+      - uses: actions/checkout@v4
+      - run: npm install
+      - run: npm run format-check
+      - run: npm run lint
+      - run: npm run build
+      - run: npm run package
+      - run: npm test
+  test:
+    runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: ./
+      - uses: actions/checkout@v4
+      - name: Example.xcresult
+        uses: ./
         with:
           path: __tests__/data/Example.xcresult
-          title: Example test report
-      - uses: ./
+          title: Example.xcresult
+      - name: Example.xcresult (failures only)
+        uses: ./
         with:
           path: __tests__/data/Example.xcresult
-          title: Example Failures Only test report
+          title: Example.xcresult (failures only)
           show-passed-tests: false
-      - uses: ./
+      - name: KeychainAccess.xcresult
+        uses: ./
         with:
           path: __tests__/data/KeychainAccess.xcresult
-          title: KeychainAccess Failures Only test report
-          show-passed-tests: false
-      - uses: ./
+          title: KeychainAccess.xcresult
+      - name: KeychainAccess.xcresult (failures only)
+        uses: ./
         with:
           path: __tests__/data/KeychainAccess.xcresult
-          title: KeychainAccess test report
-      - uses: ./
+          title: KeychainAccess.xcresult (failures only)
+          show-passed-tests: false
+      - name: TAU.xcresult
+        uses: ./
         with:
           path: __tests__/data/TAU.xcresult
-          title: TAU test report
-      - uses: ./
+          title: TAU.xcresult
+      - name: TestResults.xcresult
+        uses: ./
         with:
           path: __tests__/data/TestResults.xcresult
-          title: TestResults test report
-      - uses: ./
+          title: TestResults.xcresult
+      - name: Coverage.xcresult
+        uses: ./
         with:
           path: __tests__/data/Coverage.xcresult
-          title: Coverage test report
-      - uses: ./
+          title: Coverage.xcresult
+      - name: Coverage.xcresult hiding coverage
+        uses: ./
         with:
           path: __tests__/data/Coverage.xcresult
-          title: Hide Coverage test report
+          title: Coverage.xcresult hiding coverage
           show-code-coverage: false
-      - uses: ./
+      - name: UhooiPicBook.xcresult
+        uses: ./
         with:
           path: __tests__/data/UhooiPicBook.xcresult
-          title: UhooiPicBook test report
-      - uses: ./
+          title: UhooiPicBook.xcresult
+      - name: UhooiPicBook.xcresult (failures only)
+        uses: ./
         with:
           path: __tests__/data/UhooiPicBook.xcresult
-          title: UhooiPicBook No Passed test report
+          title: UhooiPicBook.xcresult (failures only)
           show-passed-tests: false
-      - uses: ./
+      - name: UhooiPicBook.xcresult hiding coverage
+        uses: ./
         with:
           path: __tests__/data/UhooiPicBook.xcresult
-          title: UhooiPicBook No Code Coverage test report
+          title: UhooiPicBook.xcresult hiding coverage
           show-code-coverage: false
-      - uses: ./
+      - name: Multiple Xcode Results
+        uses: ./
         with:
           path: |
             __tests__/data/Example.xcresult
             __tests__/data/KeychainAccess.xcresult
             __tests__/data/TAU.xcresult
-          title: 'Multiple Paths'
+          title: 'Multiple Xcode Results'
