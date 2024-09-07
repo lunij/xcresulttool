@@ -27,7 +27,8 @@ test('Example.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: false,
     showCodeCoverage: true,
-    showTestSummaries: true
+    showTestSummaries: true,
+    showTestDetails: true
   })
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
 
@@ -59,7 +60,8 @@ test('KeychainAccess.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: false,
     showCodeCoverage: true,
-    showTestSummaries: true
+    showTestSummaries: true,
+    showTestDetails: true
   })
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
 
@@ -197,7 +199,8 @@ test('Coverage.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: true,
     showCodeCoverage: false,
-    showTestSummaries: true
+    showTestSummaries: true,
+    showTestDetails: true
   })
 
   let root = ''

@@ -20,6 +20,9 @@ inputs:
   show-test-summaries:
     description: 'Show summaries for all test classes'
     default: false
+  show-test-details:
+    description: 'Show details for all test classes'
+    default: false
   upload-bundles:
     description: 'Upload the xcresult bundles. Possible values: always, failure, never.'
     default: failure

@@ -119,6 +119,11 @@ jobs:
     # Default: false
     show-test-summaries:
 
+    # Show details for all test classes
+    #
+    # Default: false
+    show-test-details:
+
     # Whether to upload the xcresult bundles. possible values: always, failure, never. Specifying failure will only upload the bundle if all the tests do not pass.
     #
     # Default: 'always'
