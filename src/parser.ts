@@ -1,11 +1,11 @@
 
 export class Parser {
-  async parse(json: string): Promise<any> {
+  static async parse(json: string): Promise<any> {
     const root = JSON.parse(json)
     return this.parseObject(root) as any
   }
 
-  private parseObject(element: object): object {
+  private static parseObject(element: object): object {
     const obj: any = {}
     for (const [key, value] of Object.entries(element)) {
       if (value['_value']) {
@@ -21,7 +21,7 @@ export class Parser {
     return obj
   }
 
-  private parseArray(arrayElement: any): any {
+  private static parseArray(arrayElement: any): any {
     return arrayElement['_values'].map((arrayValue: object) => {
       const obj: any = {}
       for (const [key, value] of Object.entries(arrayValue)) {
@@ -41,7 +41,7 @@ export class Parser {
     })
   }
 
-  private parsePrimitive(element: any): any {
+  private static parsePrimitive(element: any): any {
     switch (element['_type']['_name']) {
       case 'Int':
         return parseInt(element['_value'])

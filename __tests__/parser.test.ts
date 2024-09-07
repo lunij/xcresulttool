@@ -1,13 +1,7 @@
-import { beforeEach, describe, expect, it, jest } from '@jest/globals'
+import { describe, expect, it } from '@jest/globals'
 import { Parser } from '../src/parser.js'
 
 describe('Parser', () => {
-  let parser: Parser
-
-  beforeEach(() => {
-    parser = new Parser()
-  })
-
   describe('parse', () => {
     it(`should parse XCResult's JSON format`, async () => {
       const sampleJSON = JSON.stringify({
@@ -39,7 +33,7 @@ describe('Parser', () => {
         }
       })
 
-      const result = await parser.parse(sampleJSON)
+      const result = await Parser.parse(sampleJSON)
 
       expect(result).toEqual({
         actions: [

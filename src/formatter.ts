@@ -61,11 +61,9 @@ export class Formatter {
   readonly details = ''
 
   private bundlePath: string
-  private parser: Parser
 
   constructor(bundlePath: string) {
     this.bundlePath = bundlePath
-    this.parser = new Parser()
   }
 
   async format(
@@ -73,11 +71,11 @@ export class Formatter {
   ): Promise<TestReport> {
     const testReport = new TestReport()
     var json = await XCResultTool.json(this.bundlePath)
-    const actionsInvocationRecord: ActionsInvocationRecord = await this.parser.parse(json)
+    const actionsInvocationRecord: ActionsInvocationRecord = await Parser.parse(json)
 
     if (actionsInvocationRecord.metadataRef) {
       json = await XCResultTool.json(this.bundlePath, actionsInvocationRecord.metadataRef.id)
-      const metadata: ActionsInvocationMetadata = await this.parser.parse(json)
+      const metadata: ActionsInvocationMetadata = await Parser.parse(json)
 
       testReport.entityName = metadata.schemeIdentifier?.entityName
       testReport.creatingWorkspaceFilePath = metadata.creatingWorkspaceFilePath
@@ -87,7 +85,7 @@ export class Formatter {
       for (const action of actionsInvocationRecord.actions) {
         if (action.buildResult.logRef) {
           json = await XCResultTool.json(this.bundlePath, action.buildResult.logRef.id)
-          const log: ActivityLogSection = await this.parser.parse(json)
+          const log: ActivityLogSection = await Parser.parse(json)
           const buildLog = new BuildLog(
             log,
             testReport.creatingWorkspaceFilePath
@@ -110,7 +108,7 @@ export class Formatter {
             testReport.chapters.push(testReportChapter)
 
             json = await XCResultTool.json(this.bundlePath, action.actionResult.testsRef.id)
-            const actionTestPlanRunSummaries: ActionTestPlanRunSummaries = await this.parser.parse(json)
+            const actionTestPlanRunSummaries: ActionTestPlanRunSummaries = await Parser.parse(json)
 
             for (const summary of actionTestPlanRunSummaries.summaries) {
               for (const testableSummary of summary.testableSummaries) {
@@ -376,7 +374,7 @@ export class Formatter {
 
               if (testResult.summaryRef) {
                 json = await XCResultTool.json(this.bundlePath, testResult.summaryRef.id)
-                const summary: ActionTestSummary = await this.parser.parse(json)
+                const summary: ActionTestSummary = await Parser.parse(json)
 
                 const testFailureGroup = new TestFailureGroup(
                   testResultSummaryName || '',
@@ -676,7 +674,7 @@ export class Formatter {
 
               if (testResult.summaryRef) {
                 json = await XCResultTool.json(this.bundlePath, testResult.summaryRef.id)
-                const summary: ActionTestSummary = await this.parser.parse(json)
+                const summary: ActionTestSummary = await Parser.parse(json)
 
                 if (summary.configuration) {
                   if (testResult.name) {
