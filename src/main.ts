@@ -89,14 +89,14 @@ async function run(): Promise<void> {
       let output
       if (reportDetail.trim()) {
         output = {
-          title: 'Xcode test results',
+          title,
           summary: reportSummary,
           text: reportDetail,
           annotations
         }
       } else {
         output = {
-          title: 'Xcode test results',
+          title,
           summary: reportSummary,
           annotations
         }
