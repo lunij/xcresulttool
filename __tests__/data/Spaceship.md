@@ -30,16 +30,28 @@
 ---
 
 ### Test Summary
+
 #### <a name="spaceshiptests_summary"/>[SpaceshipTests](#user-content-spaceshiptests)
 
 - **Device:** iPhone 13 Pro, 15.0 (19A339)
 - **SDK:** Simulator - iOS 15.0, 15.0
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipTests</a><td align="right" width="80px">3<td align="right" width="80px">2<td align="right" width="80px"><b>1</b><td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipTests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="spaceshipuitests_summary"/>[SpaceshipUITests](#user-content-spaceshipuitests)
@@ -48,12 +60,29 @@
 - **SDK:** Simulator - iOS 15.0, 15.0
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITestsLaunchTests</a><td align="right" width="80px">4<td align="right" width="80px">4<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITestsLaunchTests</a></td>
+  <td align="right" width="80px">4</td>
+  <td align="right" width="80px">4</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 ---
@@ -95,16 +124,28 @@
 ---
 
 ### Test Summary
+
 #### <a name="spaceshiptests_summary"/>[SpaceshipTests](#user-content-spaceshiptests)
 
 - **Device:** iPhone 13 mini, 15.0 (19A339)
 - **SDK:** Simulator - iOS 15.0, 15.0
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipTests</a><td align="right" width="80px">3<td align="right" width="80px">2<td align="right" width="80px"><b>1</b><td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipTests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="spaceshipuitests_summary"/>[SpaceshipUITests](#user-content-spaceshipuitests)
@@ -113,12 +154,29 @@
 - **SDK:** Simulator - iOS 15.0, 15.0
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITestsLaunchTests</a><td align="right" width="80px">4<td align="right" width="80px">4<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITestsLaunchTests</a></td>
+  <td align="right" width="80px">4</td>
+  <td align="right" width="80px">4</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 ---

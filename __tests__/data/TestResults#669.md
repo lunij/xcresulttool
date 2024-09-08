@@ -30,14 +30,20 @@
 ---
 
 ### Test Summary
+
 #### <a name="analyticsmanagerunittests_summary"/>[AnalyticsManagerUnitTests](#user-content-analyticsmanagerunittests)
 
 - **Device:** iPhone 14, 16.2 (20C52)
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
-
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 </table>
 
 #### <a name="countriesapiunittests_summary"/>[CountriesAPIUnitTests](#user-content-countriesapiunittests)
@@ -46,10 +52,21 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="countriesapiunittests_countriesapiunittests_summary"/><a href="#user-content-countriesapiunittests_countriesapiunittests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CountriesAPIUnitTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="countriesapiunittests_countriesapiunittests_summary"/><a href="#user-content-countriesapiunittests_countriesapiunittests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CountriesAPIUnitTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="jsbridgetests_summary"/>[JSBridgeTests](#user-content-jsbridgetests)
@@ -58,12 +75,29 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="jsbridgetests_jsbvaluetests_summary"/><a href="#user-content-jsbridgetests_jsbvaluetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;JSBValueTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="jsbridgetests_jsbvaluetests_summary"/><a href="#user-content-jsbridgetests_jsbvaluetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;JSBValueTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="jsbridgetests_promisedispatchtabletests_summary"/><a href="#user-content-jsbridgetests_promisedispatchtabletests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;PromiseDispatchTableTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="jsbridgetests_promisedispatchtabletests_summary"/><a href="#user-content-jsbridgetests_promisedispatchtabletests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;PromiseDispatchTableTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="keyappbusinesstests_summary"/>[KeyAppBusinessTests](#user-content-keyappbusinesstests)
@@ -72,16 +106,45 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="keyappbusinesstests_priceservicetests_summary"/><a href="#user-content-keyappbusinesstests_priceservicetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;PriceServiceTests</a><td align="right" width="80px">3<td align="right" width="80px">3<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="keyappbusinesstests_priceservicetests_summary"/><a href="#user-content-keyappbusinesstests_priceservicetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;PriceServiceTests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="keyappbusinesstests_ethereumaccountsservicetests_summary"/><a href="#user-content-keyappbusinesstests_ethereumaccountsservicetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EthereumAccountsServiceTests</a><td align="right" width="80px">1<td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="keyappbusinesstests_ethereumaccountsservicetests_summary"/><a href="#user-content-keyappbusinesstests_ethereumaccountsservicetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EthereumAccountsServiceTests</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="keyappbusinesstests_solanaaccountsservicetests_summary"/><a href="#user-content-keyappbusinesstests_solanaaccountsservicetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SolanaAccountsServiceTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="keyappbusinesstests_solanaaccountsservicetests_summary"/><a href="#user-content-keyappbusinesstests_solanaaccountsservicetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SolanaAccountsServiceTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="keyappbusinesstests_ethereumtests_summary"/><a href="#user-content-keyappbusinesstests_ethereumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EthereumTests</a><td align="right" width="80px">4<td align="right" width="80px">4<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="keyappbusinesstests_ethereumtests_summary"/><a href="#user-content-keyappbusinesstests_ethereumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EthereumTests</a></td>
+  <td align="right" width="80px">4</td>
+  <td align="right" width="80px">4</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="nameserviceintegrationtests_summary"/>[NameServiceIntegrationTests](#user-content-nameserviceintegrationtests)
@@ -90,10 +153,21 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="nameserviceintegrationtests_nameserviceimpltests_summary"/><a href="#user-content-nameserviceintegrationtests_nameserviceimpltests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;NameServiceImplTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="nameserviceintegrationtests_nameserviceimpltests_summary"/><a href="#user-content-nameserviceintegrationtests_nameserviceimpltests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;NameServiceImplTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="onboardingtests_summary"/>[OnboardingTests](#user-content-onboardingtests)
@@ -102,14 +176,37 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="onboardingtests_apigatewayclientimpltests_summary"/><a href="#user-content-onboardingtests_apigatewayclientimpltests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;APIGatewayClientImplTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="onboardingtests_apigatewayclientimpltests_summary"/><a href="#user-content-onboardingtests_apigatewayclientimpltests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;APIGatewayClientImplTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="onboardingtests_cryptotests_summary"/><a href="#user-content-onboardingtests_cryptotests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CryptoTests</a><td align="right" width="80px">1<td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="onboardingtests_cryptotests_summary"/><a href="#user-content-onboardingtests_cryptotests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CryptoTests</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="onboardingtests_e164numberstests_summary"/><a href="#user-content-onboardingtests_e164numberstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;E164NumbersTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="onboardingtests_e164numberstests_summary"/><a href="#user-content-onboardingtests_e164numberstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;E164NumbersTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="p2ptestsintegrationtests_summary"/>[P2PTestsIntegrationTests](#user-content-p2ptestsintegrationtests)
@@ -118,8 +215,13 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
-
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 </table>
 
 #### <a name="sendtest_summary"/>[SendTest](#user-content-sendtest)
@@ -128,16 +230,45 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="sendtest_recipientsearchserviceimpltest_summary"/><a href="#user-content-sendtest_recipientsearchserviceimpltest"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;RecipientSearchServiceImplTest</a><td align="right" width="80px">12<td align="right" width="80px">12<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="sendtest_recipientsearchserviceimpltest_summary"/><a href="#user-content-sendtest_recipientsearchserviceimpltest"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;RecipientSearchServiceImplTest</a></td>
+  <td align="right" width="80px">12</td>
+  <td align="right" width="80px">12</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="sendtest_sendinputbusinesslogictokentests_summary"/><a href="#user-content-sendtest_sendinputbusinesslogictokentests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SendInputBusinessLogicTokenTests</a><td align="right" width="80px">3<td align="right" width="80px">3<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="sendtest_sendinputbusinesslogictokentests_summary"/><a href="#user-content-sendtest_sendinputbusinesslogictokentests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SendInputBusinessLogicTokenTests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="sendtest_sendinputbusinesslogicinputtests_summary"/><a href="#user-content-sendtest_sendinputbusinesslogicinputtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SendInputBusinessLogicInputTests</a><td align="right" width="80px">6<td align="right" width="80px">6<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="sendtest_sendinputbusinesslogicinputtests_summary"/><a href="#user-content-sendtest_sendinputbusinesslogicinputtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SendInputBusinessLogicInputTests</a></td>
+  <td align="right" width="80px">6</td>
+  <td align="right" width="80px">6</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="sendtest_recipientsearchusernametests_summary"/><a href="#user-content-sendtest_recipientsearchusernametests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;RecipientSearchUsernameTests</a><td align="right" width="80px">3<td align="right" width="80px">3<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="sendtest_recipientsearchusernametests_summary"/><a href="#user-content-sendtest_recipientsearchusernametests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;RecipientSearchUsernameTests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="solanapricesapisunittests_summary"/>[SolanaPricesAPIsUnitTests](#user-content-solanapricesapisunittests)
@@ -146,12 +277,29 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="solanapricesapisunittests_cryptocomparepricesapitests_summary"/><a href="#user-content-solanapricesapisunittests_cryptocomparepricesapitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CryptoComparePricesAPITests</a><td align="right" width="80px">3<td align="right" width="80px">3<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="solanapricesapisunittests_cryptocomparepricesapitests_summary"/><a href="#user-content-solanapricesapisunittests_cryptocomparepricesapitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CryptoComparePricesAPITests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="solanapricesapisunittests_coingeckopricesapitests_summary"/><a href="#user-content-solanapricesapisunittests_coingeckopricesapitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CoinGeckoPricesAPITests</a><td align="right" width="80px">3<td align="right" width="80px">3<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="solanapricesapisunittests_coingeckopricesapitests_summary"/><a href="#user-content-solanapricesapisunittests_coingeckopricesapitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CoinGeckoPricesAPITests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="solendunittests_summary"/>[SolendUnitTests](#user-content-solendunittests)
@@ -160,12 +308,29 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="solendunittests_solendmathtests_summary"/><a href="#user-content-solendunittests_solendmathtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SolendMathTests</a><td align="right" width="80px">1<td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="solendunittests_solendmathtests_summary"/><a href="#user-content-solendunittests_solendmathtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SolendMathTests</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="solendunittests_solendunittests_summary"/><a href="#user-content-solendunittests_solendunittests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SolendUnitTests</a><td align="right" width="80px">1<td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="solendunittests_solendunittests_summary"/><a href="#user-content-solendunittests_solendunittests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SolendUnitTests</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="transactionparserunittests_summary"/>[TransactionParserUnitTests](#user-content-transactionparserunittests)
@@ -174,22 +339,69 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="transactionparserunittests_transactionparserimpltests_summary"/><a href="#user-content-transactionparserunittests_transactionparserimpltests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TransactionParserImplTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="transactionparserunittests_transactionparserimpltests_summary"/><a href="#user-content-transactionparserunittests_transactionparserimpltests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TransactionParserImplTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="transactionparserunittests_orcaswapstrategytests_summary"/><a href="#user-content-transactionparserunittests_orcaswapstrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;OrcaSwapStrategyTests</a><td align="right" width="80px">5<td align="right" width="80px">5<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="transactionparserunittests_orcaswapstrategytests_summary"/><a href="#user-content-transactionparserunittests_orcaswapstrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;OrcaSwapStrategyTests</a></td>
+  <td align="right" width="80px">5</td>
+  <td align="right" width="80px">5</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="transactionparserunittests_transferparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_transferparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TransferParseStrategyTests</a><td align="right" width="80px">7<td align="right" width="80px">7<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="transactionparserunittests_transferparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_transferparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TransferParseStrategyTests</a></td>
+  <td align="right" width="80px">7</td>
+  <td align="right" width="80px">7</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="transactionparserunittests_p2porcaswapwrapperstrategytests_summary"/><a href="#user-content-transactionparserunittests_p2porcaswapwrapperstrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;P2POrcaSwapWrapperStrategyTests</a><td align="right" width="80px">1<td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="transactionparserunittests_p2porcaswapwrapperstrategytests_summary"/><a href="#user-content-transactionparserunittests_p2porcaswapwrapperstrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;P2POrcaSwapWrapperStrategyTests</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="transactionparserunittests_defaultfeeparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_defaultfeeparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;DefaultFeeParseStrategyTests</a><td align="right" width="80px">5<td align="right" width="80px">5<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="transactionparserunittests_defaultfeeparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_defaultfeeparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;DefaultFeeParseStrategyTests</a></td>
+  <td align="right" width="80px">5</td>
+  <td align="right" width="80px">5</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="transactionparserunittests_accountcreationparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_accountcreationparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;AccountCreationParseStrategyTests</a><td align="right" width="80px">2<td align="right" width="80px">2<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="transactionparserunittests_accountcreationparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_accountcreationparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;AccountCreationParseStrategyTests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="transactionparserunittests_closeaccountparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_closeaccountparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CloseAccountParseStrategyTests</a><td align="right" width="80px">1<td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="transactionparserunittests_closeaccountparsestrategytests_summary"/><a href="#user-content-transactionparserunittests_closeaccountparsestrategytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;CloseAccountParseStrategyTests</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 #### <a name="wormholetests_summary"/>[WormholeTests](#user-content-wormholetests)
@@ -198,10 +410,14 @@
 - **SDK:** Simulator - iOS 16.2, 16.2
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
-
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 </table>
-
 ---
 
 ### Code Coverage

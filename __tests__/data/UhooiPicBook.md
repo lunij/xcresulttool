@@ -30,26 +30,61 @@
 ---
 
 ### Test Summary
+
 #### <a name="uhooipicbooktests_summary"/>[UhooiPicBookTests](#user-content-uhooipicbooktests)
 
 - **Device:** iPhone 13 Pro Max, 15.0 (19A339)
 - **SDK:** Simulator - iOS 15.0, 15.0
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="uhooipicbooktests_bundlestringtests_summary"/><a href="#user-content-uhooipicbooktests_bundlestringtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BundleStringTests</a><td align="right" width="80px">3<td align="right" width="80px">3<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="uhooipicbooktests_bundlestringtests_summary"/><a href="#user-content-uhooipicbooktests_bundlestringtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BundleStringTests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="uhooipicbooktests_userdefaultsclienttests_summary"/><a href="#user-content-uhooipicbooktests_userdefaultsclienttests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;UserDefaultsClientTests</a><td align="right" width="80px">1<td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="uhooipicbooktests_userdefaultsclienttests_summary"/><a href="#user-content-uhooipicbooktests_userdefaultsclienttests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;UserDefaultsClientTests</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="uhooipicbooktests_monsterlistinteractortests_summary"/><a href="#user-content-uhooipicbooktests_monsterlistinteractortests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;MonsterListInteractorTests</a><td align="right" width="80px">3<td align="right" width="80px">3<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="uhooipicbooktests_monsterlistinteractortests_summary"/><a href="#user-content-uhooipicbooktests_monsterlistinteractortests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;MonsterListInteractorTests</a></td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">3</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="uhooipicbooktests_monsterlistpresentertests_summary"/><a href="#user-content-uhooipicbooktests_monsterlistpresentertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;MonsterListPresenterTests</a><td align="right" width="80px">9<td align="right" width="80px">9<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="uhooipicbooktests_monsterlistpresentertests_summary"/><a href="#user-content-uhooipicbooktests_monsterlistpresentertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;MonsterListPresenterTests</a></td>
+  <td align="right" width="80px">9</td>
+  <td align="right" width="80px">9</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="uhooipicbooktests_monsterdetailpresentertests_summary"/><a href="#user-content-uhooipicbooktests_monsterdetailpresentertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;MonsterDetailPresenterTests</a><td align="right" width="80px">5<td align="right" width="80px">5<td align="right" width="80px">0<td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="uhooipicbooktests_monsterdetailpresentertests_summary"/><a href="#user-content-uhooipicbooktests_monsterdetailpresentertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;MonsterDetailPresenterTests</a></td>
+  <td align="right" width="80px">5</td>
+  <td align="right" width="80px">5</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
-
 ---
 
 ### Code Coverage

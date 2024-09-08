@@ -30,18 +30,36 @@
 ---
 
 ### Test Summary
+
 #### <a name="tauuitests_summary"/>[TAUUITests](#user-content-tauuitests)
 
 - **Device:** iPhone 13 mini, 15.0 (19A339)
 - **SDK:** Simulator - iOS 15.0, 15.0
 <table>
 <tr>
-<th>Test<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"><th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">
+  <th>Test</th>
+  <th>Total</th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
+  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="tauuitests_bddtest_summary"/><a href="#user-content-tauuitests_bddtest"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BDDTest</a><td align="right" width="80px">1<td align="right" width="80px">0<td align="right" width="80px"><b>1</b><td align="right" width="80px">0<td align="right" width="80px">0
+  <td align="left" width="368px"><a name="tauuitests_bddtest_summary"/><a href="#user-content-tauuitests_bddtest"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BDDTest</a></td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 <tr>
-<td align="left" width="368px"><a name="tauuitests_tauuitests_summary"/><a href="#user-content-tauuitests_tauuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TAUUITests</a><td align="right" width="80px">2<td align="right" width="80px">1<td align="right" width="80px"><b>1</b><td align="right" width="80px">0<td align="right" width="80px">0
-
+  <td align="left" width="368px"><a name="tauuitests_tauuitests_summary"/><a href="#user-content-tauuitests_tauuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TAUUITests</a></td>
+  <td align="right" width="80px">2</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">1</td>
+  <td align="right" width="80px">0</td>
+  <td align="right" width="80px">0</td>
+</tr>
 </table>
 
 ---

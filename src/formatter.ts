@@ -231,60 +231,8 @@ export class Formatter {
       }
 
       if (options.showTestSummaries) {
-        chapterSummary.content.push('\n---\n')
-        chapterSummary.content.push('### Test Summary')
-
-        for (const [groupIdentifier, group] of Object.entries(testSummary.groups)) {
-          const anchorName = anchorIdentifier(groupIdentifier)
-          const anchorTag = anchorNameTag(`${groupIdentifier}_summary`)
-          chapterSummary.content.push(`#### ${anchorTag}[${groupIdentifier}](${anchorName})\n`)
-
-          const runDestination = chapter.runDestination
-          chapterSummary.content.push(
-            `- **Device:** ${runDestination.targetDeviceRecord.modelName}, ${runDestination.targetDeviceRecord.operatingSystemVersionWithBuildNumber}`
-          )
-          chapterSummary.content.push(
-            `- **SDK:** ${runDestination.targetSDKRecord.name}, ${runDestination.targetSDKRecord.operatingSystemVersion}`
-          )
-
-          chapterSummary.content.push('<table>')
-          chapterSummary.content.push('<tr>')
-          const header = [
-            `<th>Test`,
-            `<th>Total`,
-            `<th>${passedIcon}`,
-            `<th>${failedIcon}`,
-            `<th>${skippedIcon}`,
-            `<th>${expectedFailureIcon}`
-          ].join('')
-          chapterSummary.content.push(header)
-
-          for (const [identifier, stats] of Object.entries(group)) {
-            chapterSummary.content.push('<tr>')
-            const testClass = `${testClassIcon}&nbsp;${identifier}`
-            const testClassAnchor = anchorNameTag(`${groupIdentifier}_${identifier}_summary`)
-            const anchorName = anchorIdentifier(`${groupIdentifier}_${identifier}`)
-            const testClassLink = `<a href="${anchorName}">${testClass}</a>`
-
-            let failedCount: string
-            if (stats.failed > 0) {
-              failedCount = `<b>${stats.failed}</b>`
-            } else {
-              failedCount = `${stats.failed}`
-            }
-            const cols = [
-              `<td align="left" width="368px">${testClassAnchor}${testClassLink}`,
-              `<td align="right" width="80px">${stats.total}`,
-              `<td align="right" width="80px">${stats.passed}`,
-              `<td align="right" width="80px">${failedCount}`,
-              `<td align="right" width="80px">${stats.skipped}`,
-              `<td align="right" width="80px">${stats.expectedFailure}`
-            ].join('')
-            chapterSummary.content.push(cols)
-          }
-          chapterSummary.content.push('')
-          chapterSummary.content.push('</table>\n')
-        }
+        const testClassSummaries = this.createTestClassSummaries(testSummary, chapter)
+        chapterSummary.content.push(...testClassSummaries)
       }
 
       const testFailures = new TestFailures()
@@ -373,7 +321,7 @@ export class Formatter {
       }
 
       if (testFailures.failureGroups.length) {
-        chapterSummary.content.push('---\n')
+        chapterSummary.content.push('\n---\n')
         chapterSummary.content.push(`### ${failedIcon} Failures`)
         const summaryFailures: string[] = []
 
@@ -807,6 +755,57 @@ export class Formatter {
       '</tr>',
       '</table>'
     ]
+  }
+
+  private createTestClassSummaries(testSummary: TestSummary, chapter: TestReportChapter): string[] {
+    var summaries = ['', '---', '', '### Test Summary']
+    for (const [groupIdentifier, group] of Object.entries(testSummary.groups)) {
+      summaries.push('')
+      const anchorName = anchorIdentifier(groupIdentifier)
+      const anchorTag = anchorNameTag(`${groupIdentifier}_summary`)
+      summaries.push(`#### ${anchorTag}[${groupIdentifier}](${anchorName})\n`)
+
+      const runDestination = chapter.runDestination
+      summaries.push(
+        `- **Device:** ${runDestination.targetDeviceRecord.modelName}, ${runDestination.targetDeviceRecord.operatingSystemVersionWithBuildNumber}`
+      )
+      summaries.push(
+        `- **SDK:** ${runDestination.targetSDKRecord.name}, ${runDestination.targetSDKRecord.operatingSystemVersion}`
+      )
+
+      summaries.push('<table>')
+      const header = [
+        `<tr>`,
+        `  <th>Test</th>`,
+        `  <th>Total</th>`,
+        `  <th>${passedIcon}</th>`,
+        `  <th>${failedIcon}</th>`,
+        `  <th>${skippedIcon}</th>`,
+        `  <th>${expectedFailureIcon}</th>`,
+        `</tr>`
+      ]
+      summaries.push(...header)
+
+      for (const [identifier, stats] of Object.entries(group)) {
+        summaries.push('<tr>')
+        const testClass = `${testClassIcon}&nbsp;${identifier}`
+        const testClassAnchor = anchorNameTag(`${groupIdentifier}_${identifier}_summary`)
+        const anchorName = anchorIdentifier(`${groupIdentifier}_${identifier}`)
+        const testClassLink = `<a href="${anchorName}">${testClass}</a>`
+        const cols = [
+          `  <td align="left" width="368px">${testClassAnchor}${testClassLink}</td>`,
+          `  <td align="right" width="80px">${stats.total}</td>`,
+          `  <td align="right" width="80px">${stats.passed}</td>`,
+          `  <td align="right" width="80px">${stats.failed}</td>`,
+          `  <td align="right" width="80px">${stats.skipped}</td>`,
+          `  <td align="right" width="80px">${stats.expectedFailure}</td>`
+        ]
+        summaries.push(...cols)
+        summaries.push('</tr>')
+      }
+      summaries.push('</table>')
+    }
+    return summaries
   }
 
   async collectTestSummaries(
