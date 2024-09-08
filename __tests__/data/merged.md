@@ -1,11 +1,30 @@
 ## Testing project Weather with scheme Weather
 
-### Summary
 <table>
 <tr>
-<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top">&nbsp;Passed<th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top">&nbsp;Failed<th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top">&nbsp;Skipped<th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">&nbsp;Expected Failure<th>:stopwatch:&nbsp;Time
+  <td></td>
+  <td align="right"><b>11</b></td>
+</tr>
 <tr>
-<td align="right" width="118px">11<td align="right" width="118px">8<td align="right" width="118px"><b>2</b><td align="right" width="118px">0<td align="right" width="158px">1<td align="right" width="138px">12.25s
+  <td><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top">&nbsp;Passed</td>
+  <td align="right"><b>8</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top">&nbsp;Failed</td>
+  <td align="right"><b>2</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top">&nbsp;Skipped</td>
+  <td align="right"><b>0</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">&nbsp;Expected Failure</td>
+  <td align="right"><b>1</b></td>
+</tr>
+<tr>
+  <td>:stopwatch:&nbsp;Time</td>
+  <td align="right"><b>12.25s</b></td>
+</tr>
 </table>
 
 ---
@@ -49,12 +68,31 @@
 
 ## Testing workspace KeychainAccess with scheme KeychainAccess
 
-### Summary
 <table>
 <tr>
-<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top">&nbsp;Passed<th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top">&nbsp;Failed<th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top">&nbsp;Skipped<th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">&nbsp;Expected Failure<th>:stopwatch:&nbsp;Time
+  <td></td>
+  <td align="right"><b>91</b></td>
+</tr>
 <tr>
-<td align="right" width="118px">91<td align="right" width="118px">84<td align="right" width="118px"><b>6</b><td align="right" width="118px">0<td align="right" width="158px">1<td align="right" width="138px">12.28s
+  <td><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top">&nbsp;Passed</td>
+  <td align="right"><b>84</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top">&nbsp;Failed</td>
+  <td align="right"><b>6</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top">&nbsp;Skipped</td>
+  <td align="right"><b>0</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">&nbsp;Expected Failure</td>
+  <td align="right"><b>1</b></td>
+</tr>
+<tr>
+  <td>:stopwatch:&nbsp;Time</td>
+  <td align="right"><b>12.28s</b></td>
+</tr>
 </table>
 
 ---
@@ -164,12 +202,31 @@
 
 ## Testing project TAU with scheme TAUUITests
 
-### Summary
 <table>
 <tr>
-<th>Total<th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top">&nbsp;Passed<th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top">&nbsp;Failed<th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top">&nbsp;Skipped<th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">&nbsp;Expected Failure<th>:stopwatch:&nbsp;Time
+  <td></td>
+  <td align="right"><b>94</b></td>
+</tr>
 <tr>
-<td align="right" width="118px">94<td align="right" width="118px">85<td align="right" width="118px"><b>8</b><td align="right" width="118px">0<td align="right" width="158px">1<td align="right" width="138px">30.59s
+  <td><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top">&nbsp;Passed</td>
+  <td align="right"><b>85</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top">&nbsp;Failed</td>
+  <td align="right"><b>8</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top">&nbsp;Skipped</td>
+  <td align="right"><b>0</b></td>
+</tr>
+<tr>
+  <td><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">&nbsp;Expected Failure</td>
+  <td align="right"><b>1</b></td>
+</tr>
+<tr>
+  <td>:stopwatch:&nbsp;Time</td>
+  <td align="right"><b>30.59s</b></td>
+</tr>
 </table>
 
 ---

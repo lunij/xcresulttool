@@ -51,6 +51,20 @@ const testClassIcon = Image.icon('test-class.png')
 const testMethodIcon = Image.icon('test-method.png')
 const attachmentIcon = Image.icon('attachment.png')
 
+class TestSummaryStats {
+  passed = 0
+  failed = 0
+  skipped = 0
+  expectedFailure = 0
+  total = 0
+}
+type TestSummaryStatsGroup = { [key: string]: TestSummaryStats }
+class TestSummary {
+  stats = new TestSummaryStats()
+  duration = 0
+  groups = {} as { [key: string]: TestSummaryStatsGroup }
+}
+
 export class Formatter {
   readonly summaries = ''
   readonly details = ''
@@ -134,19 +148,7 @@ export class Formatter {
       }
     }
 
-    class TestSummaryStats {
-      passed = 0
-      failed = 0
-      skipped = 0
-      expectedFailure = 0
-      total = 0
-    }
-    type TestSummaryStatsGroup = { [key: string]: TestSummaryStats }
-    const testSummary = {
-      stats: new TestSummaryStats(),
-      duration: 0,
-      groups: {} as { [key: string]: TestSummaryStatsGroup }
-    }
+    const testSummary = new TestSummary()
 
     for (const chapter of testReport.chapters) {
       const chapterSummary = new TestReportChapterSummary()
@@ -219,39 +221,8 @@ export class Formatter {
         groups[identifier] = group
       }
 
-      chapterSummary.content.push('### Summary')
-
-      chapterSummary.content.push('<table>')
-      chapterSummary.content.push('<tr>')
-      const header = [
-        `<th>Total`,
-        `<th>${passedIcon}&nbsp;Passed`,
-        `<th>${failedIcon}&nbsp;Failed`,
-        `<th>${skippedIcon}&nbsp;Skipped`,
-        `<th>${expectedFailureIcon}&nbsp;Expected Failure`,
-        `<th>:stopwatch:&nbsp;Time`
-      ].join('')
-      chapterSummary.content.push(header)
-
-      chapterSummary.content.push('<tr>')
-
-      let failedCount: string
-      if (testSummary.stats.failed > 0) {
-        failedCount = `<b>${testSummary.stats.failed}</b>`
-      } else {
-        failedCount = `${testSummary.stats.failed}`
-      }
-      const duration = testSummary.duration.toFixed(2)
-      const cols = [
-        `<td align="right" width="118px">${testSummary.stats.total}`,
-        `<td align="right" width="118px">${testSummary.stats.passed}`,
-        `<td align="right" width="118px">${failedCount}`,
-        `<td align="right" width="118px">${testSummary.stats.skipped}`,
-        `<td align="right" width="158px">${testSummary.stats.expectedFailure}`,
-        `<td align="right" width="138px">${duration}s`
-      ].join('')
-      chapterSummary.content.push(cols)
-      chapterSummary.content.push('</table>\n')
+      const summaryTable = this.createSummaryTable(testSummary)
+      chapterSummary.content.push(...summaryTable)
 
       if (testSummary.stats.failed > 0) {
         testReport.testStatus = 'failure'
@@ -260,7 +231,7 @@ export class Formatter {
       }
 
       if (options.showTestSummaries) {
-        chapterSummary.content.push('---\n')
+        chapterSummary.content.push('\n---\n')
         chapterSummary.content.push('### Test Summary')
 
         for (const [groupIdentifier, group] of Object.entries(testSummary.groups)) {
@@ -805,6 +776,37 @@ export class Formatter {
     }
 
     return testReport
+  }
+
+  private createSummaryTable(testSummary: TestSummary): string[] {
+    return [
+      '<table>',
+      '<tr>',
+      '  <td></td>',
+      `  <td align="right"><b>${testSummary.stats.total}</b></td>`,
+      '</tr>',
+      '<tr>',
+      `  <td>${passedIcon}&nbsp;Passed</td>`,
+      `  <td align="right"><b>${testSummary.stats.passed}</b></td>`,
+      '</tr>',
+      '<tr>',
+      `  <td>${failedIcon}&nbsp;Failed</td>`,
+      `  <td align="right"><b>${testSummary.stats.failed}</b></td>`,
+      '</tr>',
+      '<tr>',
+      `  <td>${skippedIcon}&nbsp;Skipped</td>`,
+      `  <td align="right"><b>${testSummary.stats.skipped}</b></td>`,
+      '</tr>',
+      '<tr>',
+      `  <td>${expectedFailureIcon}&nbsp;Expected Failure</td>`,
+      `  <td align="right"><b>${testSummary.stats.expectedFailure}</b></td>`,
+      '</tr>',
+      '<tr>',
+      '  <td>:stopwatch:&nbsp;Time</td>',
+      `  <td align="right"><b>${testSummary.duration.toFixed(2)}s</b></td>`,
+      '</tr>',
+      '</table>'
+    ]
   }
 
   async collectTestSummaries(
