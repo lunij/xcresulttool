@@ -253,8 +253,6 @@ export class Formatter {
       chapterSummary.content.push(cols)
       chapterSummary.content.push('</table>\n')
 
-      chapterSummary.content.push('---\n')
-
       if (testSummary.stats.failed > 0) {
         testReport.testStatus = 'failure'
       } else if (testSummary.stats.passed > 0) {
@@ -262,6 +260,7 @@ export class Formatter {
       }
 
       if (options.showTestSummaries) {
+        chapterSummary.content.push('---\n')
         chapterSummary.content.push('### Test Summary')
 
         for (const [groupIdentifier, group] of Object.entries(testSummary.groups)) {
@@ -315,8 +314,6 @@ export class Formatter {
           chapterSummary.content.push('')
           chapterSummary.content.push('</table>\n')
         }
-
-        chapterSummary.content.push('---\n')
       }
 
       const testFailures = new TestFailures()
@@ -362,14 +359,14 @@ export class Formatter {
                 json = await XCResultTool.json(this.bundlePath, testResult.summaryRef.id)
                 const summary: ActionTestSummary = await Parser.parse(json)
 
-                const testFailureGroup = new TestFailureGroup(
-                  testResultSummaryName || '',
-                  summary.identifier || '',
-                  summary.name || ''
-                )
-                testFailures.failureGroups.push(testFailureGroup)
-
                 if (summary.failureSummaries) {
+                  const testFailureGroup = new TestFailureGroup(
+                    testResultSummaryName || '',
+                    summary.identifier || '',
+                    summary.name || ''
+                  )
+                  testFailures.failureGroups.push(testFailureGroup)
+
                   const testFailure = new TestFailure()
                   testFailureGroup.failures.push(testFailure)
 
@@ -404,28 +401,27 @@ export class Formatter {
         testReport.annotations.push(annotation)
       }
 
-      chapterSummary.content.push(`### ${failedIcon} Failures`)
-      const summaryFailures: string[] = []
+      if (testFailures.failureGroups.length) {
+        chapterSummary.content.push('---\n')
+        chapterSummary.content.push(`### ${failedIcon} Failures`)
+        const summaryFailures: string[] = []
 
-      for (const failureGroup of testFailures.failureGroups) {
-        if (failureGroup.failures.length) {
-          const testIdentifier = `${failureGroup.summaryIdentifier}_${failureGroup.identifier}`
-          const anchorName = anchorIdentifier(testIdentifier)
-          const anchorTag = anchorNameTag(`${testIdentifier}_failure-summary`)
-          const testMethodLink = `${anchorTag}<a href="${anchorName}">${failureGroup.summaryIdentifier}/${failureGroup.identifier}</a>`
-          summaryFailures.push(`<h4>${testMethodLink}</h4>`)
-          for (const failure of failureGroup.failures) {
-            for (const line of failure.lines) {
-              summaryFailures.push(line)
+        for (const failureGroup of testFailures.failureGroups) {
+          if (failureGroup.failures.length) {
+            const testIdentifier = `${failureGroup.summaryIdentifier}_${failureGroup.identifier}`
+            const anchorName = anchorIdentifier(testIdentifier)
+            const anchorTag = anchorNameTag(`${testIdentifier}_failure-summary`)
+            const testMethodLink = `${anchorTag}<a href="${anchorName}">${failureGroup.summaryIdentifier}/${failureGroup.identifier}</a>`
+            summaryFailures.push(`<h4>${testMethodLink}</h4>`)
+            for (const failure of failureGroup.failures) {
+              for (const line of failure.lines) {
+                summaryFailures.push(line)
+              }
             }
           }
         }
-      }
-      if (summaryFailures.length) {
         chapterSummary.content.push(summaryFailures.join('\n'))
         chapterSummary.content.push('')
-      } else {
-        chapterSummary.content.push('All tests passed :tada:\n')
       }
 
       if (testReport.codeCoverage && options.showCodeCoverage) {
