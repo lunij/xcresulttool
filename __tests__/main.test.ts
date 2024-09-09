@@ -18,7 +18,7 @@ test('Netbob.xcresult', async () => {
     showTestDetails: true,
     showTestSummaries: true
   })
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
 
   const outputPath = path.join(os.tmpdir(), 'Netbob.md')
   await writeFile(outputPath, reportText)
@@ -172,15 +172,7 @@ test('UhooiPicBook.xcresult', async () => {
   const bundlePath = '__tests__/fixtures/UhooiPicBook.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
-
-  let root = ''
-  if (process.env.GITHUB_REPOSITORY) {
-    const pr = github.context.payload.pull_request
-    const sha = (pr && pr.head.sha) || github.context.sha
-    root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
-  }
-  const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
 
   const outputPath = path.join(os.tmpdir(), 'UhooiPicBook.md')
   await writeFile(outputPath, reportText)
@@ -212,15 +204,7 @@ test('Coverage.xcresult', async () => {
   const bundlePath = '__tests__/fixtures/Coverage.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
-
-  let root = ''
-  if (process.env.GITHUB_REPOSITORY) {
-    const pr = github.context.payload.pull_request
-    const sha = (pr && pr.head.sha) || github.context.sha
-    root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
-  }
-  const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
 
   const outputPath = path.join(os.tmpdir(), 'Coverage.md')
   await writeFile(outputPath, reportText)
@@ -241,15 +225,7 @@ test('Coverage.xcresult', async () => {
     showTestSummaries: true,
     showTestDetails: true
   })
-
-  let root = ''
-  if (process.env.GITHUB_REPOSITORY) {
-    const pr = github.context.payload.pull_request
-    const sha = (pr && pr.head.sha) || github.context.sha
-    root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
-  }
-  const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
 
   const outputPath = path.join(os.tmpdir(), 'HideCodeCoverage.md')
   await writeFile(outputPath, reportText)
@@ -297,15 +273,7 @@ test('NoTests.xcresult', async () => {
   const bundlePath = '__tests__/fixtures/NoTests.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
-
-  let root = ''
-  if (process.env.GITHUB_REPOSITORY) {
-    const pr = github.context.payload.pull_request
-    const sha = (pr && pr.head.sha) || github.context.sha
-    root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
-  }
-  const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
 
   const outputPath = path.join(os.tmpdir(), 'NoTests.md')
   await writeFile(outputPath, reportText)
@@ -321,15 +289,7 @@ test('TestResults#669.xcresult', async () => {
   const bundlePath = '__tests__/fixtures/TestResults#669.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
-
-  let root = ''
-  if (process.env.GITHUB_REPOSITORY) {
-    const pr = github.context.payload.pull_request
-    const sha = (pr && pr.head.sha) || github.context.sha
-    root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
-  }
-  const re = new RegExp(`${root}`, 'g')
-  const reportText = `${report.reportSummary}\n${report.reportDetail}`.replace(re, '')
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
 
   const outputPath = path.join(os.tmpdir(), 'NoTests.md')
   await writeFile(outputPath, reportText)
@@ -340,3 +300,25 @@ test('TestResults#669.xcresult', async () => {
     (await readFile('__tests__/fixtures/TestResults#669.md')).toString()
   )
 })
+
+function getGithubRootUrl(): string {
+  let root = ''
+  if (process.env.GITHUB_REPOSITORY) {
+    const pr = github.context.payload.pull_request
+    const sha = (pr && pr.head.sha) || github.context.sha
+    root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
+  }
+  return root
+}
+
+declare global {
+  interface String {
+    removeGithubRootUrl(): string
+  }
+}
+
+String.prototype.removeGithubRootUrl = function (): string {
+  const root = getGithubRootUrl()
+  const re = new RegExp(`${root}`, 'g')
+  return this.replace(re, '')
+}
