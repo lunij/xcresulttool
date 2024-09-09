@@ -22,83 +22,83 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Example.xcresult
+      - name: Weather.xcresult
         uses: ./
         with:
-          path: __tests__/data/Example.xcresult
-          title: Example.xcresult
-      - name: Example.xcresult (+passed)
+          path: __tests__/fixtures/Weather.xcresult
+          title: Weather.xcresult
+      - name: Weather.xcresult (+passed)
         uses: ./
         with:
-          path: __tests__/data/Example.xcresult
-          title: Example.xcresult (+passed)
+          path: __tests__/fixtures/Weather.xcresult
+          title: Weather.xcresult (+passed)
           show-passed-tests: true
-      - name: Example.xcresult (+test summaries)
+      - name: Weather.xcresult (+test summaries)
         uses: ./
         with:
-          path: __tests__/data/Example.xcresult
-          title: Example.xcresult (+test summaries)
+          path: __tests__/fixtures/Weather.xcresult
+          title: Weather.xcresult (+test summaries)
           show-test-summaries: true
-      - name: Example.xcresult (+test details)
+      - name: Weather.xcresult (+test details)
         uses: ./
         with:
-          path: __tests__/data/Example.xcresult
-          title: Example.xcresult (+test details)
+          path: __tests__/fixtures/Weather.xcresult
+          title: Weather.xcresult (+test details)
           show-test-details: true
       - name: KeychainAccess.xcresult
         uses: ./
         with:
-          path: __tests__/data/KeychainAccess.xcresult
+          path: __tests__/fixtures/KeychainAccess.xcresult
           title: KeychainAccess.xcresult
       - name: KeychainAccess.xcresult (+passed)
         uses: ./
         with:
-          path: __tests__/data/KeychainAccess.xcresult
+          path: __tests__/fixtures/KeychainAccess.xcresult
           title: KeychainAccess.xcresult (+passed)
           show-passed-tests: true
       - name: TAU.xcresult
         uses: ./
         with:
-          path: __tests__/data/TAU.xcresult
+          path: __tests__/fixtures/TAU.xcresult
           title: TAU.xcresult
       - name: TestResults.xcresult
         uses: ./
         with:
-          path: __tests__/data/TestResults.xcresult
+          path: __tests__/fixtures/TestResults.xcresult
           title: TestResults.xcresult
       - name: Coverage.xcresult
         uses: ./
         with:
-          path: __tests__/data/Coverage.xcresult
+          path: __tests__/fixtures/Coverage.xcresult
           title: Coverage.xcresult
       - name: Coverage.xcresult (-coverage)
         uses: ./
         with:
-          path: __tests__/data/Coverage.xcresult
+          path: __tests__/fixtures/Coverage.xcresult
           title: Coverage.xcresult (-coverage)
           show-code-coverage: false
       - name: UhooiPicBook.xcresult
         uses: ./
         with:
-          path: __tests__/data/UhooiPicBook.xcresult
+          path: __tests__/fixtures/UhooiPicBook.xcresult
           title: UhooiPicBook.xcresult
       - name: UhooiPicBook.xcresult (+passed)
         uses: ./
         with:
-          path: __tests__/data/UhooiPicBook.xcresult
+          path: __tests__/fixtures/UhooiPicBook.xcresult
           title: UhooiPicBook.xcresult (+passed)
           show-passed-tests: true
       - name: UhooiPicBook.xcresult (-coverage)
         uses: ./
         with:
-          path: __tests__/data/UhooiPicBook.xcresult
+          path: __tests__/fixtures/UhooiPicBook.xcresult
           title: UhooiPicBook.xcresult (-coverage)
           show-code-coverage: false
       - name: Multiple Xcode Results
         uses: ./
         with:
           path: |
-            __tests__/data/Example.xcresult
-            __tests__/data/KeychainAccess.xcresult
-            __tests__/data/TAU.xcresult
+            __tests__/fixtures/Weather.xcresult
+            __tests__/fixtures/KeychainAccess.xcresult
+            __tests__/fixtures/TAU.xcresult
           title: 'Multiple Xcode Results'

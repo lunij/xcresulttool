@@ -9,24 +9,24 @@ import { Formatter, FormatterOptions } from '../src/formatter.js'
 
 const record = false
 
-test('Example.xcresult', async () => {
-  const bundlePath = '__tests__/data/Example.xcresult'
+test('Weather.xcresult', async () => {
+  const bundlePath = '__tests__/fixtures/Weather.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
 
-  const outputPath = path.join(os.tmpdir(), 'Example.md')
+  const outputPath = path.join(os.tmpdir(), 'Weather.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/Example.md', reportText)
+    await writeFile('__tests__/fixtures/Weather.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/Example.md')).toString()
+    (await readFile('__tests__/fixtures/Weather.md')).toString()
   )
 })
 
-test('Example.xcresult', async () => {
-  const bundlePath = '__tests__/data/Example.xcresult'
+test('Weather.xcresult', async () => {
+  const bundlePath = '__tests__/fixtures/Weather.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format({
     showPassedTests: false,
@@ -36,18 +36,18 @@ test('Example.xcresult', async () => {
   })
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
 
-  const outputPath = path.join(os.tmpdir(), 'ExampleOnlyFailures.md')
+  const outputPath = path.join(os.tmpdir(), 'WeatherFailuresOnly.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/ExampleOnlyFailures.md', reportText)
+    await writeFile('__tests__/fixtures/WeatherFailuresOnly.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/ExampleOnlyFailures.md')).toString()
+    (await readFile('__tests__/fixtures/WeatherFailuresOnly.md')).toString()
   )
 })
 
 test('KeychainAccess.xcresult', async () => {
-  const bundlePath = '__tests__/data/KeychainAccess.xcresult'
+  const bundlePath = '__tests__/fixtures/KeychainAccess.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -55,15 +55,15 @@ test('KeychainAccess.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'KeychainAccess.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/KeychainAccess.md', reportText)
+    await writeFile('__tests__/fixtures/KeychainAccess.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/KeychainAccess.md')).toString()
+    (await readFile('__tests__/fixtures/KeychainAccess.md')).toString()
   )
 })
 
 test('KeychainAccess.xcresult', async () => {
-  const bundlePath = '__tests__/data/KeychainAccess.xcresult'
+  const bundlePath = '__tests__/fixtures/KeychainAccess.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format({
     showPassedTests: false,
@@ -76,15 +76,15 @@ test('KeychainAccess.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'KeychainAccessOnlyFailures.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/KeychainAccessOnlyFailures.md', reportText)
+    await writeFile('__tests__/fixtures/KeychainAccessOnlyFailures.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/KeychainAccessOnlyFailures.md')).toString()
+    (await readFile('__tests__/fixtures/KeychainAccessOnlyFailures.md')).toString()
   )
 })
 
 test('TAU.xcresult', async () => {
-  const bundlePath = '__tests__/data/TAU.xcresult'
+  const bundlePath = '__tests__/fixtures/TAU.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -92,15 +92,15 @@ test('TAU.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'TAU.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/TAU.md', reportText)
+    await writeFile('__tests__/fixtures/TAU.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/TAU.md')).toString()
+    (await readFile('__tests__/fixtures/TAU.md')).toString()
   )
 })
 
 test('Merged.xcresult', async () => {
-  const bundlePath = '__tests__/data/Merged.xcresult'
+  const bundlePath = '__tests__/fixtures/Merged.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -108,15 +108,15 @@ test('Merged.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'Merged.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/Merged.md', reportText)
+    await writeFile('__tests__/fixtures/Merged.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/Merged.md')).toString()
+    (await readFile('__tests__/fixtures/Merged.md')).toString()
   )
 })
 
 test('Spaceship.xcresult', async () => {
-  const bundlePath = '__tests__/data/Spaceship.xcresult'
+  const bundlePath = '__tests__/fixtures/Spaceship.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -124,15 +124,15 @@ test('Spaceship.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'Spaceship.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/Spaceship.md', reportText)
+    await writeFile('__tests__/fixtures/Spaceship.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/Spaceship.md')).toString()
+    (await readFile('__tests__/fixtures/Spaceship.md')).toString()
   )
 })
 
 test('TestResults.xcresult', async () => {
-  const bundlePath = '__tests__/data/TestResults.xcresult'
+  const bundlePath = '__tests__/fixtures/TestResults.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -140,15 +140,15 @@ test('TestResults.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'TestResults.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/TestResults.md', reportText)
+    await writeFile('__tests__/fixtures/TestResults.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/TestResults.md')).toString()
+    (await readFile('__tests__/fixtures/TestResults.md')).toString()
   )
 })
 
 test('UhooiPicBook.xcresult', async () => {
-  const bundlePath = '__tests__/data/UhooiPicBook.xcresult'
+  const bundlePath = '__tests__/fixtures/UhooiPicBook.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
 
@@ -164,15 +164,15 @@ test('UhooiPicBook.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'UhooiPicBook.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/UhooiPicBook.md', reportText)
+    await writeFile('__tests__/fixtures/UhooiPicBook.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/UhooiPicBook.md')).toString()
+    (await readFile('__tests__/fixtures/UhooiPicBook.md')).toString()
   )
 })
 
 test('Attachment.xcresult', async () => {
-  const bundlePath = '__tests__/data/Attachment.xcresult'
+  const bundlePath = '__tests__/fixtures/Attachment.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -180,15 +180,15 @@ test('Attachment.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'Attachment.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/Attachment.md', reportText)
+    await writeFile('__tests__/fixtures/Attachment.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/Attachment.md')).toString()
+    (await readFile('__tests__/fixtures/Attachment.md')).toString()
   )
 })
 
 test('Coverage.xcresult', async () => {
-  const bundlePath = '__tests__/data/Coverage.xcresult'
+  const bundlePath = '__tests__/fixtures/Coverage.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
 
@@ -204,15 +204,15 @@ test('Coverage.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'Coverage.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/Coverage.md', reportText)
+    await writeFile('__tests__/fixtures/Coverage.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/Coverage.md')).toString()
+    (await readFile('__tests__/fixtures/Coverage.md')).toString()
   )
 })
 
 test('Coverage.xcresult', async () => {
-  const bundlePath = '__tests__/data/Coverage.xcresult'
+  const bundlePath = '__tests__/fixtures/Coverage.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format({
     showPassedTests: true,
@@ -233,15 +233,15 @@ test('Coverage.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'HideCodeCoverage.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/HideCodeCoverage.md', reportText)
+    await writeFile('__tests__/fixtures/HideCodeCoverage.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/HideCodeCoverage.md')).toString()
+    (await readFile('__tests__/fixtures/HideCodeCoverage.md')).toString()
   )
 })
 
 test('BuildError.xcresult', async () => {
-  const bundlePath = '__tests__/data/BuildError.xcresult'
+  const bundlePath = '__tests__/fixtures/BuildError.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -249,15 +249,15 @@ test('BuildError.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'BuildError.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/BuildError.md', reportText)
+    await writeFile('__tests__/fixtures/BuildError.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/BuildError.md')).toString()
+    (await readFile('__tests__/fixtures/BuildError.md')).toString()
   )
 })
 
 test('LinkError.xcresult', async () => {
-  const bundlePath = '__tests__/data/LinkError.xcresult'
+  const bundlePath = '__tests__/fixtures/LinkError.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
@@ -265,15 +265,15 @@ test('LinkError.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'LinkError.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/LinkError.md', reportText)
+    await writeFile('__tests__/fixtures/LinkError.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/LinkError.md')).toString()
+    (await readFile('__tests__/fixtures/LinkError.md')).toString()
   )
 })
 
 test('NoTests.xcresult', async () => {
-  const bundlePath = '__tests__/data/NoTests.xcresult'
+  const bundlePath = '__tests__/fixtures/NoTests.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
 
@@ -289,15 +289,15 @@ test('NoTests.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'NoTests.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/NoTests.md', reportText)
+    await writeFile('__tests__/fixtures/NoTests.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/NoTests.md')).toString()
+    (await readFile('__tests__/fixtures/NoTests.md')).toString()
   )
 })
 
 test('TestResults#669.xcresult', async () => {
-  const bundlePath = '__tests__/data/TestResults#669.xcresult'
+  const bundlePath = '__tests__/fixtures/TestResults#669.xcresult'
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format()
 
@@ -313,9 +313,9 @@ test('TestResults#669.xcresult', async () => {
   const outputPath = path.join(os.tmpdir(), 'NoTests.md')
   await writeFile(outputPath, reportText)
   if (record) {
-    await writeFile('__tests__/data/TestResults#669.md', reportText)
+    await writeFile('__tests__/fixtures/TestResults#669.md', reportText)
   }
   expect((await readFile(outputPath)).toString()).toBe(
-    (await readFile('__tests__/data/TestResults#669.md')).toString()
+    (await readFile('__tests__/fixtures/TestResults#669.md')).toString()
   )
 })
