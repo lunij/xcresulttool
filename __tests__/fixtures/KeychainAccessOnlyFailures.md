@@ -119,7 +119,7 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="keychainaccesstests-maccatalyst_keychainaccesstests/testallkeys()_failure-summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests/testallkeys()">KeychainAccessTests-MacCatalyst/KeychainAccessTests/testAllKeys()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Documents/XcodeProjects/KeychainAccess/Lib/TestHost-MacCatalyst/KeychainAccessTests-MacCatalyst/KeychainAccessTests.swift:1372<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost-MacCatalyst")") is not equal to ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost")")</table>
 
@@ -157,7 +157,6 @@
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Documents/XcodeProjects/KeychainAccess/Lib/TestHost-MacCatalyst/KeychainAccessTests-MacCatalyst/KeychainAccessTests.swift:913<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost-MacCatalyst")") is not equal to ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost")")</table>
 
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Documents/XcodeProjects/KeychainAccess/Lib/TestHost-MacCatalyst/KeychainAccessTests-MacCatalyst/KeychainAccessTests.swift:972<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost-MacCatalyst")") is not equal to ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost")")</table>
-
 
 ### Test Details
 

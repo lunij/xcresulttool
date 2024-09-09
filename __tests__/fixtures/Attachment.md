@@ -87,13 +87,12 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="xcresulttool-exampletests_xcresulttool_exampletests/testfail()_failure-summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool_exampletests/testfail()">xcresulttool-exampleTests/xcresulttool_exampleTests/testFail()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/xcresulttool-example/xcresulttool-exampleTests/xcresulttool_exampleTests.swift:35<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("success") is not equal to ("fail")</table>
 
 <h4><a name="xcresulttool-exampletests_xcresulttool_exampletests/testskip()_failure-summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool_exampletests/testskip()">xcresulttool-exampleTests/xcresulttool_exampleTests/testSkip()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/xcresulttool-example/xcresulttool-exampleTests/xcresulttool_exampleTests.swift:41<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("success") is not equal to ("fail")</table>
-
 
 ### Test Details
 

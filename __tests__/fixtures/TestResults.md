@@ -79,13 +79,12 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="xcresulttool-exampletests_xcresulttool-example-encountered-an-error_failure-summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool-example-encountered-an-error">xcresulttool-exampleTests/xcresulttool-example encountered an error</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px"><tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">System<tr><td align="right" width="100px"><b>Message</b><td width="668px">Failed to establish communication with the test runner. If you believe this error represents a bug, please attach the result bundle at /Users/runner/work/xcresult. (Underlying Error: The operation couldn’t be completed. (DTXProxyChannel error 1.))</table>
 
 <h4><a name="xcresulttool-exampleuitests_xcresulttool-exampleuitests-runner-encountered-an-error_failure-summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool-exampleuitests-runner-encountered-an-error">xcresulttool-exampleUITests/xcresulttool-exampleUITests-Runner encountered an error</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px"><tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">System<tr><td align="right" width="100px"><b>Message</b><td width="668px">Failed to install or launch the test runner. If you believe this error represents a bug, please attach the result bundle at /Users/runner/work/xcresult. (Underlying Error: Invalid device state. (Underlying Error: The operation couldn’t be completed. (Mach error -308 - (ipc/mig) server died)))</table>
-
 
 ### Test Details
 

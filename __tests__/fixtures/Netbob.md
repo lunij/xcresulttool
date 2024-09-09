@@ -152,7 +152,7 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="netbobtests_bodyviewtests/test_bodyview_whenimage()_failure-summary"/><a href="#user-content-netbobtests_bodyviewtests/test_bodyview_whenimage()">NetbobTests/BodyViewTests/test_bodyView_whenImage()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/runner/work/netbob/netbob/Tests/NetbobTests/Modules/Body/BodyViewTests.swift:15<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">failed - Snapshot does not match reference.
 
@@ -169,7 +169,6 @@ To configure output for a custom diff tool, use 'withSnapshotTesting'. For examp
 
 The percentage of pixels that match 0.9974098 is less than required 1.0
 The lowest perceptual color precision 0.0 is less than required 0.95</table>
-
 
 ---
 

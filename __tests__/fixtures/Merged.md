@@ -87,13 +87,12 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="weathertests_weathertests/testfail()_failure-summary"/><a href="#user-content-weathertests_weathertests/testfail()">WeatherTests/WeatherTests/testFail()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/Weather/WeatherTests/WeatherTests.swift:23<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("1") is not equal to ("2")</table>
 
 <h4><a name="weatheruitests_weatheruitestslaunchtests/testlaunch()_failure-summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests/testlaunch()">WeatherUITests/WeatherUITestsLaunchTests/testLaunch()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/Weather/WeatherUITests/WeatherUITestsLaunchTests.swift:28<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">failed - Fail!!</table>
-
 
 ## Testing workspace KeychainAccess with scheme KeychainAccess
 
@@ -270,7 +269,7 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="keychainaccesstests-maccatalyst_keychainaccesstests/testallkeys()_failure-summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests/testallkeys()">KeychainAccessTests-MacCatalyst/KeychainAccessTests/testAllKeys()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Documents/XcodeProjects/KeychainAccess/Lib/TestHost-MacCatalyst/KeychainAccessTests-MacCatalyst/KeychainAccessTests.swift:1372<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost-MacCatalyst")") is not equal to ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost")")</table>
 
@@ -308,7 +307,6 @@
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Documents/XcodeProjects/KeychainAccess/Lib/TestHost-MacCatalyst/KeychainAccessTests-MacCatalyst/KeychainAccessTests.swift:913<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost-MacCatalyst")") is not equal to ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost")")</table>
 
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Documents/XcodeProjects/KeychainAccess/Lib/TestHost-MacCatalyst/KeychainAccessTests-MacCatalyst/KeychainAccessTests.swift:972<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost-MacCatalyst")") is not equal to ("Optional("27AEDK3C9F.com.kishikawakatsumi.KeychainAccess.TestHost")")</table>
-
 
 ## Testing project TAU with scheme TAUUITests
 
@@ -516,13 +514,12 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="tauuitests_bddtest/testthankyoumessageinbdstyle()_failure-summary"/><a href="#user-content-tauuitests_bddtest/testthankyoumessageinbdstyle()">TAUUITests/BDDTest/testThankYouMessageInBDStyle()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Downloads/XCUITest-TAU-chapter4/TAUUITests/BDDTest.swift:40<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">Failed to synthesize event: Failed to scroll to visible (by AX action) Button, {{25.0, 500.0}, {330.0, 41.0}}, identifier: 'enrollButton', label: 'Enroll', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 58911, elementOrHash.elementID: 5661339664.11. (Underlying Error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 58911, elementOrHash.elementID: 5661339664.11)</table>
 
 <h4><a name="tauuitests_tauuitests/testthankyoumessage()_failure-summary"/><a href="#user-content-tauuitests_tauuitests/testthankyoumessage()">TAUUITests/TAUUITests/testThankYouMessage()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Downloads/XCUITest-TAU-chapter4/TAUUITests/TAUUITests.swift:24<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">Failed to synthesize event: Failed to scroll to visible (by AX action) Button, {{25.0, 500.0}, {330.0, 41.0}}, identifier: 'enrollButton', label: 'Enroll', error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 58971, elementOrHash.elementID: 4931535136.11. (Underlying Error: Error kAXErrorCannotComplete performing AXAction kAXScrollToVisibleAction on element AX element pid: 58971, elementOrHash.elementID: 4931535136.11)</table>
-
 
 ### Test Details
 

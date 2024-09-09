@@ -320,28 +320,8 @@ export class Formatter {
         testReport.annotations.push(annotation)
       }
 
-      if (testFailures.failureGroups.length) {
-        chapterSummary.content.push('\n---\n')
-        chapterSummary.content.push(`### ${failedIcon} Failures`)
-        const summaryFailures: string[] = []
-
-        for (const failureGroup of testFailures.failureGroups) {
-          if (failureGroup.failures.length) {
-            const testIdentifier = `${failureGroup.summaryIdentifier}_${failureGroup.identifier}`
-            const anchorName = anchorIdentifier(testIdentifier)
-            const anchorTag = anchorNameTag(`${testIdentifier}_failure-summary`)
-            const testMethodLink = `${anchorTag}<a href="${anchorName}">${failureGroup.summaryIdentifier}/${failureGroup.identifier}</a>`
-            summaryFailures.push(`<h4>${testMethodLink}</h4>`)
-            for (const failure of failureGroup.failures) {
-              for (const line of failure.lines) {
-                summaryFailures.push(line)
-              }
-            }
-          }
-        }
-        chapterSummary.content.push(summaryFailures.join('\n'))
-        chapterSummary.content.push('')
-      }
+      const failuresSection = this.createFailuresSection(testFailures)
+      chapterSummary.content.push(...failuresSection)
 
       if (testReport.codeCoverage && options.showCodeCoverage) {
         const workspace = path.dirname(`${testReport.creatingWorkspaceFilePath}`)
@@ -806,6 +786,30 @@ export class Formatter {
       summaries.push('</table>')
     }
     return summaries
+  }
+
+  private createFailuresSection(testFailures: TestFailures): string[] {
+    const failuresSection: string[] = []
+    if (testFailures.failureGroups.length) {
+      failuresSection.push(...['', '---', ''])
+      failuresSection.push(`### Failures`)
+
+      for (const failureGroup of testFailures.failureGroups) {
+        if (failureGroup.failures.length) {
+          const testIdentifier = `${failureGroup.summaryIdentifier}_${failureGroup.identifier}`
+          const anchorName = anchorIdentifier(testIdentifier)
+          const anchorTag = anchorNameTag(`${testIdentifier}_failure-summary`)
+          const testMethodLink = `${anchorTag}<a href="${anchorName}">${failureGroup.summaryIdentifier}/${failureGroup.identifier}</a>`
+          failuresSection.push(`<h4>${testMethodLink}</h4>`)
+          for (const failure of failureGroup.failures) {
+            for (const line of failure.lines) {
+              failuresSection.push(line)
+            }
+          }
+        }
+      }
+    }
+    return failuresSection
   }
 
   async collectTestSummaries(

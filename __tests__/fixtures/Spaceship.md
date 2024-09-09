@@ -87,10 +87,9 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="spaceshiptests_spaceshiptests/testfail()_failure-summary"/><a href="#user-content-spaceshiptests_spaceshiptests/testfail()">SpaceshipTests/SpaceshipTests/testFail()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/Spaceship/SpaceshipTests/SpaceshipTests.swift:22<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("success") is not equal to ("fail")</table>
-
 
 ## Testing project Spaceship with scheme Spaceship
 
@@ -181,10 +180,9 @@
 
 ---
 
-### <img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"> Failures
+### Failures
 <h4><a name="spaceshiptests_spaceshiptests/testfail()_failure-summary"/><a href="#user-content-spaceshiptests_spaceshiptests/testfail()">SpaceshipTests/SpaceshipTests/testFail()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/Spaceship/SpaceshipTests/SpaceshipTests.swift:22<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("success") is not equal to ("fail")</table>
-
 
 ### Test Details
 
