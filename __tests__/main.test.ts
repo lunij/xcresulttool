@@ -5,9 +5,30 @@ import * as process from 'process'
 import { expect, test } from '@jest/globals'
 import { promises } from 'fs'
 const { readFile, writeFile } = promises
-import { Formatter, FormatterOptions } from '../src/formatter.js'
+import { Formatter } from '../src/formatter.js'
 
 const record = false
+
+test('Netbob.xcresult', async () => {
+  const bundlePath = '__tests__/fixtures/Netbob.xcresult'
+  const formatter = new Formatter(bundlePath)
+  const report = await formatter.format({
+    showCodeCoverage: true,
+    showPassedTests: false,
+    showTestDetails: true,
+    showTestSummaries: true
+  })
+  const reportText = `${report.reportSummary}\n${report.reportDetail}`
+
+  const outputPath = path.join(os.tmpdir(), 'Netbob.md')
+  await writeFile(outputPath, reportText)
+  if (record) {
+    await writeFile('__tests__/fixtures/Netbob.md', reportText)
+  }
+  expect((await readFile(outputPath)).toString()).toBe(
+    (await readFile('__tests__/fixtures/Netbob.md')).toString()
+  )
+})
 
 test('Weather.xcresult', async () => {
   const bundlePath = '__tests__/fixtures/Weather.xcresult'
