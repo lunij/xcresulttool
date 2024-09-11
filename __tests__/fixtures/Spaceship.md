@@ -288,7 +288,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_4F55F7BC-5285-4DE2-B622-CDCCBDC8AE97.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
@@ -307,7 +307,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_057FB603-7587-49D4-A1F3-E8787CA07EF8.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
@@ -326,7 +326,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_48CE6A99-4377-4D32-90D6-2FCA897706E1.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
@@ -345,7 +345,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_E584429C-A6D3-4096-997C-8DD10F6CD378.png"></div></details>
 
 - Tear Down
 </table>
@@ -454,7 +454,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_81DB3258-82E1-443F-9A32-A97FE6CE14D6.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
@@ -473,7 +473,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_A4EFD2D7-C491-4F89-9D2A-6B31B6E7AF21.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
@@ -492,7 +492,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_FA72CD75-CFF2-416A-9F08-9F7FA3F66532.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
@@ -511,7 +511,7 @@
     - Wait for com.kishikawakatsumi.Spaceship to idle
 - Find the Target Application 'com.kishikawakatsumi.Spaceship'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_937098BC-0531-473E-A6D9-315EA0D55B4B.png"></div></details>
 
 - Tear Down
 </table>

@@ -169,7 +169,7 @@
     - Wait for com.kishikawakatsumi.xcresulttool-example to idle
 - Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_AE628467-B885-4ED2-82EF-3E97D5D30039.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
@@ -188,7 +188,7 @@
     - Wait for com.kishikawakatsumi.xcresulttool-example to idle
 - Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_3283B985-3ABB-4FBF-BB2F-561E3A7F9245.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
@@ -207,7 +207,7 @@
     - Wait for com.kishikawakatsumi.xcresulttool-example to idle
 - Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_657FF179-1AF2-489C-AD8D-60BCCAE8FBA8.png"></div></details>
 
 - Tear Down
 <tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
@@ -226,7 +226,7 @@
     - Wait for com.kishikawakatsumi.xcresulttool-example to idle
 - Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
 - Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="undefined"></div></details>
+  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_2D5236C6-D613-4D07-8522-517186A7F42A.png"></div></details>
 
 - Tear Down
 </table>

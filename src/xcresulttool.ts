@@ -83,7 +83,12 @@ export class XCResultTool {
       silent: true
     }
 
-    await exec('xcrun', args, options)
-    return Buffer.from(await readFile(outputPath))
+    try {
+      await exec('xcrun', args, options)
+      return Buffer.from(await readFile(outputPath))
+    } catch (error) {
+      const command = `xcrun ${args.join(' ')}`
+      throw new Error(`The command "${command}" failed with error: ${(error as Error).message}`)
+    }
   }
 }

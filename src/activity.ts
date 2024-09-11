@@ -1,15 +1,18 @@
 import { ActionTestActivitySummary } from '../dev/@types/ActionTestActivitySummary.d.js'
 import { Attachment } from './attachment.js'
 
-export interface Activity {
-  title: string
-  activityType: string
-  uuid: string
-  start?: string
-  finish?: string
+export class Activity {
+  activitySummary: ActionTestActivitySummary
   attachments: Attachment[]
-  subactivities: ActionTestActivitySummary[]
-  failureSummaryIDs: string[]
-  expectedFailureIDs: string[]
   indent: number
+
+  constructor(
+    activitySummary: ActionTestActivitySummary,
+    attachments: Attachment[],
+    indent: number
+  ) {
+    this.activitySummary = activitySummary
+    this.attachments = attachments
+    this.indent = indent
+  }
 }

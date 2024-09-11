@@ -577,10 +577,8 @@ export class Formatter {
                     }
                   }
 
-                  const activities: Activity[] = []
-                  if (summary.activitySummaries) {
-                    await this.collectActivities(summary.activitySummaries, activities)
-                  }
+                  const activities = await this.collectActivities(summary.activitySummaries ?? [])
+
                   if (activities.length) {
                     if (!options.showPassedTests && summary.testStatus !== 'Failure') {
                       continue
@@ -589,13 +587,11 @@ export class Formatter {
                     const testActivities = activities
                       .map(activity => {
                         const attachments = activity.attachments
-                          .filter(attachment => {
-                            return attachment.dimensions
-                          })
+                          .filter(attachment => attachment.dimensions)
                           .map(attachment => {
                             let width = '100%'
                             const dimensions = attachment.dimensions
-                            if (dimensions.width && dimensions.height) {
+                            if (dimensions && dimensions.width && dimensions.height) {
                               const orientation = dimensions.orientation
                               if (orientation && orientation >= 5) {
                                 width = `${dimensions.height}px`
@@ -604,12 +600,12 @@ export class Formatter {
                               }
                             }
 
-                            const userInfo = attachment.userInfo
+                            const userInfo = attachment.actionTestAttachment.userInfo
                             if (userInfo) {
                               for (const info of userInfo.storage) {
                                 if (info.key === 'Scale') {
                                   const scale = parseInt(`${info.value}`)
-                                  if (dimensions.width && dimensions.height) {
+                                  if (dimensions && dimensions.width && dimensions.height) {
                                     if (dimensions.orientation && dimensions.orientation >= 5) {
                                       const value = dimensions.height / scale
                                       width = `${value.toFixed(0)}px`
@@ -631,14 +627,14 @@ export class Formatter {
                         if (attachments.length) {
                           const testStatus = testResult.testStatus
                           const open = testStatus.includes('Failure') ? 'open' : ''
-                          const title = escapeHashSign(activity.title)
+                          const title = escapeHashSign(activity.activitySummary.title)
                           const message = `${indentation(activity.indent)}- ${title}`
                           const attachmentIndent = indentation(activity.indent + 1)
                           const attachmentContent = attachments.join('')
                           return `${message}\n${attachmentIndent}<details ${open}><summary>${attachmentIcon}</summary>${attachmentContent}</details>\n`
                         } else {
                           const indent = indentation(activity.indent)
-                          return `${indent}- ${escapeHashSign(activity.title)}`
+                          return `${indent}- ${escapeHashSign(activity.activitySummary.title)}`
                         }
                       })
                       .join('\n')
@@ -835,19 +831,26 @@ export class Formatter {
 
   async collectActivities(
     activitySummaries: ActionTestActivitySummary[],
-    activities: Activity[],
     indent = 0
-  ): Promise<void> {
+  ): Promise<Activity[]> {
+    const activities: Activity[] = []
     for (const activitySummary of activitySummaries) {
-      const activity = activitySummary as Activity
-      activity.indent = indent
-      await exportAttachments(this.bundlePath, activity)
+      const attachments = await exportAttachments(
+        activitySummary.attachments ?? [],
+        this.bundlePath
+      )
+      const activity = new Activity(activitySummary, attachments, indent)
       activities.push(activity)
 
       if (activitySummary.subactivities) {
-        await this.collectActivities(activitySummary.subactivities, activities, indent + 1)
+        const subActivities = await this.collectActivities(
+          activitySummary.subactivities,
+          indent + 1
+        )
+        activities.push(...subActivities)
       }
     }
+    return activities
   }
 }
 

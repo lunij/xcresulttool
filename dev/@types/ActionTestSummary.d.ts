@@ -14,7 +14,7 @@ export interface ActionTestSummary {
   failureSummaries: ActionTestFailureSummary[]
   expectedFailures: ActionTestExpectedFailure[]
   skipNoticeSummary?: ActionTestNoticeSummary
-  activitySummaries: ActionTestActivitySummary[]
+  activitySummaries?: ActionTestActivitySummary[]
   repetitionPolicySummary?: ActionTestRepetitionPolicySummary
   configuration?: ActionTestConfiguration
 }

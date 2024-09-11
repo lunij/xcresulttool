@@ -1,77 +1,58 @@
-import * as core from '@actions/core'
-import * as exec from '@actions/exec'
+import * as fs from 'fs'
 import * as os from 'os'
 import * as path from 'path'
 
-import { Activity } from './activity.js'
 import { Dimensions } from './dimensions.js'
-import { Parser } from './parser.js'
-
-import { Reference } from '../dev/@types/Reference.d.js'
-import { SortedKeyValueArray } from '../dev/@types/SortedKeyValueArray.d.js'
-
 import { imageSize } from 'image-size'
 import { XCResultTool } from './xcresulttool.js'
+import { ActionTestAttachment } from '../dev/@types/ActionTestActivitySummary.js'
 
-export interface Attachment {
-  uniformTypeIdentifier: string
-  name?: string
-  uuid?: string
-  timestamp?: string
-  userInfo?: SortedKeyValueArray
-  lifetime: string
-  inActivityIdentifier: number
-  filename?: string
-  payloadRef?: Reference
-  payloadSize: number
+export class Attachment {
+  actionTestAttachment: ActionTestAttachment
   link: string
-  dimensions: Dimensions
+  dimensions?: Dimensions
+
+  constructor(actionTestAttachment: ActionTestAttachment, link: string, dimensions?: Dimensions) {
+    this.actionTestAttachment = actionTestAttachment
+    this.link = link
+    this.dimensions = dimensions
+  }
 }
 
-export async function exportAttachments(xcResultPath: string, activity: Activity): Promise<void> {
-  activity.attachments = activity.attachments || []
+export async function exportAttachments(
+  attachments: ActionTestAttachment[],
+  xcResultPath: string
+): Promise<Attachment[]> {
+  const mappedAttachments = await Promise.all(
+    attachments.map(async attachment => {
+      return await exportAttachment(attachment, xcResultPath)
+    })
+  )
+  const exportedAttachments = mappedAttachments.filter(
+    (attachment): attachment is Attachment => attachment !== undefined
+  )
+  return Promise.resolve(exportedAttachments)
+}
 
-  if (activity.attachments) {
-    for (const attachment of activity.attachments) {
-      if (attachment.filename && attachment.payloadRef) {
-        const outputPath = path.join(os.tmpdir(), attachment.filename)
-        const image = await XCResultTool.export(xcResultPath, outputPath, attachment.payloadRef.id)
-
-        let output = ''
-        const options = {
-          silent: true,
-          listeners: {
-            stdout: (data: Buffer) => {
-              output += data.toString()
-            }
-          }
-        }
-
-        try {
-          const dimensions: Dimensions = imageSize(image)
-          attachment.dimensions = dimensions
-
-          if (image && core.getInput('token')) {
-            await exec.exec(
-              'curl',
-              [
-                '-X',
-                'POST',
-                'https://xcresulttool-file.herokuapp.com/file',
-                '-d',
-                image.toString('base64')
-              ],
-              options
-            )
-            const response = JSON.parse(output)
-            if (response) {
-              attachment.link = response.link
-            }
-          }
-        } catch {
-          // no-op
-        }
-      }
-    }
+export async function exportAttachment(
+  attachment: ActionTestAttachment,
+  xcResultPath: string
+): Promise<Attachment | undefined> {
+  if (!attachment.filename || !attachment.payloadRef) {
+    return Promise.resolve(undefined)
+  }
+  const attachmentFolderPath = path.join(process.env.GITHUB_WORKSPACE ?? os.tmpdir(), 'attachments')
+  fs.mkdirSync(attachmentFolderPath, { recursive: true })
+  const attachmentPath = path.join(attachmentFolderPath, attachment.filename)
+  const attachmentData = await XCResultTool.export(
+    xcResultPath,
+    attachmentPath,
+    attachment.payloadRef.id
+  )
+  try {
+    const dimensions = imageSize(attachmentData)
+    return Promise.resolve(new Attachment(attachment, attachmentPath, dimensions))
+  } catch {
+    return Promise.resolve(new Attachment(attachment, attachmentPath))
   }
 }

@@ -11,7 +11,7 @@ export interface ActionTestActivitySummary {
   uuid: string
   start?: string
   finish?: string
-  attachments: ActionTestAttachment[]
+  attachments?: ActionTestAttachment[]
   subactivities: ActionTestActivitySummary1[]
   failureSummaryIDs: string[]
   expectedFailureIDs: string[]
