@@ -132,16 +132,7 @@
 </table>
 
 <table>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code><br><br><b>Activities:</b>
-
-- Start Test at 2021-12-06 21:52:36.501
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Set Up
-- Open com.kishikawakatsumi.xcresulttool-example
-  - Launch com.kishikawakatsumi.xcresulttool-example
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Tear Down
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code>
 </table>
 
 <a name="xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests"/><h5>xcresulttool_exampleUITestsLaunchTests&nbsp;[<img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top">](#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests_summary)</h5>
@@ -153,82 +144,10 @@
 </table>
 
 <table>
-<tr><td align="center" rowspan="4" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Portrait
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Light
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Start Test at 2021-12-06 21:52:39.470
-- Set Up
-- Open com.kishikawakatsumi.xcresulttool-example
-  - Launch com.kishikawakatsumi.xcresulttool-example
-    - Terminate com.kishikawakatsumi.xcresulttool-example:6873
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_AE628467-B885-4ED2-82EF-3E97D5D30039.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Landscape Right
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Light
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Start Test at 2021-12-06 21:52:46.677
-- Set Up
-- Open com.kishikawakatsumi.xcresulttool-example
-  - Launch com.kishikawakatsumi.xcresulttool-example
-    - Terminate com.kishikawakatsumi.xcresulttool-example:6874
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_3283B985-3ABB-4FBF-BB2F-561E3A7F9245.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Portrait
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Dark
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Start Test at 2021-12-06 21:52:51.870
-- Set Up
-- Open com.kishikawakatsumi.xcresulttool-example
-  - Launch com.kishikawakatsumi.xcresulttool-example
-    - Terminate com.kishikawakatsumi.xcresulttool-example:6878
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_657FF179-1AF2-489C-AD8D-60BCCAE8FBA8.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Landscape Right
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Dark
-  - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Start Test at 2021-12-06 21:52:58.958
-- Set Up
-- Open com.kishikawakatsumi.xcresulttool-example
-  - Launch com.kishikawakatsumi.xcresulttool-example
-    - Terminate com.kishikawakatsumi.xcresulttool-example:6884
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.xcresulttool-example to idle
-- Find the Target Application 'com.kishikawakatsumi.xcresulttool-example'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_2D5236C6-D613-4D07-8522-517186A7F42A.png"></div></details>
-
-- Tear Down
+<tr><td align="center" rowspan="4" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 1</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code>
 </table>
 
 #### <a name="xcresulttool-exampletests"/>xcresulttool-exampleTests[<img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top">](#user-content-xcresulttool-exampletests_summary)

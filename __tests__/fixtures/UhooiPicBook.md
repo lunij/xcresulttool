@@ -315,12 +315,7 @@
 </table>
 
 <table>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>test_monster()</code><br><br><b>Activities:</b>
-
-- Unsaved
-- Add
-- Update
-- Remove
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>test_monster()</code>
 </table>
 
 <a name="uhooipicbooktests_monsterlistinteractortests"/><h5>MonsterListInteractorTests&nbsp;[<img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top">](#user-content-uhooipicbooktests_monsterlistinteractortests_summary)</h5>

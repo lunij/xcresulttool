@@ -198,9 +198,7 @@
 
 <table>
 <tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="spaceshiptests_spaceshiptests/testfail()"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testFail()</code><a href="#user-content-spaceshiptests_spaceshiptests/testfail()_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a><br><br><b>Activities:</b>
-
-- Assertion Failure at SpaceshipTests.swift:22: XCTAssertEqual failed: ("success") is not equal to ("fail")
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="spaceshiptests_spaceshiptests/testfail()"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testFail()</code><a href="#user-content-spaceshiptests_spaceshiptests/testfail()_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a>
 <tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testPerformanceExample()</code>
 </table>
 
@@ -215,52 +213,8 @@
 </table>
 
 <table>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code><br><br><b>Activities:</b>
-
-- Start Test at 2021-10-20 22:49:15.987
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Tear Down
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunchPerformance()</code><br><br><b>Activities:</b>
-
-- Start Test at 2021-10-20 22:49:17.793
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18864
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18880
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18920
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18934
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18948
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18953
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Tear Down
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code>
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunchPerformance()</code>
 </table>
 
 <a name="spaceshipuitests_spaceshipuitestslaunchtests"/><h5>SpaceshipUITestsLaunchTests&nbsp;[<img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top">](#user-content-spaceshipuitests_spaceshipuitestslaunchtests_summary)</h5>
@@ -272,82 +226,10 @@
 </table>
 
 <table>
-<tr><td align="center" rowspan="4" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Portrait
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Light
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:50:45.165
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18964
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_4F55F7BC-5285-4DE2-B622-CDCCBDC8AE97.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Landscape Right
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Light
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:50:52.635
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18970
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_057FB603-7587-49D4-A1F3-E8787CA07EF8.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Portrait
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Dark
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:50:57.923
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18976
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_48CE6A99-4377-4D32-90D6-2FCA897706E1.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Landscape Right
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Dark
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:51:05.345
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18982
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="390px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_E584429C-A6D3-4096-997C-8DD10F6CD378.png"></div></details>
-
-- Tear Down
+<tr><td align="center" rowspan="4" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 1</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code>
 </table>
 
 ### Test Details
@@ -364,9 +246,7 @@
 
 <table>
 <tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="spaceshiptests_spaceshiptests/testfail()"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testFail()</code><a href="#user-content-spaceshiptests_spaceshiptests/testfail()_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a><br><br><b>Activities:</b>
-
-- Assertion Failure at SpaceshipTests.swift:22: XCTAssertEqual failed: ("success") is not equal to ("fail")
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="spaceshiptests_spaceshiptests/testfail()"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testFail()</code><a href="#user-content-spaceshiptests_spaceshiptests/testfail()_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a>
 <tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testPerformanceExample()</code>
 </table>
 
@@ -381,52 +261,8 @@
 </table>
 
 <table>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code><br><br><b>Activities:</b>
-
-- Start Test at 2021-10-20 22:49:15.987
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Tear Down
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunchPerformance()</code><br><br><b>Activities:</b>
-
-- Start Test at 2021-10-20 22:49:19.682
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18873
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18882
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18922
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18940
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18949
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18960
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Tear Down
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testExample()</code>
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunchPerformance()</code>
 </table>
 
 <a name="spaceshipuitests_spaceshipuitestslaunchtests"/><h5>SpaceshipUITestsLaunchTests&nbsp;[<img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top">](#user-content-spaceshipuitests_spaceshipuitestslaunchtests_summary)</h5>
@@ -438,80 +274,8 @@
 </table>
 
 <table>
-<tr><td align="center" rowspan="4" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Portrait
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Light
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:50:49.980
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18965
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_81DB3258-82E1-443F-9A32-A97FE6CE14D6.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Landscape Right
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Light
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:50:57.326
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18974
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_A4EFD2D7-C491-4F89-9D2A-6B31B6E7AF21.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Portrait
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Dark
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:51:02.651
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18981
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_FA72CD75-CFF2-416A-9F08-9F7FA3F66532.png"></div></details>
-
-- Tear Down
-<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code><br><br><b>Activities:</b>
-
-- Setting device orientation to Landscape Right
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Some screenshots were deleted because testing is configured to remove automatic screenshots on success.
-- Setting appearance mode to Dark
-  - Wait for com.kishikawakatsumi.Spaceship to idle
-- Start Test at 2021-10-20 22:51:07.856
-- Set Up
-- Open com.kishikawakatsumi.Spaceship
-  - Launch com.kishikawakatsumi.Spaceship
-    - Terminate com.kishikawakatsumi.Spaceship:18983
-    - Setting up automation session
-    - Wait for com.kishikawakatsumi.Spaceship to idle
-- Find the Target Application 'com.kishikawakatsumi.Spaceship'
-- Added attachment named 'Launch Screen'
-  <details ><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="375px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/Launch Screen_1_937098BC-0531-473E-A6D9-315EA0D55B4B.png"></div></details>
-
-- Tear Down
+<tr><td align="center" rowspan="4" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 1</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 1, XCUIDeviceOrientation: 4</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 1</code>
+<tr><td valign="top" width="716px"><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"> <img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>testLaunch()</code><br><br><b>Configuration:</b><br><code>XCUIAppearanceMode: 2, XCUIDeviceOrientation: 4</code>
 </table>

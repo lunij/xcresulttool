@@ -10,7 +10,3 @@ export function anchorNameTag(text: string): string {
 export function escapeHashSign(text: string): string {
   return text.replace(/#/g, '<span>#</span>')
 }
-
-export function indentation(level: number): string {
-  return '  '.repeat(level)
-}

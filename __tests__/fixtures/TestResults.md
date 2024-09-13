@@ -99,9 +99,7 @@
 </table>
 
 <table>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="xcresulttool-exampletests_xcresulttool-example-encountered-an-error"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>xcresulttool-example encountered an error</code><a href="#user-content-xcresulttool-exampletests_xcresulttool-example-encountered-an-error_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a><br><br><b>Activities:</b>
-
-- Failed to establish communication with the test runner. If you believe this error represents a bug, please attach the result bundle at /Users/runner/work/xcresult. (Underlying Error: The operation couldn’t be completed. (DTXProxyChannel error 1.))
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="xcresulttool-exampletests_xcresulttool-example-encountered-an-error"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>xcresulttool-example encountered an error</code><a href="#user-content-xcresulttool-exampletests_xcresulttool-example-encountered-an-error_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a>
 </table>
 
 #### <a name="xcresulttool-exampleuitests"/>xcresulttool-exampleUITests[<img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top">](#user-content-xcresulttool-exampleuitests_summary)
@@ -115,7 +113,5 @@
 </table>
 
 <table>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="xcresulttool-exampleuitests_xcresulttool-exampleuitests-runner-encountered-an-error"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>xcresulttool-exampleUITests-Runner encountered an error</code><a href="#user-content-xcresulttool-exampleuitests_xcresulttool-exampleuitests-runner-encountered-an-error_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a><br><br><b>Activities:</b>
-
-- Failed to install or launch the test runner. If you believe this error represents a bug, please attach the result bundle at /Users/runner/work/xcresult. (Underlying Error: Invalid device state. (Underlying Error: The operation couldn’t be completed. (Mach error -308 - (ipc/mig) server died)))
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="xcresulttool-exampleuitests_xcresulttool-exampleuitests-runner-encountered-an-error"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>xcresulttool-exampleUITests-Runner encountered an error</code><a href="#user-content-xcresulttool-exampleuitests_xcresulttool-exampleuitests-runner-encountered-an-error_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a>
 </table>

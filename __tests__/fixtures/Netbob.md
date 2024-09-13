@@ -400,11 +400,7 @@ All tests passed :tada:
 </table>
 
 <table>
-<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="netbobtests_bodyviewtests/test_bodyview_whenimage()"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>test_bodyView_whenImage()</code><a href="#user-content-netbobtests_bodyviewtests/test_bodyview_whenimage()_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a><br><br><b>Activities:</b>
-
-- Attached Failure Diff
-  <details open><summary><img src="https://xcresulttool-static.netlify.app/i/attachment.png" alt="attachment" width="14px" align="top"></summary><div><img width="320px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/reference_1_2717E2F4-927B-46B4-A37F-79F17132B719.png"></div><div><img width="320px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/failure_2_2717E2F4-927B-46B4-A37F-79F17132B719.png"></div><div><img width="320px" src="/var/folders/0b/8nh6krfd7fjbkjkynkvn9lwc0000gn/T/attachments/difference_3_2717E2F4-927B-46B4-A37F-79F17132B719.png"></div></details>
-
+<tr><td align="center" valign="top" width="52px"><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"><td valign="top" width="716px"><a name="netbobtests_bodyviewtests/test_bodyview_whenimage()"/><img src="https://xcresulttool-static.netlify.app/i/test-method.png" alt="test-method" width="14px" align="top">&nbsp;<code>test_bodyView_whenImage()</code><a href="#user-content-netbobtests_bodyviewtests/test_bodyview_whenimage()_failure-summary"><img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top"></a>
 </table>
 
 <a name="netbobtests_listviewtests"/><h5>ListViewTests&nbsp;[<img src="https://xcresulttool-static.netlify.app/i/back.png" alt="back" width="14px" align="top">](#user-content-netbobtests_listviewtests_summary)</h5>

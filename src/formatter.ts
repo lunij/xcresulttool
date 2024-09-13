@@ -21,9 +21,8 @@ import {
   actionTestSummaries,
   actionTestSummary
 } from './report.js'
-import { anchorIdentifier, anchorNameTag, escapeHashSign, indentation } from './markdown.js'
+import { anchorIdentifier, anchorNameTag } from './markdown.js'
 
-import { ActionTestActivitySummary } from '../dev/@types/ActionTestActivitySummary.d.js'
 import { ActionTestFailureSummary } from '../dev/@types/ActionTestFailureSummary.d.js'
 import { ActionTestMetadata } from '../dev/@types/ActionTestMetadata.d.js'
 import { ActionTestPlanRunSummaries } from '../dev/@types/ActionTestPlanRunSummaries.d.js'
@@ -38,7 +37,6 @@ import { ActivityLogSection } from '../dev/@types/ActivityLogSection.d.js'
 import { Convert } from './coverage.js'
 import { Parser } from './parser.js'
 import { XCResultTool } from './xcresulttool.js'
-import { exportAttachments } from './attachment.js'
 import { XCCov } from './xccov.js'
 
 const passedIcon = Image.testStatus('Success')
@@ -49,7 +47,6 @@ const expectedFailureIcon = Image.testStatus('Expected Failure')
 const backIcon = Image.icon('back.png')
 const testClassIcon = Image.icon('test-class.png')
 const testMethodIcon = Image.icon('test-method.png')
-const attachmentIcon = Image.icon('attachment.png')
 
 class TestSummaryStats {
   passed = 0
@@ -576,71 +573,6 @@ export class Formatter {
                       resultLines.push(`${testMethod}`)
                     }
                   }
-
-                  const activities = await this.collectActivities(summary.activitySummaries ?? [])
-
-                  if (activities.length) {
-                    if (!options.showPassedTests && summary.testStatus !== 'Failure') {
-                      continue
-                    }
-
-                    const testActivities = activities
-                      .map(activity => {
-                        const attachments = activity.attachments
-                          .filter(attachment => attachment.dimensions)
-                          .map(attachment => {
-                            let width = '100%'
-                            const dimensions = attachment.dimensions
-                            if (dimensions && dimensions.width && dimensions.height) {
-                              const orientation = dimensions.orientation
-                              if (orientation && orientation >= 5) {
-                                width = `${dimensions.height}px`
-                              } else {
-                                width = `${dimensions.width}px`
-                              }
-                            }
-
-                            const userInfo = attachment.actionTestAttachment.userInfo
-                            if (userInfo) {
-                              for (const info of userInfo.storage) {
-                                if (info.key === 'Scale') {
-                                  const scale = parseInt(`${info.value}`)
-                                  if (dimensions && dimensions.width && dimensions.height) {
-                                    if (dimensions.orientation && dimensions.orientation >= 5) {
-                                      const value = dimensions.height / scale
-                                      width = `${value.toFixed(0)}px`
-                                    } else {
-                                      const value = dimensions.width / scale
-                                      width = `${value.toFixed(0)}px`
-                                    }
-                                  } else {
-                                    width = `${(100 / scale).toFixed(0)}%`
-                                  }
-                                }
-                              }
-                            }
-
-                            const widthAttr = `width="${width}"`
-                            return `<div><img ${widthAttr} src="${attachment.link}"></div>`
-                          })
-
-                        if (attachments.length) {
-                          const testStatus = testResult.testStatus
-                          const open = testStatus.includes('Failure') ? 'open' : ''
-                          const title = escapeHashSign(activity.activitySummary.title)
-                          const message = `${indentation(activity.indent)}- ${title}`
-                          const attachmentIndent = indentation(activity.indent + 1)
-                          const attachmentContent = attachments.join('')
-                          return `${message}\n${attachmentIndent}<details ${open}><summary>${attachmentIcon}</summary>${attachmentContent}</details>\n`
-                        } else {
-                          const indent = indentation(activity.indent)
-                          return `${indent}- ${escapeHashSign(activity.activitySummary.title)}`
-                        }
-                      })
-                      .join('\n')
-
-                    resultLines.push(`<br><b>Activities:</b>\n\n${testActivities}`)
-                  }
                 } else {
                   if (!options.showPassedTests && !isFailure) {
                     continue
@@ -827,30 +759,6 @@ export class Formatter {
         testSummaries.push(test)
       }
     }
-  }
-
-  async collectActivities(
-    activitySummaries: ActionTestActivitySummary[],
-    indent = 0
-  ): Promise<Activity[]> {
-    const activities: Activity[] = []
-    for (const activitySummary of activitySummaries) {
-      const attachments = await exportAttachments(
-        activitySummary.attachments ?? [],
-        this.bundlePath
-      )
-      const activity = new Activity(activitySummary, attachments, indent)
-      activities.push(activity)
-
-      if (activitySummary.subactivities) {
-        const subActivities = await this.collectActivities(
-          activitySummary.subactivities,
-          indent + 1
-        )
-        activities.push(...subActivities)
-      }
-    }
-    return activities
   }
 }
 
