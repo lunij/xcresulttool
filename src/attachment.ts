@@ -1,5 +1,4 @@
 import * as fs from 'fs'
-import * as os from 'os'
 import * as path from 'path'
 
 import { Dimensions } from './dimensions.js'
@@ -41,7 +40,7 @@ export async function exportAttachment(
   if (!attachment.filename || !attachment.payloadRef) {
     return Promise.resolve(undefined)
   }
-  const attachmentFolderPath = path.join(process.env.GITHUB_WORKSPACE ?? os.tmpdir(), 'attachments')
+  const attachmentFolderPath = path.join(process.env.GITHUB_WORKSPACE ?? '', 'attachments')
   fs.mkdirSync(attachmentFolderPath, { recursive: true })
   const attachmentPath = path.join(attachmentFolderPath, attachment.filename)
   const attachmentData = await XCResultTool.export(

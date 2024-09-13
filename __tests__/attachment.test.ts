@@ -1,3 +1,4 @@
+import * as path from 'path'
 import { afterEach, beforeEach, describe, expect, it, jest } from '@jest/globals'
 import { exportAttachments, exportAttachment, Attachment } from '../src/attachment.js'
 import { XCResultTool } from '../src/xcresulttool.js'
@@ -17,15 +18,7 @@ jest.mock('fs', () => {
   }
 })
 
-jest.mock('os', () => {
-  const originalModule = jest.requireActual('os')
-  return {
-    __esModule: true,
-    //@ts-ignore
-    ...originalModule,
-    tmpdir: () => '/tmp'
-  }
-})
+const attachmentsPath = path.join(process.env.GITHUB_WORKSPACE ?? '', 'attachments')
 
 describe('exportAttachments', () => {
   const mockAttachments: ActionTestAttachment[] = [
@@ -53,7 +46,7 @@ describe('exportAttachments', () => {
 
     expect(exportedAttachments).toHaveLength(1)
     expect(exportedAttachments[0]).toBeInstanceOf(Attachment)
-    expect(exportedAttachments[0].link).toBe('/tmp/attachments/test.png')
+    expect(exportedAttachments[0].link).toBe(`${attachmentsPath}/test.png`)
     expect(exportedAttachments[0].dimensions).toEqual({ width: 100, height: 100 })
   })
 
@@ -73,7 +66,7 @@ describe('exportAttachments', () => {
     const exportedAttachments = await exportAttachments(mockAttachmentsUnfiltered, xcResultPath)
 
     expect(exportedAttachments).toHaveLength(1)
-    expect(exportedAttachments[0].link).toBe('/tmp/attachments/test.png')
+    expect(exportedAttachments[0].link).toBe(`${attachmentsPath}/test.png`)
   })
 
   it('should not fail when input attachments are empty', async () => {
@@ -102,7 +95,7 @@ describe('exportAttachment', () => {
     const exportedAttachment = await exportAttachment(mockAttachment, xcResultPath)
 
     expect(exportedAttachment).toBeInstanceOf(Attachment)
-    expect(exportedAttachment?.link).toBe('/tmp/attachments/test.png')
+    expect(exportedAttachment?.link).toBe(`${attachmentsPath}/test.png`)
     expect(exportedAttachment?.dimensions).toEqual({ width: 100, height: 100 })
   })
 
