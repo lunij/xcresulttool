@@ -16,7 +16,6 @@ async function run(): Promise<void> {
     const showPassedTests = core.getBooleanInput('show-passed-tests')
     const showCodeCoverage = core.getBooleanInput('show-code-coverage')
     const showTestSummaries = core.getBooleanInput('show-test-summaries')
-    const showTestDetails = core.getBooleanInput('show-test-details')
 
     let uploadBundles = core.getInput('upload-bundles').toLowerCase()
     if (uploadBundles === 'true') {
@@ -47,8 +46,7 @@ async function run(): Promise<void> {
     const report = await formatter.format({
       showPassedTests,
       showCodeCoverage,
-      showTestSummaries,
-      showTestDetails
+      showTestSummaries
     })
 
     if (core.getInput('token')) {

@@ -44,12 +44,6 @@ jobs:
           path: __tests__/fixtures/Weather.xcresult
           title: Weather.xcresult (+test summaries)
           show-test-summaries: true
-      - name: Weather.xcresult (+test details)
-        uses: ./
-        with:
-          path: __tests__/fixtures/Weather.xcresult
-          title: Weather.xcresult (+test details)
-          show-test-details: true
       - name: KeychainAccess.xcresult
         uses: ./
         with:

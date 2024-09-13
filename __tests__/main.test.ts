@@ -15,7 +15,6 @@ test('Netbob.xcresult', async () => {
   const report = await formatter.format({
     showCodeCoverage: true,
     showPassedTests: false,
-    showTestDetails: true,
     showTestSummaries: true
   })
   const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
@@ -52,8 +51,7 @@ test('Weather.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: false,
     showCodeCoverage: true,
-    showTestSummaries: true,
-    showTestDetails: true
+    showTestSummaries: true
   })
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
 
@@ -89,8 +87,7 @@ test('KeychainAccess.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: false,
     showCodeCoverage: true,
-    showTestSummaries: true,
-    showTestDetails: true
+    showTestSummaries: true
   })
   const reportText = `${report.reportSummary}\n${report.reportDetail}`
 
@@ -222,8 +219,7 @@ test('Coverage.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: true,
     showCodeCoverage: false,
-    showTestSummaries: true,
-    showTestDetails: true
+    showTestSummaries: true
   })
   const reportText = `${report.reportSummary}\n${report.reportDetail}`.removeGithubRootUrl()
 

@@ -110,15 +110,6 @@ export class TestReportSection {
   }
 }
 
-export class TestDetails {
-  readonly header = '### Test Details\n'
-  readonly details: TestDetail[] = []
-}
-
-export class TestDetail {
-  readonly lines: string[] = []
-}
-
 export class TestFailures {
   readonly failureGroups: TestFailureGroup[] = []
 }
