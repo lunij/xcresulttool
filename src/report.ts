@@ -56,18 +56,6 @@ export class TestReport {
 
     return lines.join('\n')
   }
-
-  get reportDetail(): string {
-    const lines: string[] = []
-
-    for (const chapter of this.chapters) {
-      for (const chapterDetail of chapter.details) {
-        lines.push(chapterDetail.content.join('\n'))
-      }
-    }
-
-    return lines.join('\n')
-  }
 }
 
 export class TestReportChapter {
@@ -77,7 +65,6 @@ export class TestReportChapter {
   readonly sections: { [key: string]: TestReportSection } = {}
 
   readonly summaries: TestReportChapterSummary[] = []
-  readonly details: TestReportChapterDetail[] = []
 
   constructor(
     schemeCommandName: string,
@@ -91,10 +78,6 @@ export class TestReportChapter {
 }
 
 export class TestReportChapterSummary {
-  readonly content: string[] = []
-}
-
-export class TestReportChapterDetail {
   readonly content: string[] = []
 }
 

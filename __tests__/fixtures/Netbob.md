@@ -367,4 +367,3 @@ The lowest perceptual color precision 0.0 is less than required 0.95</table>
 <td align="right"><b>1556
 <td align="right"><b>2163
 </table>
-

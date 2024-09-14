@@ -13,7 +13,6 @@ import {
   TestFailures,
   TestReport,
   TestReportChapter,
-  TestReportChapterDetail,
   TestReportChapterSummary,
   TestReportSection,
   actionTestSummaries,

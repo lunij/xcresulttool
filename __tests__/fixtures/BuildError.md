@@ -30,4 +30,3 @@ xcresulttool-example/SceneDelegate.swift:6:15: error: cannot find type 'paramete
               ^~~~~~~~~~
 ```
 
-

@@ -93,4 +93,3 @@
 
 <h4><a name="weatheruitests_weatheruitestslaunchtests/testlaunch()_failure-summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests/testlaunch()">WeatherUITests/WeatherUITestsLaunchTests/testLaunch()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/Weather/WeatherUITests/WeatherUITestsLaunchTests.swift:28<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">failed - Fail!!</table>
-
