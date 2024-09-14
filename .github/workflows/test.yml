@@ -8,7 +8,8 @@ on:
       - marc/update # remove me
 
 jobs:
-  build:
+  build-and-test:
+    name: Lint, Build, Test
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +19,8 @@ jobs:
       - run: npm run build
       - run: npm run package
       - run: npm test
-  test:
+  examples:
+    name: Examples
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
