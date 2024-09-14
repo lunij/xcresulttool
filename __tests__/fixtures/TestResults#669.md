@@ -418,6 +418,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 </table>
+
 ---
 
 ### Code Coverage

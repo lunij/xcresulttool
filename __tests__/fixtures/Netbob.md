@@ -170,6 +170,7 @@ To configure output for a custom diff tool, use 'withSnapshotTesting'. For examp
 The percentage of pixels that match 0.9974098 is less than required 1.0
 The lowest perceptual color precision 0.0 is less than required 0.95</table>
 
+
 ---
 
 ### Code Coverage

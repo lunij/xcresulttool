@@ -94,6 +94,7 @@
 <h4><a name="xcresulttool-exampletests_xcresulttool_exampletests/testskip()_failure-summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool_exampletests/testskip()">xcresulttool-exampleTests/xcresulttool_exampleTests/testSkip()</a></h4>
 <table><tr><td align="right" width="100px"><b>File</b><td width="668px">/Users/katsumi/Develop/xcresulttool-example/xcresulttool-exampleTests/xcresulttool_exampleTests.swift:44<tr><td align="right" width="100px"><b>Issue Type</b><td width="668px">Assertion Failure<tr><td align="right" width="100px"><b>Message</b><td width="668px">XCTAssertEqual failed: ("success") is not equal to ("fail")</table>
 
+
 ---
 
 ### Code Coverage

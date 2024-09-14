@@ -317,18 +317,16 @@ export class Formatter {
       const failuresSection = this.createFailuresSection(testFailures)
       chapterSummary.content.push(...failuresSection)
 
-      if (testReport.codeCoverage && options.showCodeCoverage) {
-        const workspace = path.dirname(`${testReport.creatingWorkspaceFilePath}`)
-        chapterSummary.content.push('---\n')
-
-        const re = new RegExp(`${workspace}/`, 'g')
-        let root = ''
-        if (process.env.GITHUB_REPOSITORY) {
-          const pr = github.context.payload.pull_request
-          const sha = (pr && pr.head.sha) || github.context.sha
-          root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
-        }
-        chapterSummary.content.push(testReport.codeCoverage.lines.join('\n').replace(re, root))
+      if (
+        testReport.codeCoverage &&
+        options.showCodeCoverage &&
+        testReport.creatingWorkspaceFilePath
+      ) {
+        const codeCoverageSection = this.createCodeCoverageSection(
+          testReport.codeCoverage,
+          testReport.creatingWorkspaceFilePath
+        )
+        chapterSummary.content.push(...codeCoverageSection)
       }
     }
 
@@ -439,6 +437,25 @@ export class Formatter {
       }
     }
     return failuresSection
+  }
+
+  private createCodeCoverageSection(
+    codeCoverage: TestCodeCoverage,
+    workspaceFilePath: string
+  ): string[] {
+    const codeCoverageLines: string[] = []
+    const workspace = path.dirname(`${workspaceFilePath}`)
+    codeCoverageLines.push(...['', '---', ''])
+
+    const regExp = new RegExp(`${workspace}/`, 'g')
+    let root = ''
+    if (process.env.GITHUB_REPOSITORY) {
+      const pr = github.context.payload.pull_request
+      const sha = (pr && pr.head.sha) || github.context.sha
+      root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
+    }
+    codeCoverageLines.push(codeCoverage.lines.join('\n').replace(regExp, root))
+    return codeCoverageLines
   }
 
   async collectTestSummaries(
