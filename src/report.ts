@@ -10,7 +10,7 @@ import { ActivityLogCommandInvocationSection } from '../dev/@types/ActivityLogCo
 import { ActivityLogSection } from '../dev/@types/ActivityLogSection.d.js'
 import { CodeCoverage } from './coverage.js'
 
-type TestStatus =
+export type TestStatus =
   | 'action_required'
   | 'cancelled'
   | 'failure'

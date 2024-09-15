@@ -124,10 +124,10 @@ jobs:
     # Default: false
     show-test-details:
 
-    # Whether to upload the xcresult bundles. possible values: always, failure, never. Specifying failure will only upload the bundle if all the tests do not pass.
+    # Upload the xcresult bundle(s). Possible values: always, failure, never
     #
-    # Default: 'always'
-    upload-bundles:
+    # Default: 'failure'
+    upload:
 ```
 
 ## Limitations

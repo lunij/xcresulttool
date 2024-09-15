@@ -32,11 +32,13 @@
     "@actions/exec": "1.1.1",
     "@actions/github": "6.0.0",
     "@octokit/action": "7.0.0",
+    "archiver": "^7.0.1",
     "image-size": "1.1.1"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^2.7.2",
     "@stylistic/eslint-plugin-ts": "^2.7.2",
+    "@types/archiver": "^6.0.2",
     "@types/node": "^22.0.0",
     "@vercel/ncc": "^0.38.1",
     "eslint": "^9.0.0",

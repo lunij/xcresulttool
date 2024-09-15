@@ -3,10 +3,9 @@ import * as exec from '@actions/exec'
 import * as github from '@actions/github'
 import * as os from 'os'
 import * as path from 'path'
-import { DefaultArtifactClient } from '@actions/artifact'
 import { Formatter } from './formatter.js'
+import { uploadBundlesAsArtifacts } from './upload.js'
 import { Octokit } from '@octokit/action'
-import { glob } from 'glob'
 import { promises } from 'fs'
 const { stat } = promises
 
@@ -16,13 +15,7 @@ async function run(): Promise<void> {
     const showPassedTests = core.getBooleanInput('show-passed-tests')
     const showCodeCoverage = core.getBooleanInput('show-code-coverage')
     const showTestSummaries = core.getBooleanInput('show-test-summaries')
-
-    let uploadBundles = core.getInput('upload-bundles').toLowerCase()
-    if (uploadBundles === 'true') {
-      uploadBundles = 'always'
-    } else if (uploadBundles === 'false') {
-      uploadBundles = 'never'
-    }
+    const uploadOption = core.getInput('upload').toLowerCase()
 
     const bundlePaths: string[] = []
     for (const checkPath of inputPaths) {
@@ -95,36 +88,7 @@ async function run(): Promise<void> {
         output
       })
 
-      if (
-        uploadBundles === 'always' ||
-        (uploadBundles === 'failure' && report.testStatus === 'failure')
-      ) {
-        for (const uploadBundlePath of inputPaths) {
-          try {
-            await stat(uploadBundlePath)
-          } catch (error) {
-            continue
-          }
-
-          const artifactClient = new DefaultArtifactClient()
-          const artifactName = path.basename(uploadBundlePath)
-          const rootDirectory = uploadBundlePath
-
-          try {
-            const files = await glob(`${uploadBundlePath}/**/*`)
-
-            if (files.length) {
-              await artifactClient.uploadArtifact(artifactName, files, rootDirectory)
-            }
-          } catch (error) {
-            if (error instanceof Error) {
-              core.error(error.message)
-            } else {
-              core.error(String(error))
-            }
-          }
-        }
-      }
+      uploadBundlesAsArtifacts(inputPaths, uploadOption, report.testStatus)
     }
   } catch (error) {
     core.setFailed((error as Error).message)
