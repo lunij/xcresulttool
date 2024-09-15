@@ -2,28 +2,22 @@
 
 <table>
 <tr>
-  <td></td>
-  <td align="right"><b>10</b></td>
+  <td align="right" colspan="2"><b>10</b></td>
 </tr>
 <tr>
-  <td><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top">&nbsp;Passed</td>
+  <td align="right">Passed&nbsp;&nbsp;<img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></td>
   <td align="right"><b>7</b></td>
 </tr>
 <tr>
-  <td><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top">&nbsp;Failed</td>
+  <td align="right">Failed&nbsp;&nbsp;<img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></td>
   <td align="right"><b>2</b></td>
 </tr>
 <tr>
-  <td><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top">&nbsp;Skipped</td>
-  <td align="right"><b>0</b></td>
-</tr>
-<tr>
-  <td><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top">&nbsp;Expected Failure</td>
+  <td align="right">Expected Failure&nbsp;&nbsp;<img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></td>
   <td align="right"><b>1</b></td>
 </tr>
 <tr>
-  <td>:stopwatch:&nbsp;Time</td>
-  <td align="right"><b>9.08s</b></td>
+  <td align="right" colspan="2">9.08s</td>
 </tr>
 </table>
 

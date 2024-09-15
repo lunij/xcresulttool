@@ -28,9 +28,10 @@ import { ActionTestSummaryGroup } from '../dev/@types/ActionTestSummaryGroup.d.j
 import { ActionTestableSummary } from '../dev/@types/ActionTestableSummary.d.js'
 import { ActionsInvocationMetadata } from '../dev/@types/ActionsInvocationMetadata.d.js'
 import { ActionsInvocationRecord } from '../dev/@types/ActionsInvocationRecord.d.js'
-
 import { ActivityLogSection } from '../dev/@types/ActivityLogSection.d.js'
+
 import { Convert } from './coverage.js'
+import { TestSummary, TestSummaryStats, TestSummaryStatsGroup } from './summary.js'
 import { Parser } from './parser.js'
 import { XCResultTool } from './xcresulttool.js'
 import { XCCov } from './xccov.js'
@@ -39,24 +40,7 @@ const passedIcon = Image.testStatus('Success')
 const failedIcon = Image.testStatus('Failure')
 const skippedIcon = Image.testStatus('Skipped')
 const expectedFailureIcon = Image.testStatus('Expected Failure')
-
-const backIcon = Image.icon('back.png')
 const testClassIcon = Image.icon('test-class.png')
-const testMethodIcon = Image.icon('test-method.png')
-
-class TestSummaryStats {
-  passed = 0
-  failed = 0
-  skipped = 0
-  expectedFailure = 0
-  total = 0
-}
-type TestSummaryStatsGroup = { [key: string]: TestSummaryStats }
-class TestSummary {
-  stats = new TestSummaryStats()
-  duration = 0
-  groups = {} as { [key: string]: TestSummaryStatsGroup }
-}
 
 export class Formatter {
   readonly summaries = ''
@@ -214,8 +198,8 @@ export class Formatter {
         groups[identifier] = group
       }
 
-      const summaryTable = this.createSummaryTable(testSummary)
-      chapterSummary.content.push(...summaryTable)
+      const summaryMarkdown = testSummary.createMarkdown()
+      chapterSummary.content.push(...summaryMarkdown)
 
       if (testSummary.stats.failed > 0) {
         testReport.testStatus = 'failure'
@@ -330,37 +314,6 @@ export class Formatter {
     }
 
     return testReport
-  }
-
-  private createSummaryTable(testSummary: TestSummary): string[] {
-    return [
-      '<table>',
-      '<tr>',
-      '  <td></td>',
-      `  <td align="right"><b>${testSummary.stats.total}</b></td>`,
-      '</tr>',
-      '<tr>',
-      `  <td>${passedIcon}&nbsp;Passed</td>`,
-      `  <td align="right"><b>${testSummary.stats.passed}</b></td>`,
-      '</tr>',
-      '<tr>',
-      `  <td>${failedIcon}&nbsp;Failed</td>`,
-      `  <td align="right"><b>${testSummary.stats.failed}</b></td>`,
-      '</tr>',
-      '<tr>',
-      `  <td>${skippedIcon}&nbsp;Skipped</td>`,
-      `  <td align="right"><b>${testSummary.stats.skipped}</b></td>`,
-      '</tr>',
-      '<tr>',
-      `  <td>${expectedFailureIcon}&nbsp;Expected Failure</td>`,
-      `  <td align="right"><b>${testSummary.stats.expectedFailure}</b></td>`,
-      '</tr>',
-      '<tr>',
-      '  <td>:stopwatch:&nbsp;Time</td>',
-      `  <td align="right"><b>${testSummary.duration.toFixed(2)}s</b></td>`,
-      '</tr>',
-      '</table>'
-    ]
   }
 
   private createTestClassSummaries(testSummary: TestSummary, chapter: TestReportChapter): string[] {
