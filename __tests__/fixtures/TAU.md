@@ -35,7 +35,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="tauuitests_bddtest_summary"/><a href="#user-content-tauuitests_bddtest"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BDDTest</a></td>
+  <td align="left" width="368px"><a name="tauuitests_bddtest_summary"/><a href="#user-content-tauuitests_bddtest">BDDTest</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
   <td align="right" width="80px">1</td>
@@ -43,7 +43,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="tauuitests_tauuitests_summary"/><a href="#user-content-tauuitests_tauuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TAUUITests</a></td>
+  <td align="left" width="368px"><a name="tauuitests_tauuitests_summary"/><a href="#user-content-tauuitests_tauuitests">TAUUITests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>

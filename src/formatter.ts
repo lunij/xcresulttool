@@ -1,13 +1,11 @@
 /*eslint-disable no-shadow */
 
-import * as Image from './image.js'
-import * as github from '@actions/github'
+import * as image from './image.js'
 import * as path from 'path'
 
 import {
   Annotation,
   BuildLog,
-  TestCodeCoverage,
   TestFailure,
   TestFailureGroup,
   TestFailures,
@@ -31,16 +29,11 @@ import { ActionsInvocationRecord } from '../dev/@types/ActionsInvocationRecord.d
 import { ActivityLogSection } from '../dev/@types/ActivityLogSection.d.js'
 
 import { Convert } from './coverage.js'
+import { createCodeCoverageMarkdown } from './code-coverage.js'
 import { TestSummary, TestSummaryStats, TestSummaryStatsGroup } from './summary.js'
 import { Parser } from './parser.js'
 import { XCResultTool } from './xcresulttool.js'
 import { XCCov } from './xccov.js'
-
-const passedIcon = Image.testStatus('Success')
-const failedIcon = Image.testStatus('Failure')
-const skippedIcon = Image.testStatus('Skipped')
-const expectedFailureIcon = Image.testStatus('Expected Failure')
-const testClassIcon = Image.icon('test-class.png')
 
 export class Formatter {
   readonly summaries = ''
@@ -113,9 +106,7 @@ export class Formatter {
                 const codeCoverage = Convert.toCodeCoverage(
                   await XCCov.viewCodeCoverage(this.bundlePath)
                 )
-
-                const testCodeCoverage = new TestCodeCoverage(codeCoverage)
-                testReport.codeCoverage = testCodeCoverage
+                testReport.codeCoverage = codeCoverage
               } catch (error) {
                 // no-op
               }
@@ -305,11 +296,11 @@ export class Formatter {
         options.showCodeCoverage &&
         testReport.creatingWorkspaceFilePath
       ) {
-        const codeCoverageSection = this.createCodeCoverageSection(
+        const codeCoverageMarkdown = createCodeCoverageMarkdown(
           testReport.codeCoverage,
           testReport.creatingWorkspaceFilePath
         )
-        chapterSummary.content.push(...codeCoverageSection)
+        chapterSummary.content.push(...codeCoverageMarkdown)
       }
     }
 
@@ -337,17 +328,17 @@ export class Formatter {
         `<tr>`,
         `  <th>Test</th>`,
         `  <th>Total</th>`,
-        `  <th>${passedIcon}</th>`,
-        `  <th>${failedIcon}</th>`,
-        `  <th>${skippedIcon}</th>`,
-        `  <th>${expectedFailureIcon}</th>`,
+        `  <th>${image.passedImage}</th>`,
+        `  <th>${image.failedImage}</th>`,
+        `  <th>${image.skippedImage}</th>`,
+        `  <th>${image.expectedFailureImage}</th>`,
         `</tr>`
       ]
       summaries.push(...header)
 
       for (const [identifier, stats] of Object.entries(group)) {
         summaries.push('<tr>')
-        const testClass = `${testClassIcon}&nbsp;${identifier}`
+        const testClass = identifier
         const testClassAnchor = anchorNameTag(`${groupIdentifier}_${identifier}_summary`)
         const anchorName = anchorIdentifier(`${groupIdentifier}_${identifier}`)
         const testClassLink = `<a href="${anchorName}">${testClass}</a>`
@@ -389,25 +380,6 @@ export class Formatter {
       }
     }
     return failuresSection
-  }
-
-  private createCodeCoverageSection(
-    codeCoverage: TestCodeCoverage,
-    workspaceFilePath: string
-  ): string[] {
-    const codeCoverageLines: string[] = []
-    const workspace = path.dirname(`${workspaceFilePath}`)
-    codeCoverageLines.push(...['', '---', ''])
-
-    const regExp = new RegExp(`${workspace}/`, 'g')
-    let root = ''
-    if (process.env.GITHUB_REPOSITORY) {
-      const pr = github.context.payload.pull_request
-      const sha = (pr && pr.head.sha) || github.context.sha
-      root = `${github.context.serverUrl}/${github.context.repo.owner}/${github.context.repo.repo}/blob/${sha}/`
-    }
-    codeCoverageLines.push(codeCoverage.lines.join('\n').replace(regExp, root))
-    return codeCoverageLines
   }
 
   async collectTestSummaries(

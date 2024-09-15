@@ -39,7 +39,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;xcresulttool_exampleUITests</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitests">xcresulttool_exampleUITests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -47,7 +47,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;xcresulttool_exampleUITestsLaunchTests</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests">xcresulttool_exampleUITestsLaunchTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -70,7 +70,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampletests_xcresulttool_exampletests_summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool_exampletests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;xcresulttool_exampleTests</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampletests_xcresulttool_exampletests_summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool_exampletests">xcresulttool_exampleTests</a></td>
   <td align="right" width="80px">5</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>

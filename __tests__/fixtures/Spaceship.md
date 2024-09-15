@@ -35,7 +35,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipTests</a></td>
+  <td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests">SpaceshipTests</a></td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
@@ -58,7 +58,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITests</a></td>
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests">SpaceshipUITests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -66,7 +66,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITestsLaunchTests</a></td>
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests">SpaceshipUITestsLaunchTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -118,7 +118,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipTests</a></td>
+  <td align="left" width="368px"><a name="spaceshiptests_spaceshiptests_summary"/><a href="#user-content-spaceshiptests_spaceshiptests">SpaceshipTests</a></td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
@@ -141,7 +141,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITests</a></td>
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitests">SpaceshipUITests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -149,7 +149,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SpaceshipUITestsLaunchTests</a></td>
+  <td align="left" width="368px"><a name="spaceshipuitests_spaceshipuitestslaunchtests_summary"/><a href="#user-content-spaceshipuitests_spaceshipuitestslaunchtests">SpaceshipUITestsLaunchTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>

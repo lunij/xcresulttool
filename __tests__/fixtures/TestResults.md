@@ -35,7 +35,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampletests_system-failures_summary"/><a href="#user-content-xcresulttool-exampletests_system-failures"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;System Failures</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampletests_system-failures_summary"/><a href="#user-content-xcresulttool-exampletests_system-failures">System Failures</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
   <td align="right" width="80px">1</td>
@@ -58,7 +58,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_system-failures_summary"/><a href="#user-content-xcresulttool-exampleuitests_system-failures"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;System Failures</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_system-failures_summary"/><a href="#user-content-xcresulttool-exampleuitests_system-failures">System Failures</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
   <td align="right" width="80px">1</td>

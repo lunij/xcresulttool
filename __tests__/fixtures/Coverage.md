@@ -39,7 +39,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampletests_xcresulttool_exampletests_summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool_exampletests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;xcresulttool_exampleTests</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampletests_xcresulttool_exampletests_summary"/><a href="#user-content-xcresulttool-exampletests_xcresulttool_exampletests">xcresulttool_exampleTests</a></td>
   <td align="right" width="80px">5</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
@@ -62,7 +62,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;xcresulttool_exampleUITests</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitests">xcresulttool_exampleUITests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -70,7 +70,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;xcresulttool_exampleUITestsLaunchTests</a></td>
+  <td align="left" width="368px"><a name="xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests_summary"/><a href="#user-content-xcresulttool-exampleuitests_xcresulttool_exampleuitestslaunchtests">xcresulttool_exampleUITestsLaunchTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -94,32 +94,30 @@
 ### Code Coverage
 <table>
 <tr>
-<th width="344px">
-<th colspan="2">Coverage
-<th width="100px">Covered
-<th width="100px">Executable
+<th width="344px"></th>
+<th colspan="2">Coverage</th>
+<th width="100px">Covered</th>
+<th width="100px">Executable</th>
+</tr>
 <tr>
-<td>xcresulttool-example.app
-<td width="120px"><img src="https://xcresulttool-static.netlify.app/i/45.svg"/>
-<td width="104px" align="right">45.16 %
-<td align="right">14
-<td align="right">31
+<th align="left">xcresulttool-example.app</th>
+<th width="120px"><img src="https://xcresulttool-static.netlify.app/i/45.svg"/></th>
+<th width="104px" align="right">45.16 %</th>
+<th align="right">14</th>
+<th align="right">31</th>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="xcresulttool-example/ViewController.swift">ViewController.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/44.svg"/>
-<td align="right">44.44 %
-<td align="right">8
-<td align="right">18
+<td><a href="xcresulttool-example/AppDelegate.swift">AppDelegate.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/46.svg"/></td>
+<td align="right">46.15 %</td>
+<td align="right">6</td>
+<td align="right">13</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="xcresulttool-example/AppDelegate.swift">AppDelegate.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/46.svg"/>
-<td align="right">46.15 %
-<td align="right">6
-<td align="right">13
-<tr>
-<td><b>Total
-<td><img src="https://xcresulttool-static.netlify.app/i/45.svg"/>
-<td align="right"><b>45.16 %
-<td align="right"><b>14
-<td align="right"><b>31
+<td><a href="xcresulttool-example/ViewController.swift">ViewController.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/44.svg"/></td>
+<td align="right">44.44 %</td>
+<td align="right">8</td>
+<td align="right">18</td>
+</tr>
 </table>

@@ -35,7 +35,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_settingsviewstatetests_summary"/><a href="#user-content-netbobtests_settingsviewstatetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SettingsViewStateTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_settingsviewstatetests_summary"/><a href="#user-content-netbobtests_settingsviewstatetests">SettingsViewStateTests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -43,7 +43,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_logfileprovidertests_summary"/><a href="#user-content-netbobtests_logfileprovidertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;LogFileProviderTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_logfileprovidertests_summary"/><a href="#user-content-netbobtests_logfileprovidertests">LogFileProviderTests</a></td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">0</td>
@@ -51,7 +51,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_bodyviewtests_summary"/><a href="#user-content-netbobtests_bodyviewtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BodyViewTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_bodyviewtests_summary"/><a href="#user-content-netbobtests_bodyviewtests">BodyViewTests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
@@ -59,7 +59,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_listviewtests_summary"/><a href="#user-content-netbobtests_listviewtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ListViewTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_listviewtests_summary"/><a href="#user-content-netbobtests_listviewtests">ListViewTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -67,7 +67,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_settingsviewtests_summary"/><a href="#user-content-netbobtests_settingsviewtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SettingsViewTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_settingsviewtests_summary"/><a href="#user-content-netbobtests_settingsviewtests">SettingsViewTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -75,7 +75,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_httpconnectionrepositorytests_summary"/><a href="#user-content-netbobtests_httpconnectionrepositorytests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;HTTPConnectionRepositoryTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_httpconnectionrepositorytests_summary"/><a href="#user-content-netbobtests_httpconnectionrepositorytests">HTTPConnectionRepositoryTests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -83,7 +83,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_bodyviewstatetests_summary"/><a href="#user-content-netbobtests_bodyviewstatetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BodyViewStateTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_bodyviewstatetests_summary"/><a href="#user-content-netbobtests_bodyviewstatetests">BodyViewStateTests</a></td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">0</td>
@@ -91,7 +91,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_httpconnectiondiskstoragetests_summary"/><a href="#user-content-netbobtests_httpconnectiondiskstoragetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;HTTPConnectionDiskStorageTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_httpconnectiondiskstoragetests_summary"/><a href="#user-content-netbobtests_httpconnectiondiskstoragetests">HTTPConnectionDiskStorageTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -99,7 +99,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_infoviewstatetests_summary"/><a href="#user-content-netbobtests_infoviewstatetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;InfoViewStateTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_infoviewstatetests_summary"/><a href="#user-content-netbobtests_infoviewstatetests">InfoViewStateTests</a></td>
   <td align="right" width="80px">5</td>
   <td align="right" width="80px">5</td>
   <td align="right" width="80px">0</td>
@@ -107,7 +107,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_listviewstatetests_summary"/><a href="#user-content-netbobtests_listviewstatetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ListViewStateTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_listviewstatetests_summary"/><a href="#user-content-netbobtests_listviewstatetests">ListViewStateTests</a></td>
   <td align="right" width="80px">5</td>
   <td align="right" width="80px">5</td>
   <td align="right" width="80px">0</td>
@@ -115,7 +115,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_detailviewtests_summary"/><a href="#user-content-netbobtests_detailviewtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;DetailViewTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_detailviewtests_summary"/><a href="#user-content-netbobtests_detailviewtests">DetailViewTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -123,7 +123,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_infoviewtests_summary"/><a href="#user-content-netbobtests_infoviewtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;InfoViewTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_infoviewtests_summary"/><a href="#user-content-netbobtests_infoviewtests">InfoViewTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -131,7 +131,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="netbobtests_detailviewstatetests_summary"/><a href="#user-content-netbobtests_detailviewstatetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;DetailViewStateTests</a></td>
+  <td align="left" width="368px"><a name="netbobtests_detailviewstatetests_summary"/><a href="#user-content-netbobtests_detailviewstatetests">DetailViewStateTests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -166,194 +166,219 @@ The lowest perceptual color precision 0.0 is less than required 0.95</table>
 ### Code Coverage
 <table>
 <tr>
-<th width="344px">
-<th colspan="2">Coverage
-<th width="100px">Covered
-<th width="100px">Executable
+<th width="344px"></th>
+<th colspan="2">Coverage</th>
+<th width="100px">Covered</th>
+<th width="100px">Executable</th>
+</tr>
 <tr>
-<td>Netbob
-<td width="120px"><img src="https://xcresulttool-static.netlify.app/i/72.svg"/>
-<td width="104px" align="right">71.94 %
-<td align="right">1556
-<td align="right">2163
+<th align="left">Netbob</th>
+<th width="120px"><img src="https://xcresulttool-static.netlify.app/i/72.svg"/></th>
+<th width="104px" align="right">71.94 %</th>
+<th align="right">1556</th>
+<th align="right">2163</th>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Detail/DetailView.swift">DetailView.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/43.svg"/>
-<td align="right">43.13 %
-<td align="right">91
-<td align="right">211
+<td><a href="netbob/Sources/Netbob/Extensions/Data+String.swift">Data+String.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/100.svg"/></td>
+<td align="right">100.00 %</td>
+<td align="right">6</td>
+<td align="right">6</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Detail/DetailViewState.swift">DetailViewState.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/49.svg"/>
-<td align="right">48.91 %
-<td align="right">45
-<td align="right">92
+<td><a href="netbob/Sources/Netbob/Extensions/Date.swift">Date.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/100.svg"/></td>
+<td align="right">100.00 %</td>
+<td align="right">22</td>
+<td align="right">22</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Extensions/URLRequest.swift">URLRequest.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/80.svg"/>
-<td align="right">80.00 %
-<td align="right">36
-<td align="right">45
+<td><a href="netbob/Sources/Netbob/Extensions/FileManager.swift">FileManager.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/100.svg"/></td>
+<td align="right">100.00 %</td>
+<td align="right">6</td>
+<td align="right">6</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/NetworkInterfaceMonitor.swift">NetworkInterfaceMonitor.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/91.svg"/>
-<td align="right">91.25 %
-<td align="right">73
-<td align="right">80
+<td><a href="netbob/Sources/Netbob/Modules/Settings/SettingsViewState.swift">SettingsViewState.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/96.svg"/></td>
+<td align="right">95.92 %</td>
+<td align="right">94</td>
+<td align="right">98</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/AnyScheduler.swift">AnyScheduler.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/53.svg"/>
-<td align="right">52.50 %
-<td align="right">21
-<td align="right">40
+<td><a href="netbob/Sources/Netbob/Modules/Settings/SettingsView.swift">SettingsView.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/94.svg"/></td>
+<td align="right">94.20 %</td>
+<td align="right">276</td>
+<td align="right">293</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Settings/SettingsView.swift">SettingsView.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/94.svg"/>
-<td align="right">94.20 %
-<td align="right">276
-<td align="right">293
+<td><a href="netbob/Sources/Netbob/Modules/Info/InfoViewState.swift">InfoViewState.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/92.svg"/></td>
+<td align="right">92.45 %</td>
+<td align="right">147</td>
+<td align="right">159</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/UI/ActivitySheet.swift">ActivitySheet.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/26.svg"/>
-<td align="right">26.09 %
-<td align="right">6
-<td align="right">23
+<td><a href="netbob/Sources/Netbob/Modules/Info/InfoView.swift">InfoView.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/92.svg"/></td>
+<td align="right">91.86 %</td>
+<td align="right">79</td>
+<td align="right">86</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Extensions/InputStream.swift">InputStream.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/>
-<td align="right">0.00 %
-<td align="right">0
-<td align="right">18
+<td><a href="netbob/Sources/Netbob/Core/NetworkInterfaceMonitor.swift">NetworkInterfaceMonitor.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/91.svg"/></td>
+<td align="right">91.25 %</td>
+<td align="right">73</td>
+<td align="right">80</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Info/InfoViewState.swift">InfoViewState.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/92.svg"/>
-<td align="right">92.45 %
-<td align="right">147
-<td align="right">159
+<td><a href="netbob/Sources/Netbob/Core/HTTPConnectionRepository.swift">HTTPConnectionRepository.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/91.svg"/></td>
+<td align="right">91.18 %</td>
+<td align="right">31</td>
+<td align="right">34</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Extensions/URLSessionConfiguration.swift">URLSessionConfiguration.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/49.svg"/>
-<td align="right">48.61 %
-<td align="right">35
-<td align="right">72
+<td><a href="netbob/Sources/Netbob/Modules/List/ListViewState.swift">ListViewState.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/90.svg"/></td>
+<td align="right">90.00 %</td>
+<td align="right">90</td>
+<td align="right">100</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/AuthenticationChallengeSender.swift">AuthenticationChallengeSender.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/>
-<td align="right">0.00 %
-<td align="right">0
-<td align="right">19
+<td><a href="netbob/Sources/Netbob/Core/LogFileProvider.swift">LogFileProvider.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/90.svg"/></td>
+<td align="right">89.71 %</td>
+<td align="right">122</td>
+<td align="right">136</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/NetbobURLProtocol.swift">NetbobURLProtocol.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/>
-<td align="right">0.00 %
-<td align="right">0
-<td align="right">104
+<td><a href="netbob/Sources/Netbob/Core/UI/KeyValueView.swift">KeyValueView.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/89.svg"/></td>
+<td align="right">88.89 %</td>
+<td align="right">24</td>
+<td align="right">27</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/UI/ActionSheetState.swift">ActionSheetState.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/21.svg"/>
-<td align="right">20.69 %
-<td align="right">6
-<td align="right">29
+<td><a href="netbob/Sources/Netbob/Core/HTTPConnectionDiskStorage.swift">HTTPConnectionDiskStorage.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/88.svg"/></td>
+<td align="right">88.24 %</td>
+<td align="right">45</td>
+<td align="right">51</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Extensions/JSONDecoder.swift">JSONDecoder.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/>
-<td align="right">0.00 %
-<td align="right">0
-<td align="right">3
+<td><a href="netbob/Sources/Netbob/Modules/List/ListView.swift">ListView.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/82.svg"/></td>
+<td align="right">81.74 %</td>
+<td align="right">179</td>
+<td align="right">219</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/List/ListViewState.swift">ListViewState.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/90.svg"/>
-<td align="right">90.00 %
-<td align="right">90
-<td align="right">100
+<td><a href="netbob/Sources/Netbob/Extensions/URLRequest.swift">URLRequest.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/80.svg"/></td>
+<td align="right">80.00 %</td>
+<td align="right">36</td>
+<td align="right">45</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Extensions/FileManager.swift">FileManager.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/100.svg"/>
-<td align="right">100.00 %
-<td align="right">6
-<td align="right">6
+<td><a href="netbob/Sources/Netbob/Modules/Body/BodyView.swift">BodyView.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/69.svg"/></td>
+<td align="right">69.23 %</td>
+<td align="right">36</td>
+<td align="right">52</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/List/ListView.swift">ListView.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/82.svg"/>
-<td align="right">81.74 %
-<td align="right">179
-<td align="right">219
+<td><a href="netbob/Sources/Netbob/Modules/Body/BodyViewState.swift">BodyViewState.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/69.svg"/></td>
+<td align="right">69.23 %</td>
+<td align="right">18</td>
+<td align="right">26</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/HTTPConnection.swift">HTTPConnection.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/66.svg"/>
-<td align="right">65.93 %
-<td align="right">60
-<td align="right">91
+<td><a href="netbob/Sources/Netbob/Core/HTTPConnection.swift">HTTPConnection.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/66.svg"/></td>
+<td align="right">65.93 %</td>
+<td align="right">60</td>
+<td align="right">91</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Extensions/Data+String.swift">Data+String.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/100.svg"/>
-<td align="right">100.00 %
-<td align="right">6
-<td align="right">6
+<td><a href="netbob/Sources/Netbob/Core/AnyScheduler.swift">AnyScheduler.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/53.svg"/></td>
+<td align="right">52.50 %</td>
+<td align="right">21</td>
+<td align="right">40</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Body/BodyView.swift">BodyView.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/69.svg"/>
-<td align="right">69.23 %
-<td align="right">36
-<td align="right">52
+<td><a href="netbob/Sources/Netbob/Modules/Detail/DetailViewState.swift">DetailViewState.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/49.svg"/></td>
+<td align="right">48.91 %</td>
+<td align="right">45</td>
+<td align="right">92</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/UI/KeyValueView.swift">KeyValueView.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/89.svg"/>
-<td align="right">88.89 %
-<td align="right">24
-<td align="right">27
+<td><a href="netbob/Sources/Netbob/Extensions/URLSessionConfiguration.swift">URLSessionConfiguration.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/49.svg"/></td>
+<td align="right">48.61 %</td>
+<td align="right">35</td>
+<td align="right">72</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Settings/SettingsViewState.swift">SettingsViewState.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/96.svg"/>
-<td align="right">95.92 %
-<td align="right">94
-<td align="right">98
+<td><a href="netbob/Sources/Netbob/Modules/Detail/DetailView.swift">DetailView.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/43.svg"/></td>
+<td align="right">43.13 %</td>
+<td align="right">91</td>
+<td align="right">211</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Extensions/Date.swift">Date.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/100.svg"/>
-<td align="right">100.00 %
-<td align="right">22
-<td align="right">22
+<td><a href="netbob/Sources/Netbob/Core/Netbob.swift">Netbob.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/38.svg"/></td>
+<td align="right">38.10 %</td>
+<td align="right">8</td>
+<td align="right">21</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/LogFileProvider.swift">LogFileProvider.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/90.svg"/>
-<td align="right">89.71 %
-<td align="right">122
-<td align="right">136
+<td><a href="netbob/Sources/Netbob/Core/UI/ActivitySheet.swift">ActivitySheet.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/26.svg"/></td>
+<td align="right">26.09 %</td>
+<td align="right">6</td>
+<td align="right">23</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/HTTPConnectionDiskStorage.swift">HTTPConnectionDiskStorage.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/88.svg"/>
-<td align="right">88.24 %
-<td align="right">45
-<td align="right">51
+<td><a href="netbob/Sources/Netbob/Core/UI/ActionSheetState.swift">ActionSheetState.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/21.svg"/></td>
+<td align="right">20.69 %</td>
+<td align="right">6</td>
+<td align="right">29</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Info/InfoView.swift">InfoView.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/92.svg"/>
-<td align="right">91.86 %
-<td align="right">79
-<td align="right">86
+<td><a href="netbob/Sources/Netbob/Core/AuthenticationChallengeSender.swift">AuthenticationChallengeSender.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/></td>
+<td align="right">0.00 %</td>
+<td align="right">0</td>
+<td align="right">19</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/HTTPConnectionRepository.swift">HTTPConnectionRepository.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/91.svg"/>
-<td align="right">91.18 %
-<td align="right">31
-<td align="right">34
+<td><a href="netbob/Sources/Netbob/Extensions/InputStream.swift">InputStream.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/></td>
+<td align="right">0.00 %</td>
+<td align="right">0</td>
+<td align="right">18</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Modules/Body/BodyViewState.swift">BodyViewState.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/69.svg"/>
-<td align="right">69.23 %
-<td align="right">18
-<td align="right">26
+<td><a href="netbob/Sources/Netbob/Extensions/JSONDecoder.swift">JSONDecoder.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/></td>
+<td align="right">0.00 %</td>
+<td align="right">0</td>
+<td align="right">3</td>
+</tr>
 <tr>
-<td>&nbsp;&nbsp;<a href="netbob/Sources/Netbob/Core/Netbob.swift">Netbob.swift</a>
-<td><img src="https://xcresulttool-static.netlify.app/i/38.svg"/>
-<td align="right">38.10 %
-<td align="right">8
-<td align="right">21
-<tr>
-<td><b>Total
-<td><img src="https://xcresulttool-static.netlify.app/i/72.svg"/>
-<td align="right"><b>71.94 %
-<td align="right"><b>1556
-<td align="right"><b>2163
+<td><a href="netbob/Sources/Netbob/Core/NetbobURLProtocol.swift">NetbobURLProtocol.swift</a></td>
+<td><img src="https://xcresulttool-static.netlify.app/i/0.svg"/></td>
+<td align="right">0.00 %</td>
+<td align="right">0</td>
+<td align="right">104</td>
+</tr>
 </table>

@@ -39,7 +39,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weathertests_weathertests_summary"/><a href="#user-content-weathertests_weathertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherTests</a></td>
+  <td align="left" width="368px"><a name="weathertests_weathertests_summary"/><a href="#user-content-weathertests_weathertests">WeatherTests</a></td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
@@ -62,7 +62,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weatheruitests_weatheruitests4_summary"/><a href="#user-content-weatheruitests_weatheruitests4"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherUITests4</a></td>
+  <td align="left" width="368px"><a name="weatheruitests_weatheruitests4_summary"/><a href="#user-content-weatheruitests_weatheruitests4">WeatherUITests4</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">0</td>
@@ -70,7 +70,7 @@
   <td align="right" width="80px">1</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weatheruitests_weatheruitestslaunchtests_summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherUITestsLaunchTests</a></td>
+  <td align="left" width="368px"><a name="weatheruitests_weatheruitestslaunchtests_summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests">WeatherUITestsLaunchTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">1</td>
@@ -129,7 +129,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weathertests_weathertests_summary"/><a href="#user-content-weathertests_weathertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherTests</a></td>
+  <td align="left" width="368px"><a name="weathertests_weathertests_summary"/><a href="#user-content-weathertests_weathertests">WeatherTests</a></td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
@@ -152,7 +152,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weatheruitests_weatheruitests4_summary"/><a href="#user-content-weatheruitests_weatheruitests4"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherUITests4</a></td>
+  <td align="left" width="368px"><a name="weatheruitests_weatheruitests4_summary"/><a href="#user-content-weatheruitests_weatheruitests4">WeatherUITests4</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">0</td>
@@ -160,7 +160,7 @@
   <td align="right" width="80px">1</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weatheruitests_weatheruitestslaunchtests_summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherUITestsLaunchTests</a></td>
+  <td align="left" width="368px"><a name="weatheruitests_weatheruitestslaunchtests_summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests">WeatherUITestsLaunchTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">1</td>
@@ -183,7 +183,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_enumtests_summary"/><a href="#user-content-keychainaccesstests_enumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EnumTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_enumtests_summary"/><a href="#user-content-keychainaccesstests_enumtests">EnumTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -191,7 +191,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_errortypetests_summary"/><a href="#user-content-keychainaccesstests_errortypetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ErrorTypeTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_errortypetests_summary"/><a href="#user-content-keychainaccesstests_errortypetests">ErrorTypeTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -199,7 +199,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests_keychainaccesstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;KeychainAccessTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests_keychainaccesstests">KeychainAccessTests</a></td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">0</td>
@@ -207,7 +207,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_sharedcredentialtests_summary"/><a href="#user-content-keychainaccesstests_sharedcredentialtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SharedCredentialTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_sharedcredentialtests_summary"/><a href="#user-content-keychainaccesstests_sharedcredentialtests">SharedCredentialTests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -230,7 +230,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_enumtests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_enumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EnumTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_enumtests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_enumtests">EnumTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -238,7 +238,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_errortypetests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_errortypetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ErrorTypeTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_errortypetests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_errortypetests">ErrorTypeTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -246,7 +246,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;KeychainAccessTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests">KeychainAccessTests</a></td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">30</td>
   <td align="right" width="80px">4</td>
@@ -337,7 +337,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weathertests_weathertests_summary"/><a href="#user-content-weathertests_weathertests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherTests</a></td>
+  <td align="left" width="368px"><a name="weathertests_weathertests_summary"/><a href="#user-content-weathertests_weathertests">WeatherTests</a></td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
@@ -360,7 +360,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weatheruitests_weatheruitests4_summary"/><a href="#user-content-weatheruitests_weatheruitests4"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherUITests4</a></td>
+  <td align="left" width="368px"><a name="weatheruitests_weatheruitests4_summary"/><a href="#user-content-weatheruitests_weatheruitests4">WeatherUITests4</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">0</td>
@@ -368,7 +368,7 @@
   <td align="right" width="80px">1</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="weatheruitests_weatheruitestslaunchtests_summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;WeatherUITestsLaunchTests</a></td>
+  <td align="left" width="368px"><a name="weatheruitests_weatheruitestslaunchtests_summary"/><a href="#user-content-weatheruitests_weatheruitestslaunchtests">WeatherUITestsLaunchTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">3</td>
   <td align="right" width="80px">1</td>
@@ -391,7 +391,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_enumtests_summary"/><a href="#user-content-keychainaccesstests_enumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EnumTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_enumtests_summary"/><a href="#user-content-keychainaccesstests_enumtests">EnumTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -399,7 +399,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_errortypetests_summary"/><a href="#user-content-keychainaccesstests_errortypetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ErrorTypeTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_errortypetests_summary"/><a href="#user-content-keychainaccesstests_errortypetests">ErrorTypeTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -407,7 +407,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests_keychainaccesstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;KeychainAccessTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests_keychainaccesstests">KeychainAccessTests</a></td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">0</td>
@@ -415,7 +415,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_sharedcredentialtests_summary"/><a href="#user-content-keychainaccesstests_sharedcredentialtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SharedCredentialTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_sharedcredentialtests_summary"/><a href="#user-content-keychainaccesstests_sharedcredentialtests">SharedCredentialTests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -438,7 +438,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_enumtests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_enumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EnumTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_enumtests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_enumtests">EnumTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -446,7 +446,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_errortypetests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_errortypetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ErrorTypeTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_errortypetests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_errortypetests">ErrorTypeTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -454,7 +454,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;KeychainAccessTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests">KeychainAccessTests</a></td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">30</td>
   <td align="right" width="80px">4</td>
@@ -477,7 +477,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="tauuitests_bddtest_summary"/><a href="#user-content-tauuitests_bddtest"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;BDDTest</a></td>
+  <td align="left" width="368px"><a name="tauuitests_bddtest_summary"/><a href="#user-content-tauuitests_bddtest">BDDTest</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
   <td align="right" width="80px">1</td>
@@ -485,7 +485,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="tauuitests_tauuitests_summary"/><a href="#user-content-tauuitests_tauuitests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;TAUUITests</a></td>
+  <td align="left" width="368px"><a name="tauuitests_tauuitests_summary"/><a href="#user-content-tauuitests_tauuitests">TAUUITests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>

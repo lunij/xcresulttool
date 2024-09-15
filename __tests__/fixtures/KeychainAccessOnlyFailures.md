@@ -35,7 +35,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_enumtests_summary"/><a href="#user-content-keychainaccesstests_enumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EnumTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_enumtests_summary"/><a href="#user-content-keychainaccesstests_enumtests">EnumTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -43,7 +43,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_errortypetests_summary"/><a href="#user-content-keychainaccesstests_errortypetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ErrorTypeTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_errortypetests_summary"/><a href="#user-content-keychainaccesstests_errortypetests">ErrorTypeTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -51,7 +51,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests_keychainaccesstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;KeychainAccessTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests_keychainaccesstests">KeychainAccessTests</a></td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">0</td>
@@ -59,7 +59,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests_sharedcredentialtests_summary"/><a href="#user-content-keychainaccesstests_sharedcredentialtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;SharedCredentialTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests_sharedcredentialtests_summary"/><a href="#user-content-keychainaccesstests_sharedcredentialtests">SharedCredentialTests</a></td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">2</td>
   <td align="right" width="80px">0</td>
@@ -82,7 +82,7 @@
   <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_enumtests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_enumtests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;EnumTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_enumtests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_enumtests">EnumTests</a></td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">4</td>
   <td align="right" width="80px">0</td>
@@ -90,7 +90,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_errortypetests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_errortypetests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;ErrorTypeTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_errortypetests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_errortypetests">ErrorTypeTests</a></td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">1</td>
   <td align="right" width="80px">0</td>
@@ -98,7 +98,7 @@
   <td align="right" width="80px">0</td>
 </tr>
 <tr>
-  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests"><img src="https://xcresulttool-static.netlify.app/i/test-class.png" alt="test-class" width="14px" align="top">&nbsp;KeychainAccessTests</a></td>
+  <td align="left" width="368px"><a name="keychainaccesstests-maccatalyst_keychainaccesstests_summary"/><a href="#user-content-keychainaccesstests-maccatalyst_keychainaccesstests">KeychainAccessTests</a></td>
   <td align="right" width="80px">34</td>
   <td align="right" width="80px">30</td>
   <td align="right" width="80px">4</td>

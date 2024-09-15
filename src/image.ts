@@ -1,9 +1,6 @@
-import * as path from 'path'
-
 const baseUrl = 'https://xcresulttool-static.netlify.app/i/'
-const attrs = 'width="14px" align="top"'
 
-export function testStatus(statusText: string): string {
+function testStatusImage(statusText: string): string {
   let filename = ''
   switch (statusText) {
     case 'Success':
@@ -28,10 +25,14 @@ export function testStatus(statusText: string): string {
       filename = 'unknown.png'
       break
   }
-  return `<img src="${baseUrl}${filename}" alt="${statusText}" title="${statusText}" ${attrs}>`
+  return `<img src="${baseUrl}${filename}" alt="${statusText}" title="${statusText}" width="14px" align="top">`
 }
 
-export function icon(filename: string): string {
-  const alt = path.parse(filename).name
-  return `<img src="${baseUrl}${filename}" alt="${alt}" ${attrs}>`
+export function coverageBarImage(percentage: number): string {
+  return `<img src="${baseUrl}${percentage.toFixed(0)}.svg"/>`
 }
+
+export const passedImage = testStatusImage('Success')
+export const failedImage = testStatusImage('Failure')
+export const skippedImage = testStatusImage('Skipped')
+export const expectedFailureImage = testStatusImage('Expected Failure')
