@@ -102,21 +102,21 @@
 <tr>
 <th align="left">xcresulttool-example.app</th>
 <th width="120px"><img src="https://xcresulttool-static.netlify.app/i/45.svg"/></th>
-<th width="104px" align="right">45.16 %</th>
+<th width="104px" align="right">45.2 %</th>
 <th align="right">14</th>
 <th align="right">31</th>
 </tr>
 <tr>
 <td><a href="xcresulttool-example/AppDelegate.swift">AppDelegate.swift</a></td>
 <td><img src="https://xcresulttool-static.netlify.app/i/46.svg"/></td>
-<td align="right">46.15 %</td>
+<td align="right">46.2 %</td>
 <td align="right">6</td>
 <td align="right">13</td>
 </tr>
 <tr>
 <td><a href="xcresulttool-example/ViewController.swift">ViewController.swift</a></td>
 <td><img src="https://xcresulttool-static.netlify.app/i/44.svg"/></td>
-<td align="right">44.44 %</td>
+<td align="right">44.4 %</td>
 <td align="right">8</td>
 <td align="right">18</td>
 </tr>

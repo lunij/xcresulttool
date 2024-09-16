@@ -29,6 +29,12 @@ jobs:
         with:
           path: __tests__/fixtures/Netbob.xcresult
           title: Netbob.xcresult
+      - name: MultipleLibraries.xcresult
+        uses: ./
+        with:
+          path: __tests__/fixtures/MultipleLibraries.xcresult
+          title: MultipleLibraries.xcresult
+          show-file-coverage: false
       - name: Weather.xcresult
         uses: ./
         with:

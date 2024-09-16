@@ -5,7 +5,8 @@ import { CodeCoverage } from './coverage.js'
 
 export function createCodeCoverageMarkdown(
   codeCoverage: CodeCoverage,
-  workspaceFilePath: string
+  workspaceFilePath: string,
+  showFileCoverage: boolean
 ): string[] {
   const workspace = path.dirname(`${workspaceFilePath}`)
   const regExp = new RegExp(`${workspace}/`, 'g')
@@ -36,28 +37,30 @@ export function createCodeCoverageMarkdown(
     lines.push('<tr>')
     lines.push(`<th align="left">${target.name}</th>`)
     lines.push(`<th width="120px">${image.coverageBarImage(lineCoverage)}</th>`)
-    lines.push(`<th width="104px" align="right">${lineCoverage.toFixed(2)} %</th>`)
+    lines.push(`<th width="104px" align="right">${lineCoverage.toFixed(1)} %</th>`)
     lines.push(`<th align="right">${target.coveredLines}</th>`)
     lines.push(`<th align="right">${target.executableLines}</th>`)
     lines.push('</tr>')
 
-    const sortedFiles = target.files.sort((a, b) => {
-      if (a.lineCoverage !== b.lineCoverage) {
-        return b.lineCoverage - a.lineCoverage
+    if (showFileCoverage) {
+      const sortedFiles = target.files.sort((a, b) => {
+        if (a.lineCoverage !== b.lineCoverage) {
+          return b.lineCoverage - a.lineCoverage
+        }
+        return a.name.localeCompare(b.name)
+      })
+
+      for (const file of sortedFiles) {
+        const lineCoverage = file.lineCoverage * 100
+
+        lines.push('<tr>')
+        lines.push(`<td><a href="${file.path}">${file.name}</a></td>`)
+        lines.push(`<td>${image.coverageBarImage(lineCoverage)}</td>`)
+        lines.push(`<td align="right">${lineCoverage.toFixed(1)} %</td>`)
+        lines.push(`<td align="right">${file.coveredLines}</td>`)
+        lines.push(`<td align="right">${file.executableLines}</td>`)
+        lines.push('</tr>')
       }
-      return a.name.localeCompare(b.name)
-    })
-
-    for (const file of sortedFiles) {
-      const lineCoverage = file.lineCoverage * 100
-
-      lines.push('<tr>')
-      lines.push(`<td><a href="${file.path}">${file.name}</a></td>`)
-      lines.push(`<td>${image.coverageBarImage(lineCoverage)}</td>`)
-      lines.push(`<td align="right">${lineCoverage.toFixed(2)} %</td>`)
-      lines.push(`<td align="right">${file.coveredLines}</td>`)
-      lines.push(`<td align="right">${file.executableLines}</td>`)
-      lines.push('</tr>')
     }
   }
 

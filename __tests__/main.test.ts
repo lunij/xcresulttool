@@ -14,6 +14,7 @@ test('Netbob.xcresult', async () => {
   const formatter = new Formatter(bundlePath)
   const report = await formatter.format({
     showCodeCoverage: true,
+    showFileCoverage: true,
     showPassedTests: false,
     showTestSummaries: true
   })
@@ -26,6 +27,27 @@ test('Netbob.xcresult', async () => {
   }
   expect((await readFile(outputPath)).toString()).toBe(
     (await readFile('__tests__/fixtures/Netbob.md')).toString()
+  )
+})
+
+test('MultipleLibraries.xcresult', async () => {
+  const bundlePath = '__tests__/fixtures/MultipleLibraries.xcresult'
+  const formatter = new Formatter(bundlePath)
+  const report = await formatter.format({
+    showCodeCoverage: true,
+    showFileCoverage: false,
+    showPassedTests: false,
+    showTestSummaries: false
+  })
+  const reportText = report.reportSummary.removeGithubRootUrl()
+
+  const outputPath = path.join(os.tmpdir(), 'MultipleLibraries.md')
+  await writeFile(outputPath, reportText)
+  if (record) {
+    await writeFile('__tests__/fixtures/MultipleLibraries.md', reportText)
+  }
+  expect((await readFile(outputPath)).toString()).toBe(
+    (await readFile('__tests__/fixtures/MultipleLibraries.md')).toString()
   )
 })
 
@@ -51,6 +73,7 @@ test('Weather.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: false,
     showCodeCoverage: true,
+    showFileCoverage: true,
     showTestSummaries: true
   })
   const reportText = report.reportSummary
@@ -87,6 +110,7 @@ test('KeychainAccess.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: false,
     showCodeCoverage: true,
+    showFileCoverage: true,
     showTestSummaries: true
   })
   const reportText = report.reportSummary
@@ -219,6 +243,7 @@ test('Coverage.xcresult', async () => {
   const report = await formatter.format({
     showPassedTests: true,
     showCodeCoverage: false,
+    showFileCoverage: true,
     showTestSummaries: true
   })
   const reportText = report.reportSummary.removeGithubRootUrl()

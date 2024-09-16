@@ -298,7 +298,8 @@ export class Formatter {
       ) {
         const codeCoverageMarkdown = createCodeCoverageMarkdown(
           testReport.codeCoverage,
-          testReport.creatingWorkspaceFilePath
+          testReport.creatingWorkspaceFilePath,
+          options.showFileCoverage
         )
         chapterSummary.content.push(...codeCoverageMarkdown)
       }
@@ -467,11 +468,18 @@ interface FailureSummary {
 export class FormatterOptions {
   showPassedTests: boolean
   showCodeCoverage: boolean
+  showFileCoverage: boolean
   showTestSummaries: boolean
 
-  constructor(showPassedTests = true, showCodeCoverage = true, showTestSummaries = true) {
+  constructor(
+    showPassedTests = true,
+    showCodeCoverage = true,
+    showFileCoverage = true,
+    showTestSummaries = true
+  ) {
     this.showPassedTests = showPassedTests
     this.showCodeCoverage = showCodeCoverage
+    this.showFileCoverage = showFileCoverage
     this.showTestSummaries = showTestSummaries
   }
 }

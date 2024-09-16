@@ -17,6 +17,9 @@ inputs:
   show-code-coverage:
     description: 'Show code coverage'
     default: true
+  show-file-coverage:
+    description: 'Show file coverage'
+    default: true
   show-test-summaries:
     description: 'Show summaries for all test classes'
     default: false

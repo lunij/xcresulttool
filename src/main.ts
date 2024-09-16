@@ -14,6 +14,7 @@ async function run(): Promise<void> {
     const inputPaths = core.getMultilineInput('path')
     const showPassedTests = core.getBooleanInput('show-passed-tests')
     const showCodeCoverage = core.getBooleanInput('show-code-coverage')
+    const showFileCoverage = core.getBooleanInput('show-file-coverage')
     const showTestSummaries = core.getBooleanInput('show-test-summaries')
     const uploadOption = core.getInput('upload').toLowerCase()
 
@@ -39,6 +40,7 @@ async function run(): Promise<void> {
     const report = await formatter.format({
       showPassedTests,
       showCodeCoverage,
+      showFileCoverage,
       showTestSummaries
     })
 

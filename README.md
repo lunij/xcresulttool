@@ -109,10 +109,16 @@ jobs:
     # Default: true
     show-passed-tests:
 
-    # Whether to show code coverage (if coverage data exists).
+    # Show code coverage if coverage data exists.
     #
     # Default: true
     show-code-coverage:
+
+    # Show code coverage for all files if coverage data exists and `show-code-coverage` is true.
+    # When `false` it shows the code coverage of targets/libraries only.
+    #
+    # Default: true
+    show-file-coverage:
 
     # Show summaries for all test classes
     #
