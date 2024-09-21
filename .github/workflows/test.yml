@@ -6,6 +6,7 @@ on:
       - main
       - 'releases/*'
       - marc/update # remove me
+      - marc/svg # remove me
 
 jobs:
   build-and-test:
