@@ -5,15 +5,15 @@
   <td align="right" colspan="2"><b>11</b></td>
 </tr>
 <tr>
-  <td align="right">Passed&nbsp;&nbsp;<img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></td>
+  <td align="right">Passed&nbsp;&nbsp;<img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/success.svg" align="center" /></td>
   <td align="right"><b>8</b></td>
 </tr>
 <tr>
-  <td align="right">Failed&nbsp;&nbsp;<img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></td>
+  <td align="right">Failed&nbsp;&nbsp;<img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/failure.svg" align="center" /></td>
   <td align="right"><b>2</b></td>
 </tr>
 <tr>
-  <td align="right">Expected Failure&nbsp;&nbsp;<img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></td>
+  <td align="right">Expected Failure&nbsp;&nbsp;<img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/expected-failure.svg" align="center" /></td>
   <td align="right"><b>1</b></td>
 </tr>
 <tr>
@@ -33,10 +33,10 @@
 <tr>
   <th>Test</th>
   <th>Total</th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/success.svg" align="center" /></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/failure.svg" align="center" /></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/skipped.svg" align="center" /></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/expected-failure.svg" align="center" /></th>
 </tr>
 <tr>
   <td align="left" width="368px"><a name="weathertests_weathertests_summary"/><a href="#user-content-weathertests_weathertests">WeatherTests</a></td>
@@ -56,10 +56,10 @@
 <tr>
   <th>Test</th>
   <th>Total</th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/passed.png" alt="Success" title="Success" width="14px" align="top"></th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/failure.png" alt="Failure" title="Failure" width="14px" align="top"></th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/skipped.png" alt="Skipped" title="Skipped" width="14px" align="top"></th>
-  <th><img src="https://xcresulttool-static.netlify.app/i/expected-failure.png" alt="Expected Failure" title="Expected Failure" width="14px" align="top"></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/success.svg" align="center" /></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/failure.svg" align="center" /></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/skipped.svg" align="center" /></th>
+  <th><img src="https://raw.github.com/lunij/xcresulttool/marc/svg/images/expected-failure.svg" align="center" /></th>
 </tr>
 <tr>
   <td align="left" width="368px"><a name="weatheruitests_weatheruitests4_summary"/><a href="#user-content-weatheruitests_weatheruitests4">WeatherUITests4</a></td>

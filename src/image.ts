@@ -1,35 +1,29 @@
-const baseUrl = 'https://xcresulttool-static.netlify.app/i/'
+const baseUrl = 'https://raw.github.com/lunij/xcresulttool/marc/svg/images/'
 
 function testStatusImage(statusText: string): string {
   let filename = ''
   switch (statusText) {
     case 'Success':
-      filename = 'passed.png'
+      filename = 'success.svg'
       break
     case 'Failure':
-      filename = 'failure.png'
+      filename = 'failure.svg'
       break
     case 'Skipped':
-      filename = 'skipped.png'
-      break
-    case 'Mixed Success':
-      filename = 'mixed-passed.png'
-      break
-    case 'Mixed Failure':
-      filename = 'mixed-failure.png'
+      filename = 'skipped.svg'
       break
     case 'Expected Failure':
-      filename = 'expected-failure.png'
+      filename = 'expected-failure.svg'
       break
     default:
-      filename = 'unknown.png'
+      filename = 'unknown.svg'
       break
   }
-  return `<img src="${baseUrl}${filename}" alt="${statusText}" title="${statusText}" width="14px" align="top">`
+  return `<img src="${baseUrl}${filename}" align="center" />`
 }
 
 export function coverageBarImage(percentage: number): string {
-  return `<img src="${baseUrl}${percentage.toFixed(0)}.svg"/>`
+  return `<img src="${baseUrl}${percentage.toFixed(0)}.svg" align="center" />`
 }
 
 export const passedImage = testStatusImage('Success')
